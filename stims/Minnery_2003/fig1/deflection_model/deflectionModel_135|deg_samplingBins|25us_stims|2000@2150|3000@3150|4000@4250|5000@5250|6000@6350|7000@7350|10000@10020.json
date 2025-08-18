@@ -1,0 +1,73 @@
+{
+    "deflection_times": [
+        [
+            2000,
+            2150
+        ],
+        [
+            3000,
+            3150
+        ],
+        [
+            4000,
+            4250
+        ],
+        [
+            5000,
+            5250
+        ],
+        [
+            6000,
+            6350
+        ],
+        [
+            7000,
+            7350
+        ],
+        [
+            10000,
+            10020
+        ]
+    ],
+    "baseline_prob": [
+        0.02148274193548387,
+        0.0017078341021596456
+    ],
+    "ON_polyFit": [
+        0.05507127868406594,
+        0.023336212760055076,
+        5.341902111423686,
+        0.3145771773953946,
+        -5.058719624006341,
+        0.3101595406586022,
+        0.04227195040782856
+    ],
+    "OFF_polyFit": [
+        0.03058709877032109,
+        0.009985359004471067,
+        0.20218871822744425,
+        0.19598034106212686,
+        0.008586585170672017
+    ],
+    "resetTime": true,
+    "dt": 0.025,
+    "plotFigs": true,
+    "target_angle": 135,
+    "n_cells": 180,
+    "prob_compensation": 1.25,
+    "yPoly_angTuning": [
+        -0.0053106042632414,
+        0.07319832323523882,
+        -0.35077072800365233,
+        0.9962195659790775
+    ],
+    "maximize_target_angle": true,
+    "save_stim_data": true,
+    "analyze_stim_data": true,
+    "paper_sampling": 1.0,
+    "addMouseHead": true,
+    "stim_dataset_folder": "/Users/joao/Research/Models/BBP/thalamus_netpyne/stims/Minnery_2003/fig1/stim_datasets/",
+    "save_figs_folder": "/Users/joao/Research/Models/BBP/thalamus_netpyne/stims/Minnery_2003/fig1/figs_stim/",
+    "save_deflection_model_folder": "/Users/joao/Research/Models/BBP/thalamus_netpyne/stims/Minnery_2003/fig1/deflection_model/",
+    "stims_string": "_stims|2000@2150|3000@3150|4000@4250|5000@5250|6000@6350|7000@7350|10000@10020"
+}

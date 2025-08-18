@@ -1,0 +1,118 @@
+{
+    "target__VPL_TC": {
+        "source__CorticoThalamic_projections__chemical": {
+            "synsPerConn": [
+                1.2162515334359265,
+                0.5270519913783142
+            ],
+            "convergence": [
+                858.9672662272371,
+                277.17414526740237
+            ],
+            "divergence": [
+                102.19738678505443,
+                52.6164059999313
+            ]
+        },
+        "source__MedialLemniscus_projections__chemical": {
+            "synsPerConn": [
+                12.582531632600789,
+                4.235697620413562
+            ],
+            "convergence": [
+                11.39978976874562,
+                7.962541652368737
+            ],
+            "divergence": [
+                40.75365344467641,
+                42.74007792672603
+            ]
+        },
+        "source__thalamus_neurons|Rt_RC__chemical": {
+            "synsPerConn": [
+                4.626752086626636,
+                3.965706033500199
+            ],
+            "convergence": [
+                112.57004021447722,
+                35.68933400541325
+            ],
+            "divergence": [
+                60.19155417512842,
+                65.77182999717962
+            ]
+        }
+    },
+    "target__Rt_RC": {
+        "source__CorticoThalamic_projections__chemical": {
+            "synsPerConn": [
+                1.1396819984839675,
+                0.40335838076890695
+            ],
+            "convergence": [
+                402.0673194614443,
+                121.42657221858126
+            ],
+            "divergence": [
+                26.194946903948644,
+                13.612139457960675
+            ]
+        },
+        "source__MedialLemniscus_projections__chemical": {
+            "synsPerConn": [
+                2.7701356329537843,
+                1.9782475690444372
+            ],
+            "convergence": [
+                11.262611975483262,
+                9.911268883761155
+            ],
+            "divergence": [
+                9.287713841368586,
+                6.085098048277366
+            ]
+        },
+        "source__thalamus_neurons|VPL_TC__chemical": {
+            "synsPerConn": [
+                1.5368701675123952,
+                1.2220262731508336
+            ],
+            "convergence": [
+                122.64106742717458,
+                33.915504875090754
+            ],
+            "divergence": [
+                18.37688104758707,
+                24.569580486228006
+            ]
+        },
+        "source__thalamus_neurons|Rt_RC__chemical": {
+            "synsPerConn": [
+                1.5261504871402765,
+                1.2682495880759375
+            ],
+            "convergence": [
+                47.023222652271336,
+                21.654593987075557
+            ],
+            "divergence": [
+                13.057129928163357,
+                16.7466156976632
+            ]
+        },
+        "source__thalamus_neurons|Rt_RC__electrical_synapse": {
+            "synsPerConn": [
+                1.0224395640313273,
+                0.15221040063634408
+            ],
+            "convergence": [
+                32.40863719698513,
+                11.940456894696888
+            ],
+            "divergence": [
+                9.945861465366342,
+                10.253467859831673
+            ]
+        }
+    }
+}

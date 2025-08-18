@@ -1,0 +1,1616 @@
+*   Notebook for tracking barreloid model 
+** Batch sims 
+
+*** 2024_05_31  
+    **** 2024_05_31 - bWgt_4070_noSilentCT
+        - removed silent pops in the artificial CT stims and rescaled the number of cells to fill the 818 total CT cells
+        - best 
+            L6A->VPM = 2
+            L6A->TRN = 1
+    **** 2024_05_31 - bWgt_4071_noSilentCT
+    parameter_space_L6A_VPM=[2,3,4] 
+    parameter_space_L6A_TRN=[1,2,3,4] 
+    - recalibrating weights to see if it improves angular tuning
+    - best
+        parameter_space_L6A_VPM=[4] 
+        parameter_space_L6A_TRN=[2] 
+
+    **** 2024_05_31 - bWgt_4072_diffAngles
+    - testing different deflection angles
+    - result: all look ok or very good
+
+*** 2024_06_03
+    **** 2024_06_03 - bWgt_5000_diffAngles_wNorm
+        - Added weight norm in each section for each different pathway
+        - Applied a reset in the weights for all conns back to 1
+        - result:
+            low spiking, because RMP seemed too low (VPM shift=0 -> -63 mV/ TRN shift=6 -> -80 mV)
+
+    **** 2024_06_03 - bWgt_5001_diffAngles_wNorm
+        - changing RMPs to -63 and -68 for VPM and TRN, respectively, to test
+
+    **** 2024_06_03 - bWgt_5002_diffAngles_wNorm
+        - changing RMPs to -63 and -68 for VPM and TRN, respectively, to test
+        - boosting weights to 2
+
+    **** 2024_06_03 - bWgt_5003_diffAngles_wNorm
+        - changing RMPs to -58 and -65 for VPM and TRN, respectively, to test
+        - boosting weights to 2
+        - result: 
+            sustained oscillations
+            changing rmp for bWgt_5003 (VPM -58 and TRN -65) increased oscillations significantly, compared with bWgt_5002 (VPM -63 and TRN -68)
+
+    **** 2024_06_03 - bWgt_5004_wNorm_exploreRMPs
+        - boosting normalized weights to 2
+        - params:
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+
+            parameter_space_shift_targetRMP_VPM = [-2.5,    -1.25,  0,      1.25,   2.5,    3.75,   5]
+            parameter_space_shift_targetRMP_TRN = [-4.5,    -3,     -1.5,   0,      1.5,    3,      4.5]
+            group_currents=False
+
+        - result: 
+            too much oscillations when VPM is depolarized because TRN->VPM feedback is too strong 
+            driver input can be increased
+
+    **** 2024_06_03 - bWgt_5005_wNorm_exploreRMPs_2
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - params:
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+
+            parameter_space_shift_targetRMP_VPM = [-2.5,    -1.25,  0,      1.25,   2.5,    3.75,   5]
+            parameter_space_shift_targetRMP_TRN = [-4.5,    -3,     -1.5,   0,      1.5,    3,      4.5, 6]
+            group_currents=False
+
+        - result: 
+            still oscillates, but found that depolarized TRN resulted in less synchrony
+            will test next if SK2 can depolarize TRN to stop oscillating
+
+*** 2024_06_04
+    **** 2024_06_04 - bWgt_5006_wNorm_exploreTRNSK2
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - params:
+            parameter_space_SK2_TRN     = [1,0.75,0.5,0.25,0]
+
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25]
+            parameter_space_shift_targetRMP_TRN = [     3,     0]
+            group_currents=True
+        
+        - result:
+            TRN was showing too strong of a rebound and depolarization blockade
+            testing depolarizing TRN next to see if a combined effect fixes it
+
+    **** 2024_06_04 - bWgt_5007_wNorm_exploreTRNSK2_andRMPs
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - params:
+            parameter_space_SK2_TRN     = [1, 1, 0.75, 0.5, 0.25]
+
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,  1.25,  1.25,  1.25,]
+            parameter_space_shift_targetRMP_TRN = [     3,     0,     0,     0,     0,]
+            group_currents=True
+
+            - TC:  -65.5  	| RT:  -68 	 
+
+        -result:
+            combining RMP and decreasing TRN SK2 conductance reduced oscillations
+            next, test effect of VPM IH
+
+    **** 2024_06_04 - bWgt_5008_wNorm_rescaleIH
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - decreasing VPM->TRN to 1.5
+        - params:
+            parameter_space_SK2_TRN     = [1,0.75]
+            parameter_space_ih_gmax__VPM= [1,0.75,1.25]
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25]
+            parameter_space_shift_targetRMP_TRN = [     3,     0]
+            group_currents=True
+        - result:
+            increasing VPM IH worked best for tonic mode
+            good, but will try with more VPM IH
+
+    **** 2024_06_04 - bWgt_5009_wNorm_rescaleIH
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - decreasing VPM->TRN to 1.5
+        - params:
+            parameter_space_SK2_TRN     = [1,   0.75,   0.75,   0.75,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1,      1.5,    2,      3]
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,  1.25,  1.25,  1.25,]
+            parameter_space_shift_targetRMP_TRN = [     3,     0,     0,     0,     0,]
+            group_currents=True
+        - result: 
+            increasing IH helped
+            next, increase more
+
+    **** 2024_06_04 - bWgt_5010_wNorm_rescaleIH
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - decreasing VPM->TRN to 1.5
+        - params:
+            parameter_space_SK2_TRN     = [1,   0.75,   0.75,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1,      5,      10]
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,  1.25,  1.25]
+            parameter_space_shift_targetRMP_TRN = [     3,     0,     0,     0]
+            group_currents=True
+        - result: 
+            increasing IH didn't result in a definitive transition from burst to tonic
+            next, test different TRN->TRN weights in two states to see if it improves Sleep/Wake response
+    
+    **** 2024_06_04 - bWgt_5011_wNorm_exploringTRNTRN
+        - boosting normalized weights to 2
+        - reducing TRN->VPM to 1
+        - increasing MLe to 4
+        - decreasing VPM->TRN to 1.5
+        - params:
+            parameter_space_TRN_TRN     = [0.25, 0.5, 1, 2, 5]
+        - grouped params:
+            parameter_space_SK2_TRN     = [1,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1.5]
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25]
+            parameter_space_shift_targetRMP_TRN = [     3,     0]
+            group_currents=True
+        
+        - result:
+            incresing TRN_TRN to 5 improved transition from sleep to wake, combined with SK2 and IH modifications
+
+    **** 2024_06_04 - 
+        - fix:
+            fixing error that was using old CT stim files - adding new combination of inputs with no silent cells
+        - weights  
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_TRN_VPM=[1]
+            parameter_space_TRN_TRN=[5]     # best for wake/sleep transition
+            parameter_space_L6A_VPM=[2] 
+            parameter_space_L6A_TRN=[2] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+        - params:
+            None
+        - grouped params:
+            parameter_space_SK2_TRN     = [1,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1.5]
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25]
+            parameter_space_shift_targetRMP_TRN = [     3,     0]
+            group_currents=True
+        
+        - result:
+            results improved
+            next, testing different CT->TRN feedback weights
+            test another wake state, with more TC hyperpolarization and more TRN depolarization
+            
+    **** 2024_06_04 - bWgt_5013_wNorm_exploringCTTRNweight
+        - params:
+            parameter_space_L6A_TRN=[2,4,8] 
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,  2.5]
+            parameter_space_shift_targetRMP_TRN = [     3,     0,  -1.5]
+            group_currents=True
+        -result: 
+            weight 8 was too high, 4 seems ok
+            next, replicating that, but rescaling RMPS
+
+    **** 2024_06_04 - bWgt_5014_wNorm_exploringCTTRNweight
+        - params:
+            parameter_space_L6A_TRN=[4] 
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,   2.5]
+            parameter_space_shift_targetRMP_TRN = [     5,    -2,  -2.5]
+            group_currents=True
+        -result: 
+
+
+    
+*** 2024_06_05    
+    **** 2024_06_05 - bWgt_5019_wNorm_newConnsMc2
+        - updated number of projections to thalamus by narrowing the cfg.conn_data to only the cells in mc2
+        - resulted in an increase in conns per cell, because neurons in the main microcircuit are more interconnected
+
+        - CT conns doubled
+        - running another param exploration on CT weights
+
+        - params:
+            - weights:
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_TRN_VPM=[1]
+            parameter_space_TRN_TRN=[5]     # best for wake/sleep transition
+            parameter_space_L6A_VPM=[1,2,4] 
+            parameter_space_L6A_TRN=[1,2,4] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+
+            parameter_space_SK2_TRN     = [1,   1,   0.75,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1,   1.5,    1.5]
+            
+            ref_rmp_VPM = -63 # mV - target -65 mV w/ CTX / -68 mV w/o CTX
+            ref_rmp_TRN = -68 # mV - target -60 mV w/ CTX / -80 mV w/o CTX    
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [ -1.25,  1.25,  1.25,   2.5]
+            parameter_space_shift_targetRMP_TRN = [     5,    -2,    -2,  -2.5]
+            group_currents=True            
+
+            ct_constant={
+                            'sparse':       '../stims/Artificial/CT/spiking_dict__nCells_359__sampling_25_uS__freq_5_Hz__downTimes__None__.json',
+                            'suppressed':   '../stims/Artificial/CT/spiking_dict__nCells_187__sampling_25_uS__freq_5_Hz__downTimes__None__.json',
+                            'activated':    '../stims/Artificial/CT/spiking_dict__nCells_272__sampling_25_uS__freq_5_Hz__downTimes__None__.json',
+                        }
+
+        - result:
+            lots of rebound bursts
+            still biased towards oscillations
+            next, reduce TRN->TRN weight, so that TRN cells might hyperpoalarize less after spiking
+        
+    
+    **** 2024_06_06 - bWgt_5021_rescalePas
+        - goal:
+            testing modifying pas mechanism to see if it affects afterhyperpolarization
+            TRN neurons are hyperpolaryzing too much after spiking, resulting in a bias towards oscillations
+        - params:
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_TRN_VPM=[1]
+            parameter_space_TRN_TRN=[1]
+            parameter_space_L6A_VPM=[2] 
+            parameter_space_L6A_TRN=[2] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+
+            modify_pas_e__VPM   = [-58, -66, -66, -66]
+            modify_pas_e__TRN   = [-75, -75, -70, -70]
+            addHoldingCurrent   =[False]
+            addThresholdCurrent =[False]
+
+            parameter_space_SK2_TRN     = [1,   1,   1,   0.75]
+            parameter_space_ih_gmax__VPM= [1,   1,   1,   1.5]
+
+            ref_rmp_VPM = -72 # mV
+            ref_rmp_TRN = -80 # mV
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+
+        - result:
+
+    **** 2024_06_06 - 
+        - params:
+
+            # test weight Norm
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_TRN_VPM=[1]
+            parameter_space_TRN_TRN=[1]     # best for wake/sleep transition
+            parameter_space_L6A_VPM=[2] 
+            parameter_space_L6A_TRN=[2] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+
+            parameter_space_KLeak_VPM   = [0,1,2]
+            parameter_space_KLeak_TRN   = [0,1,2]
+            parameter_space_SK2_VPM     = [1,]
+            parameter_space_SK2_TRN     = [1,]
+            parameter_space_ih_gmax__VPM= [1]
+            parameter_space_ih_gmax__TRN= [1]
+
+            modify_pas_e__VPM   = [-60]
+            modify_pas_e__TRN   = [-60]
+            addHoldingCurrent   =[False]
+            addThresholdCurrent =[False]
+
+            ref_rmp_VPM = -72 # mV
+            ref_rmp_TRN = -80 # mV
+            voltage_step_VPM = 2 # mV
+            voltage_step_TRN = 2 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+        - result:
+
+    
+    **** 2024_06_06 - 
+        - ran some tests on GPas correction, but didn't seem to have been affected by the 'esyn' mechanism like it is described in the BBP paper
+            "Once the structural properties of GJs-coupled neurons were validated, we 
+            performed in silico paired recordings and measured the coupling coefficients 
+            for each pair of neurons. We found that the mean coupling coefficients in the 
+            model compared well with the experiments for GJ conductance values of 0.2 nS (nS).
+            After adding GJs to the circuit, the input resistance of the neurons changed. 
+            To guarantee that the electrical properties of the neurons did not change, 
+            thus changing the responses to synaptic inputs, we devised an algorithm to 
+            compensate for the change in input resistance.48 The algorithm changed the 
+            conductance of the leak current (gpas) to restore the input resistance of the 
+            neuron before adding gap junctions. This compensation resulted in a different 
+            gpas value for each neuron."
+        - result: 
+            back to running batch simulations
+
+*** 2024_06_07
+    **** 2024_06_07 - bWgt_6000_networkStates
+        - testing implementation from paper on different sleep states
+        - params:
+            # test weight Norm
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_L6A_VPM=[1] 
+            parameter_space_L6A_TRN=[1] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+            
+            ################################################
+            # reference values for all groups
+            network_state_dict = {
+                                    'control':      {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 0
+                                    'control_ih':   {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 1
+                                    'control_kleak':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 2
+
+                                    'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 3
+                                    'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.15, 'TC_ih_shift': -3}, # 4
+                                    'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6, 'rescale_GABA_g': 1.3,  'TC_ih_shift': -2}, # 5
+                                    'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  0}, # 6
+                                    }
+            
+            base_VPM_KLeak = 1
+            base_TRN_KLeak = 1
+            base_TRN_weight= 1
+
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']                            for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * base_VPM_KLeak    for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * base_TRN_KLeak    for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight   for state in network_state_dict.keys()]
+
+            modify_pas_e__VPM   = [-60]
+            modify_pas_e__TRN   = [-60]
+            addHoldingCurrent   =[False]
+            addThresholdCurrent =[False]
+        - result:
+            Dynamics were too far off
+            Matching passive properties of the paper to see if it helps
+        
+    **** 2024_06_07 - bWgt_6001_networkStates
+        - params:
+            # test weight Norm
+            parameter_space_MLe_VPM=[4]
+            parameter_space_VPM_TRN=[1.5]
+            parameter_space_L6A_VPM=[1] 
+            parameter_space_L6A_TRN=[1] 
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+            # reference values for all groups
+            network_state_dict = {
+                                    'control':      {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 0
+                                    'control_ih':   {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 1
+                                    'control_kleak':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 2
+
+                                    'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 3
+                                    'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.15, 'TC_ih_shift': -4}, # 4 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+                                    'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6, 'rescale_GABA_g': 1.3,  'TC_ih_shift': -2}, # 5
+                                    'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  0}, # 6
+                                    }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            base_TRN_weight= 1
+
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']                            for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * base_VPM_KLeak    for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * base_TRN_KLeak    for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight   for state in network_state_dict.keys()]
+
+            # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/cell_classes.py)
+            modify_pas_e__VPM   = [-70]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_e__TRN   = [-77]   # default value (-80 mV)
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            addHoldingCurrent   =[False]
+            addThresholdCurrent =[False]
+
+    **** 2024_06_07 - bWgt_6002_networkStates
+        - added:
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+        - result: 
+            not that much change
+            still see oscillation in the awake state
+            increasing leaks for next sim, and potentially GABA weight difference for sim 6004
+
+    **** 2024_06_07 - bWgt_6003_networkStates
+        - added:
+            scale_VPM_KLeak = 1.25
+            scale_TRN_KLeak = 1.25
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+        - result:
+            Looks better
+            Need stronger oscillations in the NREM sleep
+
+    **** 2024_06_07 - bWgt_6004_networkStates
+        - params: (raised from 1 to 2)
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+        - result:
+            during background ativity decreased synchrony compared with bWgt_6003, but cells synchronized more during stim
+            likely to dictate wazing-waning
+
+        - next: 
+            test how to approximate NREM to the O_O_O_O_O condition
+            increase difference between GABA weight in different conditions to test
+
+*** 2024_06_08
+    **** 2024_06_08 - bWgt_6005_networkStates
+        - params:
+            'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 5
+            'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.35, 'TC_ih_shift': -4}, # 6 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+            'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6, 'rescale_GABA_g': 1.5,  'TC_ih_shift': -2}, # 7
+            'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 0.5,  'TC_ih_shift':  0}, # 8
+        - result:
+            rescale GABA didn't work as much
+            next, testing reducing KLeak across all RE cells to see if it makes TONIC and REM conditions less oscillating, and improves oscillations in NREM condition 
+            included 2 extra control
+
+    **** 2024_06_08 - bWgt_6007_networkStates
+        - added 2 new conditions:
+            including KLeak TC and KLeak RE separately and then together, to see which one governs the reduction of oscillations from (KL_TC and KL_RE = 0) to (KL_TC and KL_RE = 1)
+        - params:
+            ## rescale KLeak_RE
+            'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1.0-0.5, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8}, # 5
+            'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9-0.5, 'rescale_GABA_g': 1.15, 'TC_ih_shift': -4}, # 6 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+            'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6-0.5, 'rescale_GABA_g': 1.3,  'TC_ih_shift': -2}, # 7
+            'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1-0.5, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  0}, # 8
+        - result:
+            adding KLeak in TC is responsible for killing oscillations
+    
+    **** 2024_06_08 - bWgt_6008_networkStates
+        - increasing VPM_KLeak from 1.25 to 1.5
+        - params:
+            network_state_dict = {
+                        'control':      {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 0
+                        'control_ih':   {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift': -8}, # 1
+                        'control_kl_TC':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                        'control_kl_RE':{'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 3
+                        'control_kleak':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0}, # 4
+
+                        ## rescale KLeak_RE
+                        'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8}, # 5
+                        'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.15, 'TC_ih_shift': -4}, # 6 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+                        'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6, 'rescale_GABA_g': 1.3,  'TC_ih_shift': -2}, # 7
+                        'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  0}, # 8
+                        }
+    
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.5
+            scale_TRN_KLeak = 1.25
+            # base_TRN_weight= 1 # 'bWgt_6003_networkStates'
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+        - result:
+            not a major change in oscillations in awake condition
+            next, testing effect of SK2 conductance in afterhyperpolarization
+
+*** 2024_06_09    
+    **** 2024_06_09 - bWgt_6009_networkStates
+        - goal:
+            testing reducing SK2 to 0.2x original value to see if blocks afterhyperpolarization, mimmicking the effect of serotonin in awake state
+        - params:
+            same as bWgt_6008_networkStates +
+            parameter_space_SK2_VPM     = [0.2] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN     = [0.2] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+        - result:
+            many cells were too depolarized in TRN
+            next, test reducing SK2 only in VPM
+
+*** 2024_06_10
+    **** 2024_06_10 - bWgt_6010_networkStates
+        - goal:
+            testing reducing VPM SK2 to 0.5x original value to see if blocks afterhyperpolarization, mimmicking the effect of serotonin in awake state
+        - params:
+            same as bWgt_6008_networkStates +
+            parameter_space_SK2_VPM     = [0.5] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN     = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+        - result:
+            result improved
+            VPM cells showed less oscillation
+            next, scan over a range of values to confirm/improve
+
+    **** 2024_06_10 - bWgt_6011_networkStates
+        - goal:
+            testing reducing VPM SK2 on a range of values to see if blocks afterhyperpolarization, mimmicking the effect of serotonin in awake state
+        - params:
+            network_state_dict = {
+                    # paper default values
+                    'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8}, # 5
+                    }
+            parameter_space_SK2_VPM     = [1.0,0.5,0.3,0.1,0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+        - result:
+
+    **** 2024_06_10 - bWgt_6012_networkStates
+        - changes:
+            incorporated 'rescale_SK2_VPM' as a parameter and defined as 0.3 for awake and 1.0 for all other conditions
+            testing :
+                modify_pas_e__VPM   = [-65] # default (-70)
+                modify_pas_e__TRN   = [-70] # default (-77)
+        - params:
+            network_state_dict = {
+                            'control':      {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                            'control_ih':   {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift': -8, 'rescale_SK2_VPM':1.0}, # 1
+                            'control_kl_TC':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                            'control_kl_RE':{'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 3
+                            'control_kleak':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 4
+
+                            # paper default values
+                            'awake':        {'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8, 'rescale_SK2_VPM':0.3}, # 5
+                            'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.15, 'TC_ih_shift': -4, 'rescale_SK2_VPM':1.0}, # 6 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+                            'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6, 'rescale_GABA_g': 1.3,  'TC_ih_shift': -2, 'rescale_SK2_VPM':1.0}, # 7
+                            'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 8
+                            }
+    
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.5
+            scale_TRN_KLeak = 1.25
+            # base_TRN_weight= 1 # 'bWgt_6003_networkStates'
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+            # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/cell_classes.py)
+            # modify_pas_e__VPM   = [-70]   # default value (-80 mV)
+            # modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            # modify_pas_e__TRN   = [-77]   # default value (-80 mV)
+            # modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+            modify_pas_e__VPM   = [-65]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_e__TRN   = [-70]   # default value (-80 mV)
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+        - result:
+            tonic dynamics emerged when 'rescale_KLeak_RE_g' = 0
+            next, keep leak potentials and explore 'rescale_KLeak_TC_g'
+        
+    **** 2024_06_10 - bWgt_6012a_networkStates
+        - params:
+            network_state_dict = {
+                                    'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8, 'rescale_SK2_VPM':0.3}, # 5
+                                    'awake2':       {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake3':       {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake4':       {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8, 'rescale_SK2_VPM':0.3}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                    }
+        - result:
+            best parameters
+            'awake2':       {'rescale_KLeak_TC_g': 0.75,'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+
+            next, explore more 'rescale_KLeak_TC_g' values
+
+    **** 2024_06_10 - bWgt_6012b_networkStates
+        - params:
+            network_state_dict = {
+                                    'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake2':       {'rescale_KLeak_TC_g': 0.75,'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    'awake3':       {'rescale_KLeak_TC_g': 0.5, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    'awake4':       {'rescale_KLeak_TC_g': 0.25,'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    }
+        - result:
+            VPM KLeak = 1 still the best
+            'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+
+            next, opposite case, increasing KLeak to test the effects on tonic properties
+
+    **** 2024_06_10 - bWgt_6012c_networkStates
+        - params:
+            network_state_dict = {
+                                    'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake2':       {'rescale_KLeak_TC_g': 1.25,'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    'awake3':       {'rescale_KLeak_TC_g': 1.5, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    'awake4':       {'rescale_KLeak_TC_g': 2,   'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},
+                                    }
+
+        - result:
+            VPM KLeak = 1 still the best
+            'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+            next, change values of other parameters too to keep a similar difference in K leak and ih shift
+
+    **** 2024_06_10 - 
+        simulating params with 
+        - params:
+                network_state_dict = {
+                                        # # paper default values
+                                        # 'awake':        {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift': -8, 'rescale_SK2_VPM':0.3}, # 5
+                                        'awake_new':    {'rescale_KLeak_TC_g': 1.0, 'rescale_KLeak_RE_g': 0.0-1.0, 'rescale_GABA_g': 1.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 9 - adding KLeak in TC is responsible for killing oscillations
+                                        'N2':           {'rescale_KLeak_TC_g': 1.2, 'rescale_KLeak_RE_g': 0.9-1.0, 'rescale_GABA_g': 1.15, 'TC_ih_shift':  4, 'rescale_SK2_VPM':1.0}, # 6 (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L281)
+                                        'N3':           {'rescale_KLeak_TC_g': 1.8, 'rescale_KLeak_RE_g': 0.6-1.0, 'rescale_GABA_g': 1.3,  'TC_ih_shift':  6, 'rescale_SK2_VPM':1.0}, # 7
+                                        'REM':          {'rescale_KLeak_TC_g': 0.9, 'rescale_KLeak_RE_g': 1.1-1.0, 'rescale_GABA_g': 0.7,  'TC_ih_shift':  8, 'rescale_SK2_VPM':1.0}, # 8
+                                        }
+
+    **** 2024_06_10 - bWgt_6015_networkStates
+        - params:
+            increased e_pas from -65 and -70 mV to 
+                modify_pas_e__VPM   = [-58]   # default value (-80 mV)
+                modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+                modify_pas_e__TRN   = [-65]   # default value (-80 mV)
+                modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+        - result:
+            VPM still too negative
+            next, reduce VPM Kleak scaling factor
+
+    **** 2024_06_10 - bWgt_6015a_networkStates
+        - params:
+            modify_pas_e__VPM   = [-58]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_e__TRN   = [-65]   # default value (-80 mV)
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            scale_VPM_KLeak = 0.5
+            scale_TRN_KLeak = 1.25
+
+        - result:
+            oscillation increased in VPM
+            next, increasing depolarization and bringing kleak scaling to 1.0
+
+    **** 2024_06_10 - bWgt_6015b_networkStates
+        - params:
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+
+            modify_pas_e__VPM   = [-55]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_e__TRN   = [-60]   # default value (-80 mV)
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+        - result:
+            tonic firing emerged in conditons 0 and 1, and bursting in 2
+                - depolarization of TC by removal of KLeak and pas_e = -55 (condition 2), resulted in strong oscillations. With TRN KLeak being activated
+                - contrary, with VPM KLeak active, TC neurons got slightly less depolarized, and fire more tonic-like, but firing was too little. In these cases, TRN KLeak was 0
+
+            next, testing 0.5 VPM KLeak and GABA_g combinations to see if it results in a stronger tonic response
+    
+    **** 2024_06_10 - bWgt_6015c_networkStates
+        - params:
+            network_state_dict = {
+                                    'control':      {'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                                    'control_kl_TC':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                                    'control_kl_RE':{'rescale_KLeak_TC_g': 0,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 3
+                                    'control_kleak':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 4
+
+                                    # test conditions
+                                    'awake_test':{'rescale_KLeak_TC_g': 0.5,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake_test2':{'rescale_KLeak_TC_g': 1,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1.5,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                                    'awake_test3':{'rescale_KLeak_TC_g': 0.5,   'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1.5,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                                    }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+
+        - result:
+            Found some candidates for SLEEP and WAXING-WANING conditions 
+                'control_kl_RE':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'control_kleak':{'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+                base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+                scale_VPM_KLeak = 1.0
+                scale_TRN_KLeak = 1.25
+                base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+                scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+
+            next, testing negative KLeak and gaba_g of 1 and 1.5 to see if it improves tonic condition
+
+    **** 2024_06_10 - bWgt_6015d_networkStates
+        - params:
+            network_state_dict = {
+                                    'control':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                                    'control_kl_TC':{'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                                    'control_kl_RE':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                                    'control_kleak':{'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                                    
+                                    # test conditions for tonic firing
+                                    'awake_test10': {'rescale_KLeak_TC_g': -0.1, 'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},       
+                                    'awake_test20': {'rescale_KLeak_TC_g': -0.2, 'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},       
+                                    'awake_test30': {'rescale_KLeak_TC_g': -0.5, 'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},       
+                                    'awake_test21': {'rescale_KLeak_TC_g': -0.2, 'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1.5,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},       
+                                    'awake_test31': {'rescale_KLeak_TC_g': -0.5, 'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1.5,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},       
+                                }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+
+        - result:
+            adding negative VPM Kleak didn't help, because TRN is firing too much and suppresses VPM
+            next, added TRN KLeak with different values to see if reducing TRN helps get tonic firing up
+
+    **** 2024_06_10 - bWgt_6015e_networkStates            
+        - params:
+            network_state_dict = {
+                'control':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'control_kl_RE':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'control_kleak':{'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                
+                'control_kl_TC':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'control_kl_TC':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'control_kl_TC':{'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+
+        - result:  
+            0.1 worked best
+            next, explore this value combining with rescaling GABA_g
+
+    **** 2024_06_10 - bWgt_6015f_networkStates
+        - params:
+            network_state_dict = {
+                'awake30':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake31':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 0.5,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake32':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake33':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 1.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake34':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 1.5,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake35':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 2.0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+        
+        -result:
+            'rescale_GABA_g': 0.25 resulted in more firing in VPM
+            but TRN fires too much and unregular
+            
+            next, testing different TRN KLeak params to achieve less TRN firing
+
+    **** 2024_06_10 - bWgt_6015g_networkStates
+        - params:
+            network_state_dict = {
+                'awake30_':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.2, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake302':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.3, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake303':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.4, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake304':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+        - result:
+            still TRN fires too much
+            next, reducing VPM input from 1.5 to 1.0 to compare
+
+    **** 2024_06_10 - bWgt_6015h_networkStates
+        - params:
+            parameter_space_VPM_TRN=[1] # reduced from 1.5 to 1 to see if TRN will fire less, but if the other conditions will have the same behavio (SLEEP/W-W)
+
+            network_state_dict = {
+                'control':       {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'control_kl_RE': {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'control_kleak': {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'awake30_':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.1, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.2, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake302':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.3, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake303':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.4, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake304':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 2  # to compensate for the difference in the slope between the 2 mod files
+        - result:
+*** 2024_06_11
+    **** 2024_06_11 - bWgt_6015i_networkStates
+        - params:
+            network_state_dict = {
+                # 'control':       {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                # 'control_kl_RE': {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                # 'control_kleak': {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'awake3010':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake3012':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -3, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake3013':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -5, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake3014':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -7, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake3015':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -9, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+        - result:
+            best condition
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+            difference was very small. Ih shift doesn't have a major effect, at least using this Ih mod file, because the slope of the activation curve is very low
+            next, test other angles
+    
+    **** 2024_06_11 - bWgt_6016_networkStates
+        - params: 
+            network_state_dict = {
+                'control':       {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'control_kl_RE': {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'control_kleak': {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'awake3011':     {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+        - result:
+            results are good
+            next, 
+                improve waxing-waning condition
+                test with CT UP/DOWN states
+
+    **** 2024_06_11 - bWgt_6017_networkStates
+        - params:
+            initCfg = {
+                'duration':duration,
+                'delayCTvirtual':0,
+                }
+                # bWgt_6016_networkStates
+            network_state_dict = {
+                'control':        {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'sleep':          {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'wax_wan1':       {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan2':       {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan3':       {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan4':       {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan_':       {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            ct_up_down={
+                'sparse':       '../stims/Artificial/CT/spiking_dict__nCells_359__sampling_25_uS__freq_5_Hz__downTimes__1000|1500_2000|2500_3000|3500__.json',
+                'suppressed':   '../stims/Artificial/CT/spiking_dict__nCells_187__sampling_25_uS__freq_5_Hz__downTimes__1000|1500_2000|2500_3000|3500__.json',
+                'activated':    '../stims/Artificial/CT/spiking_dict__nCells_272__sampling_25_uS__freq_5_Hz__downTimes__1000|1500_2000|2500_3000|3500__.json',
+                }
+            deflection_dataset_path=[
+                                bs_wake_none,
+                                ]
+        - result:
+            UP/DOWN states didn't have much effect because the influence of CT input is weak
+            next, 
+                reducing pas_e and increasing CT weight 
+                so that cells are naturally more hyperpolarized, but CT input increase depolarization, and UP/DOWN CT modulation results in oscillations
+
+    **** 2024_06_11 - bWgt_6018_networkStates
+        - params:
+            parameter_space_L6A_VPM=[2.0] # previous [1]
+            parameter_space_L6A_TRN=[2.0] # previous [1]
+
+            modify_pas_e__VPM   = [-65]   # previous [-55] / default bbp value (-80 mV)
+            modify_pas_e__TRN   = [-75]   # previous [-60] / default bbp value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            network_state_dict = {
+                'control':        {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'sleep':          {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'wax_wan1':       {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan2':       {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan3':       {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan4':       {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan_':       {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+*** 2024_06_12
+    **** 2024_06_12 - bWgt_6019_networkStates
+        - params:
+            # bWgt_6019_networkStates
+            parameter_space_L6A_VPM=[1.0] 
+            parameter_space_L6A_TRN=[2.0]
+            
+            network_state_dict = {
+                'control':        {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'sleep':          {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'wax_wan0':       {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'wax_wan1':       {'rescale_KLeak_TC_g': 0.7,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            modify_pas_e__VPM   = [-65]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-75]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+        - result:
+
+    **** 2024_06_12 - bWgt_6020_networkStates
+        - params:
+            found a bug in the properties of synaptic mechanisms
+            
+            Bug fix in netParams_barreloid.py -> <synMechParams>    
+                # Post-creating modifications - from simulation_sonata.json
+                if ('TRN' in pre_pop): 
+                    if 'VPM' in post_pop:   edge_dict.update({'e_GABAA': -94.0, 'e_GABAB': -97.0, 'tau_d_GABAB': 77})
+                    else:                   edge_dict.update({'e_GABAA': -82.0, 'e_GABAB': -97.0, 'tau_d_GABAB': 77})
+        - result:
+            fixing the bug changed the dynamics slightly, and now I will retune some properties of the model
+
+    **** 2024_06_12 - bWgt_6021_networkStates
+        - params:
+            # bWgt_6021_networkStates
+            network_state_dict = {
+                'control':        {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'sleep':          {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.75,  'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'wax_wan0':       {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 0.75,  'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'wax_wan1':       {'rescale_KLeak_TC_g': 0.7,  'rescale_KLeak_RE_g': 0.75,  'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # bWgt_6021_networkStates
+            modify_pas_e__VPM   = [-70]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+        - result:
+            awake was oscillating
+            next, recalibrate awake TC Kleak to try to get rid of oscillations
+
+    **** 2024_06_12 - bWgt_6022_networkStates
+        - params:
+            # bWgt_6022_networkStates
+            network_state_dict = {
+                'awake30110':      {'rescale_KLeak_TC_g': -0.25,'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30111':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30112':      {'rescale_KLeak_TC_g': 0.25, 'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30113':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30114':      {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30115':      {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # bWgt_6021_networkStates
+            modify_pas_e__VPM   = [-70]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+        - result:
+            improved, but best condition still shows some synchronization
+            next, scanning IH shift over a range of values to see if it improves the response
+
+    **** 2024_06_12 - bWgt_6023_networkStates
+        - params:
+            # bWgt_6023_networkStates
+            network_state_dict = {
+                'awake301130':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift':  5, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301131':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift':  2, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake30113_':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301133':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -4, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301134':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -7, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'awake301135':      {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0,     'rescale_GABA_g': 0.25, 'TC_ih_shift': -10,'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                }
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # bWgt_6021_networkStates
+            modify_pas_e__VPM   = [-70]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+        - result:
+    
+*** 2024_06_13
+    **** 2024_06_13 - 
+        - params:    
+            # bWgt_6016_networkStates
+            parameter_space_L6A_VPM=[1] 
+            parameter_space_L6A_TRN=[1]
+
+            # bWgt_6016_networkStates
+            network_state_dict = {
+                'control':        {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+                'awake3011':      {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_iT_shift':  0,  'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+                'sleep':          {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'wax_wan_':       {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+                'wax_wan1':       {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan2':       {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan3':       {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                'wax_wan4':       {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   #
+                }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight = 2 # 'bWgt_6004_networkStates'
+            scale_iT_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+            scale_ih_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # bWgt_6016_networkStates
+            modify_pas_e__VPM   = [-55]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-60]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+        - result:
+
+    **** 2024_06_13 - 
+        - params:
+            # bWgt_7005_networkStates
+            network_state_dict = {
+                'wake_0':          {'rescale_KLeak_TC_g': 0.1,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_1':          {'rescale_KLeak_TC_g': 0.25, 'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.9},   # WAKE
+                'wake_2':          {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.8},   # WAKE
+                'wake_3':          {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.7},   # WAKE
+                
+                'wake_4':          {'rescale_KLeak_TC_g': 0.1,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_5':          {'rescale_KLeak_TC_g': 0.25, 'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.9},   # WAKE
+                'wake_6':          {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.8},   # WAKE
+                'wake_7':          {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.25, 'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':0.7},   # WAKE
+                
+                'sleep_0':         {'rescale_KLeak_TC_g': 0.65, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_1':         {'rescale_KLeak_TC_g': 0.70, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_2':         {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_3':         {'rescale_KLeak_TC_g': 0.80, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_4':         {'rescale_KLeak_TC_g': 0.85, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1,    'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_5':         {'rescale_KLeak_TC_g': 0.65, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 0.8,  'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_6':         {'rescale_KLeak_TC_g': 0.70, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 0.8,  'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_7':         {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 0.8,  'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_8':         {'rescale_KLeak_TC_g': 0.80, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 0.8,  'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_9':         {'rescale_KLeak_TC_g': 0.85, 'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 0.8,  'TC_iT_shift':  0,  'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight = 1 # 'bWgt_6004_networkStates'
+            scale_iT_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+            scale_ih_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # bWgt_6016_networkStates
+            modify_pas_e__VPM   = [-80]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            ##################################################################################################################################################################
+            # addHoldingCurrent   =[False]
+            # addThresholdCurrent =[False]
+            addHoldingCurrent   =[True]
+            addThresholdCurrent =[True]
+            # ref_rmp_VPM = -72 # mV
+            # ref_rmp_TRN = -80 # mV
+            ref_rmp_VPM = -60 # mV
+            ref_rmp_TRN = -65 # mV
+            voltage_step_VPM = 1 # mV
+            voltage_step_TRN = 1 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+        - result:
+            parameters are still not fixed
+            next, run large exploration
+
+    **** 2024_06_13 - bWgt_7006_networkStates
+        - params:
+            parameter_space_MLe_VPM=[1]
+            parameter_space_VPM_TRN=[1]
+            parameter_space_L6A_VPM=[1]
+            parameter_space_L6A_TRN=[0.5]
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+
+            network_state_dict = {
+                'wake_001':         {'rescale_KLeak_TC_g': 0.0,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_002':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_003':         {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004':         {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_005':         {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_006':         {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                
+                'wake_007':         {'rescale_KLeak_TC_g': 0.0,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_008':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_009':         {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_010':         {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_011':         {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_012':         {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                
+                'wake_013':         {'rescale_KLeak_TC_g': 0.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_014':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_015':         {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_016':         {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_017':         {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_018':         {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                
+                'sleep_019':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_020':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.7, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_021':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_022':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_023':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_024':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_025':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_026':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.7, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_027':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.9, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_028':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.1, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_029':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_030':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight = 1 # 'bWgt_6004_networkStates'
+            scale_iT_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+            scale_ih_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            parameter_space_iT_shift_VPM = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_iT_shift_TRN = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+            # bWgt_6016_networkStates
+            modify_pas_e__VPM   = [-80]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            addHoldingCurrent   =[True]
+            addThresholdCurrent =[True]
+            ref_rmp_VPM = -58 # mV
+            ref_rmp_TRN = -60 # mV
+            voltage_step_VPM = 1 # mV
+            voltage_step_TRN = 1 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+        
+            duration = 5500
+
+        - result:
+            TRN is still to active in wake and sleep states -> reducing weights next
+            Found a switching point when rescale_KLeak_RE_g = 1.3 and 1.5
+                rescale_KLeak_RE_g = 1.3 -> network oscillates in the beginning, but then VPM stops firing and TRN desynchronizes
+                rescale_KLeak_RE_g = 1.5 -> network oscillates during the whole simulation
+            
+            next, reduced CT inputs and recalibrating weights
+
+
+    **** 2024_06_13 - bWgt_7007_networkStates
+        - params:
+            parameter_space_MLe_VPM=[1]
+            parameter_space_VPM_TRN=[1]
+            parameter_space_L6A_VPM=[0.5]  # at 5Hz constant
+            parameter_space_L6A_TRN=[0.25] # at 5Hz constant
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+
+            '''
+            'awake'
+                'wake_015':         {'rescale_KLeak_TC_g': [0,1],  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+            'rem?'
+                'sleep_023':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_029':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+            'spindle'
+                'sleep_024':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_030':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+            '''
+            # bWgt_7007_networkStates
+            network_state_dict = {
+                # wake
+                'wake_000':         {'rescale_KLeak_TC_g': 0.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_001':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_002':         {'rescale_KLeak_TC_g': 0.4,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_003':         {'rescale_KLeak_TC_g': 0.6,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004':         {'rescale_KLeak_TC_g': 0.8,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_005':         {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+
+                # spindle
+                'sleep_006':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_007':        {'rescale_KLeak_TC_g': 0.625,'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_008':        {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009':        {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_010':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                # rem
+                'sleep_011':        {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_012':        {'rescale_KLeak_TC_g': 0.625,'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_013':        {'rescale_KLeak_TC_g': 0.75, 'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_014':        {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_015':        {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.3, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight = 1 # 'bWgt_6004_networkStates'
+            scale_iT_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+            scale_ih_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            parameter_space_iT_shift_VPM = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_iT_shift_TRN = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+            # bWgt_6016_networkStates
+            modify_pas_e__VPM   = [-80]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            ##################################################################################################################################################################
+            addHoldingCurrent   =[True]
+            addThresholdCurrent =[True]
+            ref_rmp_VPM = -58 # mV
+            ref_rmp_TRN = -60 # mV
+            voltage_step_VPM = 1 # mV
+            voltage_step_TRN = 1 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+
+            duration = 5500
+            initCfg = {
+                        'duration':         duration,
+                        'delayCTvirtual':   0,
+                        'delayBS':          2500,
+                        }
+
+        - result:
+
+    **** 2024_06_14 - bWgt_7012_networkStates
+        - params:    
+            network_state_dict = {
+                'wake_004_04_00':           {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.2, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_01':           {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_02':           {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift': 12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+
+                'wake_004_04_03':           {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.2, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_04':           {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_05':           {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift': 12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+
+                'wake_004_04_06':           {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.2, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_07':           {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 0.5, 'rescale_GABA_g': 0.5,  'TC_iT_shift':  6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+                'wake_004_04_08':           {'rescale_KLeak_TC_g': 1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5,  'TC_iT_shift': 12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # WAKE
+
+
+                'sleep_009_08_09':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_10':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_11':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_12':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_13':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_14':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_15':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_16':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_17':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   0,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP    
+                
+                'sleep_009_08_18':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_19':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_20':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_21':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_22':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_23':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_24':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_25':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_26':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':   6,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP    
+                
+                'sleep_009_08_27':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_28':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_29':         {'rescale_KLeak_TC_g': 0.2,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_30':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_31':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_32':         {'rescale_KLeak_TC_g': 0.5,  'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                
+                'sleep_009_08_33':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.5,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_34':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 0.75, 'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP
+                'sleep_009_08_35':         {'rescale_KLeak_TC_g': 0.875,'rescale_KLeak_RE_g': 1.0,  'rescale_GABA_g': 1.0,  'TC_iT_shift':  12,  'TC_ih_shift':   0, 'rescale_SK2_VPM':1.0},   # SLEEP    
+            }
+
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight = 1 # 'bWgt_6004_networkStates'
+            scale_iT_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+            scale_ih_shift  = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            parameter_space_iT_shift_VPM = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_iT_shift_TRN = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+            modify_pas_e__VPM   = [-80]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-80]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            ##################################################################################################################################################################
+            addHoldingCurrent   =[True]
+            addThresholdCurrent =[True]
+            ref_rmp_VPM = -58 # mV
+            ref_rmp_TRN = -63 # mV # bWgt_7010_networkStates
+            voltage_step_VPM = 1 # mV
+            voltage_step_TRN = 1 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+
+            ##################################################################################################################################################################
+
+            parameter_space_ih_gmax__VPM= [1]
+            parameter_space_ih_gmax__TRN= [1]
+            
+            duration = 5500
+            initCfg = {
+                'duration':         duration,
+                'delayCTvirtual':   1000,
+                'delayBS':          4000,
+                }
+            
+    
+    **** 2024_06_13 - bWgt_7012b_networkStates
+        - params:
+            tested uniform TRN feedback to remove uneven spatial firing in VPM 
+        - result: didin't work
+    **** 2024_06_13 - bWgt_7012c_networkStates
+        - params:
+            testing revoving spatial component of connection delay
+                'delay': 'defaultDelay', # default = 2 ms
+                # 'delay': 'defaultDelay+dist_3D/propVelocity',
+        - result: didin't work
+    
+    **** 2024_06_13 - bWgt_8016_networkStates
+        network_state_dict = {
+            'control':       {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0}, # 0
+            'control_kl_RE': {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # SLEEP
+            'control_kleak': {'rescale_KLeak_TC_g': 1,    'rescale_KLeak_RE_g': 1,   'rescale_GABA_g': 1,    'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # WAXING-WANING
+            'awake3011':     {'rescale_KLeak_TC_g': 0,    'rescale_KLeak_RE_g': 0.25,'rescale_GABA_g': 0.25, 'TC_ih_shift': -1, 'rescale_SK2_VPM':1.0}, # 2 - adding KLeak in TC is responsible for killing oscillations
+            }
+        base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+        base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+        scale_VPM_KLeak = 1.0
+        scale_TRN_KLeak = 1.25
+        base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+        scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+        # parameter_space_iT_shift_VPM = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+        # parameter_space_iT_shift_TRN = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+        parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+        parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+        parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+        parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+        parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+        parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+        parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+        # bWgt_6016_networkStates
+        modify_pas_e__VPM   = [-55]   # default value (-80 mV)
+        modify_pas_e__TRN   = [-60]   # default value (-80 mV)
+        modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+        modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+    
+    **** 2024_06_13 - bWgt_8016a_networkStates
+
+        modify_pas_e__VPM   = [-55]   # default value (-80 mV)
+        modify_pas_e__TRN   = [-65]   # default value (-80 mV)
+
+*** 2024_06_16
+    **** 2024_06_16 - bWgt_8018b_networkStates
+        # bWgt_8018b_networkStates - test with low inhibition and sparse firing (Gaba_14_3 + Gaba_14_5)
+        # starting point: 
+        #   'Gaba_14_5_':   {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+        #   reduced from 0.25 to 0.1 -> ('rescale_GABA_g': 0.1)
+        - params:
+            parameter_space_MLe_VPM=[1]
+            parameter_space_VPM_TRN=[1]
+            parameter_space_L6A_VPM=[0.5]  # at 5Hz constant
+            parameter_space_L6A_TRN=[0.25] # at 5Hz constant
+            parameter_space_TRNe_TRNe=[0.2e-6] # original value
+            network_state_dict = {
+                # calibrating awake condition - tonic firing
+                'Gaba_14_5_0':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 0.75,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_1':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_2':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.25,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_':   {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_4':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.75,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_5':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 2.0, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_6':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+
+                # calibrating awake condition - tonic firing - lowering TC KLeak even more
+                'Gaba_14_5_7':  {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 0.75,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_8':  {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_9':  {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 1.25,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_10': {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_11': {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 1.75,'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_12': {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 2.0, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_13': {'rescale_KLeak_TC_g':0.3,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.1, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+
+
+                # calibrating slee condition - wax-wan
+                'Gaba_14_5_14':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.25,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_15':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.5, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_16':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 0.75,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_17':  {'rescale_KLeak_TC_g':0.6,  'rescale_KLeak_RE_g': 1.5, 'rescale_GABA_g': 1.0, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                
+                # calibrating slee condition - wax-wan - increasing TC KLeak and decreasing RT KLeak
+                'Gaba_14_5_18':  {'rescale_KLeak_TC_g':1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.25,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_19':  {'rescale_KLeak_TC_g':1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.5, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_20':  {'rescale_KLeak_TC_g':1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 0.75,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_21':  {'rescale_KLeak_TC_g':1.0,  'rescale_KLeak_RE_g': 1.0, 'rescale_GABA_g': 1.0, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                
+                # calibrating slee condition - wax-wan
+                'Gaba_14_5_22':  {'rescale_KLeak_TC_g':0.8,  'rescale_KLeak_RE_g': 1.25, 'rescale_GABA_g': 0.25,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_23':  {'rescale_KLeak_TC_g':0.8,  'rescale_KLeak_RE_g': 1.25, 'rescale_GABA_g': 0.5, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_24':  {'rescale_KLeak_TC_g':0.8,  'rescale_KLeak_RE_g': 1.25, 'rescale_GABA_g': 0.75,'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                'Gaba_14_5_25':  {'rescale_KLeak_TC_g':0.8,  'rescale_KLeak_RE_g': 1.25, 'rescale_GABA_g': 1.0, 'TC_ih_shift':  0, 'rescale_SK2_VPM':1.0},   # 
+                }
+            
+            base_VPM_KLeak = 1.896 # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L270)
+            base_TRN_KLeak = 1.08  # (https://github.com/SoftwareImpacts/SIMPAC-2024-84/blob/7416ba3ad0ef634db89df655c7dde15a36ba9461/config.py#L275)
+            scale_VPM_KLeak = 1.0
+            scale_TRN_KLeak = 1.25
+            base_TRN_weight= 2 # 'bWgt_6004_networkStates'
+            scale_ih_shift = 1  # to compensate for the difference in the slope between the 2 mod files
+
+            # parameter_space_iT_shift_VPM = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            # parameter_space_iT_shift_TRN = [network_state_dict[state]['TC_iT_shift']        * scale_iT_shift                    for state in network_state_dict.keys()]
+            parameter_space_ih_shift_VPM = [network_state_dict[state]['TC_ih_shift']        * scale_ih_shift                    for state in network_state_dict.keys()]
+            parameter_space_KLeak_VPM    = [network_state_dict[state]['rescale_KLeak_TC_g'] * scale_VPM_KLeak * base_VPM_KLeak  for state in network_state_dict.keys()]
+            parameter_space_KLeak_TRN    = [network_state_dict[state]['rescale_KLeak_RE_g'] * scale_TRN_KLeak * base_TRN_KLeak  for state in network_state_dict.keys()]
+            parameter_space_TRN_VPM      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_TRN_TRN      = [network_state_dict[state]['rescale_GABA_g']     * base_TRN_weight                   for state in network_state_dict.keys()]
+            parameter_space_SK2_VPM      = [network_state_dict[state]['rescale_SK2_VPM']                                        for state in network_state_dict.keys()] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+            parameter_space_SK2_TRN      = [1.0] # (Goaillard, 2002) (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290335/) Serotinin suppresses SK2 current
+
+            # bWgt_6016_networkStates
+            modify_pas_e__VPM   = [-55]   # default value (-80 mV)
+            modify_pas_e__TRN   = [-65]   # default value (-80 mV)
+            modify_pas_g__VPM   = [1e-5]  # default value (3.4702549429081374e-05 )
+            modify_pas_g__TRN   = [5e-5]  # default value (8.617446501142974e-05 )
+
+            ##################################################################################################################################################################
+            addHoldingCurrent   =[False]
+            addThresholdCurrent =[False]
+            ref_rmp_VPM = -58 # mV
+            ref_rmp_TRN = -63 # mV # bWgt_7010_networkStates
+            voltage_step_VPM = 1 # mV
+            voltage_step_TRN = 1 # mV
+            parameter_space_shift_targetRMP_VPM = [0]
+            parameter_space_shift_targetRMP_TRN = [0]
+            group_currents=True
+
+            ##################################################################################################################################################################
+
+            parameter_space_ih_gmax__VPM= [1]
+            parameter_space_ih_gmax__TRN= [1]
+            deflection_dataset_path=[
+                                bs_wake_none,
+                                bs_wake_180,
+                                ]    
+            duration = 5500
+            initCfg = {
+                        'duration':         duration,
+                        'delayCTvirtual':   750,
+                        'delayBS':          1250,
+                        }
+        - result:
+            
+
+*** 
+****
+***** aaaa

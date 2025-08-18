@@ -1,0 +1,5736 @@
+{
+    "conds": {
+        "cellType": "30947"
+    },
+    "globals": {},
+    "secLists": {
+        "SectionList[0]": [],
+        "SectionList[100]": [],
+        "SectionList[101]": [],
+        "SectionList[102]": [],
+        "SectionList[103]": [],
+        "SectionList[104]": [],
+        "SectionList[105]": [],
+        "SectionList[106]": [],
+        "SectionList[107]": [],
+        "SectionList[108]": [],
+        "SectionList[109]": [],
+        "SectionList[10]": [],
+        "SectionList[110]": [],
+        "SectionList[111]": [],
+        "SectionList[112]": [],
+        "SectionList[113]": [],
+        "SectionList[114]": [],
+        "SectionList[115]": [],
+        "SectionList[116]": [],
+        "SectionList[117]": [],
+        "SectionList[118]": [],
+        "SectionList[119]": [],
+        "SectionList[11]": [],
+        "SectionList[120]": [],
+        "SectionList[121]": [],
+        "SectionList[122]": [],
+        "SectionList[123]": [],
+        "SectionList[124]": [],
+        "SectionList[125]": [],
+        "SectionList[126]": [],
+        "SectionList[127]": [],
+        "SectionList[128]": [],
+        "SectionList[129]": [],
+        "SectionList[12]": [],
+        "SectionList[130]": [],
+        "SectionList[131]": [],
+        "SectionList[132]": [],
+        "SectionList[133]": [],
+        "SectionList[134]": [],
+        "SectionList[135]": [],
+        "SectionList[136]": [],
+        "SectionList[137]": [],
+        "SectionList[138]": [],
+        "SectionList[139]": [],
+        "SectionList[13]": [],
+        "SectionList[140]": [],
+        "SectionList[141]": [],
+        "SectionList[142]": [],
+        "SectionList[143]": [],
+        "SectionList[144]": [],
+        "SectionList[145]": [],
+        "SectionList[146]": [],
+        "SectionList[147]": [],
+        "SectionList[148]": [],
+        "SectionList[149]": [],
+        "SectionList[14]": [],
+        "SectionList[150]": [],
+        "SectionList[151]": [],
+        "SectionList[152]": [],
+        "SectionList[153]": [],
+        "SectionList[154]": [],
+        "SectionList[155]": [],
+        "SectionList[156]": [],
+        "SectionList[157]": [],
+        "SectionList[158]": [],
+        "SectionList[159]": [],
+        "SectionList[15]": [],
+        "SectionList[160]": [],
+        "SectionList[161]": [],
+        "SectionList[162]": [],
+        "SectionList[163]": [],
+        "SectionList[164]": [],
+        "SectionList[165]": [],
+        "SectionList[166]": [],
+        "SectionList[167]": [],
+        "SectionList[168]": [],
+        "SectionList[169]": [],
+        "SectionList[16]": [],
+        "SectionList[170]": [],
+        "SectionList[171]": [],
+        "SectionList[172]": [],
+        "SectionList[173]": [],
+        "SectionList[174]": [],
+        "SectionList[175]": [],
+        "SectionList[176]": [],
+        "SectionList[177]": [],
+        "SectionList[178]": [],
+        "SectionList[179]": [],
+        "SectionList[17]": [],
+        "SectionList[180]": [],
+        "SectionList[181]": [],
+        "SectionList[182]": [],
+        "SectionList[183]": [],
+        "SectionList[184]": [],
+        "SectionList[185]": [],
+        "SectionList[186]": [],
+        "SectionList[187]": [],
+        "SectionList[188]": [],
+        "SectionList[189]": [],
+        "SectionList[18]": [],
+        "SectionList[190]": [],
+        "SectionList[191]": [],
+        "SectionList[192]": [],
+        "SectionList[193]": [],
+        "SectionList[194]": [],
+        "SectionList[195]": [],
+        "SectionList[196]": [],
+        "SectionList[197]": [],
+        "SectionList[198]": [],
+        "SectionList[199]": [],
+        "SectionList[19]": [],
+        "SectionList[1]": [],
+        "SectionList[200]": [],
+        "SectionList[201]": [],
+        "SectionList[202]": [],
+        "SectionList[203]": [],
+        "SectionList[204]": [],
+        "SectionList[205]": [],
+        "SectionList[206]": [],
+        "SectionList[207]": [],
+        "SectionList[208]": [],
+        "SectionList[209]": [],
+        "SectionList[20]": [],
+        "SectionList[210]": [],
+        "SectionList[211]": [],
+        "SectionList[212]": [],
+        "SectionList[213]": [],
+        "SectionList[214]": [],
+        "SectionList[215]": [],
+        "SectionList[216]": [],
+        "SectionList[217]": [],
+        "SectionList[218]": [],
+        "SectionList[219]": [],
+        "SectionList[21]": [],
+        "SectionList[220]": [],
+        "SectionList[221]": [],
+        "SectionList[222]": [],
+        "SectionList[223]": [],
+        "SectionList[224]": [],
+        "SectionList[225]": [],
+        "SectionList[226]": [],
+        "SectionList[227]": [],
+        "SectionList[228]": [],
+        "SectionList[229]": [],
+        "SectionList[22]": [],
+        "SectionList[230]": [],
+        "SectionList[231]": [],
+        "SectionList[232]": [],
+        "SectionList[233]": [],
+        "SectionList[234]": [],
+        "SectionList[235]": [],
+        "SectionList[236]": [],
+        "SectionList[237]": [],
+        "SectionList[238]": [],
+        "SectionList[239]": [],
+        "SectionList[23]": [],
+        "SectionList[240]": [],
+        "SectionList[241]": [],
+        "SectionList[242]": [],
+        "SectionList[243]": [],
+        "SectionList[244]": [],
+        "SectionList[245]": [],
+        "SectionList[246]": [],
+        "SectionList[247]": [],
+        "SectionList[248]": [],
+        "SectionList[249]": [],
+        "SectionList[24]": [],
+        "SectionList[250]": [],
+        "SectionList[251]": [],
+        "SectionList[252]": [],
+        "SectionList[253]": [],
+        "SectionList[254]": [],
+        "SectionList[255]": [],
+        "SectionList[256]": [],
+        "SectionList[257]": [],
+        "SectionList[258]": [],
+        "SectionList[259]": [],
+        "SectionList[25]": [],
+        "SectionList[260]": [],
+        "SectionList[261]": [],
+        "SectionList[262]": [],
+        "SectionList[263]": [],
+        "SectionList[264]": [],
+        "SectionList[265]": [],
+        "SectionList[266]": [],
+        "SectionList[267]": [],
+        "SectionList[268]": [],
+        "SectionList[269]": [],
+        "SectionList[26]": [],
+        "SectionList[270]": [],
+        "SectionList[271]": [],
+        "SectionList[272]": [],
+        "SectionList[273]": [],
+        "SectionList[274]": [],
+        "SectionList[275]": [],
+        "SectionList[276]": [],
+        "SectionList[277]": [],
+        "SectionList[278]": [],
+        "SectionList[279]": [],
+        "SectionList[27]": [],
+        "SectionList[280]": [],
+        "SectionList[281]": [],
+        "SectionList[282]": [],
+        "SectionList[283]": [],
+        "SectionList[284]": [],
+        "SectionList[285]": [],
+        "SectionList[286]": [],
+        "SectionList[287]": [],
+        "SectionList[288]": [],
+        "SectionList[289]": [],
+        "SectionList[28]": [],
+        "SectionList[290]": [],
+        "SectionList[291]": [],
+        "SectionList[292]": [],
+        "SectionList[293]": [],
+        "SectionList[294]": [],
+        "SectionList[295]": [],
+        "SectionList[296]": [],
+        "SectionList[297]": [],
+        "SectionList[298]": [],
+        "SectionList[299]": [],
+        "SectionList[29]": [],
+        "SectionList[2]": [],
+        "SectionList[300]": [],
+        "SectionList[301]": [],
+        "SectionList[302]": [],
+        "SectionList[303]": [],
+        "SectionList[304]": [],
+        "SectionList[305]": [],
+        "SectionList[306]": [],
+        "SectionList[307]": [],
+        "SectionList[308]": [],
+        "SectionList[309]": [],
+        "SectionList[30]": [],
+        "SectionList[310]": [],
+        "SectionList[311]": [],
+        "SectionList[312]": [],
+        "SectionList[313]": [],
+        "SectionList[314]": [],
+        "SectionList[315]": [],
+        "SectionList[316]": [],
+        "SectionList[317]": [],
+        "SectionList[318]": [],
+        "SectionList[319]": [],
+        "SectionList[31]": [],
+        "SectionList[320]": [],
+        "SectionList[321]": [],
+        "SectionList[322]": [],
+        "SectionList[323]": [],
+        "SectionList[324]": [],
+        "SectionList[325]": [],
+        "SectionList[326]": [],
+        "SectionList[327]": [],
+        "SectionList[328]": [],
+        "SectionList[329]": [],
+        "SectionList[32]": [],
+        "SectionList[330]": [],
+        "SectionList[331]": [],
+        "SectionList[332]": [],
+        "SectionList[333]": [],
+        "SectionList[334]": [],
+        "SectionList[335]": [],
+        "SectionList[336]": [],
+        "SectionList[337]": [],
+        "SectionList[338]": [],
+        "SectionList[339]": [],
+        "SectionList[33]": [],
+        "SectionList[340]": [],
+        "SectionList[341]": [],
+        "SectionList[342]": [],
+        "SectionList[343]": [],
+        "SectionList[344]": [],
+        "SectionList[345]": [],
+        "SectionList[346]": [],
+        "SectionList[347]": [],
+        "SectionList[348]": [],
+        "SectionList[349]": [],
+        "SectionList[34]": [],
+        "SectionList[350]": [],
+        "SectionList[351]": [],
+        "SectionList[352]": [],
+        "SectionList[353]": [],
+        "SectionList[354]": [],
+        "SectionList[355]": [],
+        "SectionList[356]": [],
+        "SectionList[357]": [],
+        "SectionList[358]": [],
+        "SectionList[359]": [],
+        "SectionList[35]": [],
+        "SectionList[360]": [],
+        "SectionList[361]": [],
+        "SectionList[362]": [],
+        "SectionList[363]": [],
+        "SectionList[364]": [],
+        "SectionList[365]": [],
+        "SectionList[366]": [],
+        "SectionList[367]": [],
+        "SectionList[368]": [],
+        "SectionList[369]": [],
+        "SectionList[36]": [],
+        "SectionList[370]": [],
+        "SectionList[371]": [],
+        "SectionList[372]": [],
+        "SectionList[373]": [],
+        "SectionList[374]": [],
+        "SectionList[375]": [],
+        "SectionList[376]": [],
+        "SectionList[377]": [],
+        "SectionList[378]": [],
+        "SectionList[379]": [],
+        "SectionList[37]": [],
+        "SectionList[38]": [],
+        "SectionList[39]": [],
+        "SectionList[3]": [],
+        "SectionList[40]": [],
+        "SectionList[41]": [],
+        "SectionList[42]": [],
+        "SectionList[43]": [],
+        "SectionList[44]": [],
+        "SectionList[45]": [],
+        "SectionList[46]": [],
+        "SectionList[47]": [],
+        "SectionList[48]": [],
+        "SectionList[49]": [],
+        "SectionList[4]": [],
+        "SectionList[50]": [],
+        "SectionList[51]": [],
+        "SectionList[52]": [],
+        "SectionList[53]": [],
+        "SectionList[54]": [],
+        "SectionList[55]": [],
+        "SectionList[56]": [],
+        "SectionList[57]": [],
+        "SectionList[58]": [],
+        "SectionList[59]": [],
+        "SectionList[5]": [],
+        "SectionList[60]": [],
+        "SectionList[61]": [],
+        "SectionList[62]": [],
+        "SectionList[63]": [],
+        "SectionList[64]": [],
+        "SectionList[65]": [],
+        "SectionList[66]": [],
+        "SectionList[67]": [],
+        "SectionList[68]": [],
+        "SectionList[69]": [],
+        "SectionList[6]": [],
+        "SectionList[70]": [],
+        "SectionList[71]": [],
+        "SectionList[72]": [],
+        "SectionList[73]": [],
+        "SectionList[74]": [],
+        "SectionList[75]": [],
+        "SectionList[76]": [],
+        "SectionList[77]": [],
+        "SectionList[78]": [],
+        "SectionList[79]": [],
+        "SectionList[7]": [],
+        "SectionList[80]": [],
+        "SectionList[81]": [],
+        "SectionList[82]": [],
+        "SectionList[83]": [],
+        "SectionList[84]": [],
+        "SectionList[85]": [],
+        "SectionList[86]": [],
+        "SectionList[87]": [],
+        "SectionList[88]": [],
+        "SectionList[89]": [],
+        "SectionList[8]": [],
+        "SectionList[90]": [],
+        "SectionList[91]": [],
+        "SectionList[92]": [],
+        "SectionList[93]": [],
+        "SectionList[94]": [],
+        "SectionList[95]": [],
+        "SectionList[96]": [],
+        "SectionList[97]": [],
+        "SectionList[98]": [],
+        "SectionList[99]": [],
+        "SectionList[9]": [],
+        "all": [
+            "soma_0",
+            "soma_1",
+            "dend_0",
+            "dend_1",
+            "dend_2",
+            "dend_3",
+            "dend_4",
+            "dend_5",
+            "dend_6",
+            "dend_7",
+            "dend_8",
+            "dend_9",
+            "dend_10",
+            "dend_11",
+            "dend_12",
+            "dend_13",
+            "dend_14",
+            "dend_15",
+            "dend_16",
+            "dend_17",
+            "dend_18",
+            "dend_19",
+            "dend_20",
+            "dend_21",
+            "dend_22",
+            "dend_23",
+            "dend_24",
+            "dend_25",
+            "dend_26",
+            "axon_0",
+            "axon_1"
+        ],
+        "apical": [],
+        "axonal": [
+            "axon_0",
+            "axon_1"
+        ],
+        "basal": [
+            "dend_0",
+            "dend_1",
+            "dend_2",
+            "dend_3",
+            "dend_4",
+            "dend_5",
+            "dend_6",
+            "dend_7",
+            "dend_8",
+            "dend_9",
+            "dend_10",
+            "dend_11",
+            "dend_12",
+            "dend_13",
+            "dend_14",
+            "dend_15",
+            "dend_16",
+            "dend_17",
+            "dend_18",
+            "dend_19",
+            "dend_20",
+            "dend_21",
+            "dend_22",
+            "dend_23",
+            "dend_24",
+            "dend_25",
+            "dend_26"
+        ],
+        "inputs__distal": [
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_2",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_3",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_6",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_7",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_8",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_10",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_12",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_13",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_14",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_15",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_17",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_19",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_20",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_21",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_22",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_24",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_25",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26"
+        ],
+        "inputs__intermediate": [
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_1",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_4",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_5",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_11",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_18",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23"
+        ],
+        "inputs__proximal": [
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "soma_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_0",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_9",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_16",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_23",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26",
+            "dend_26"
+        ],
+        "myelinated": [],
+        "somatic": [
+            "soma_0",
+            "soma_1"
+        ]
+    },
+    "secs": {
+        "axon_0": {
+            "geom": {
+                "L": 30.0,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.8999999761581421,
+                "nseg": 5,
+                "pt3d": []
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "TC_HH": {
+                    "gk_max": 0.15588174648698766,
+                    "gna_max": 0.1579538233015224,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.05,
+                    "taur": 5.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 1.0
+            }
+        },
+        "axon_1": {
+            "geom": {
+                "L": 30.0,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.8999999761581414,
+                "nseg": 5,
+                "pt3d": []
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "TC_HH": {
+                    "gk_max": 0.15588174648698766,
+                    "gna_max": 0.1579538233015224,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.05,
+                    "taur": 5.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "axon_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_0": {
+            "geom": {
+                "L": 12.995064440069502,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.7999999523162842,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        1.9520210027694702,
+                        -1.3889703750610352,
+                        -1.688170313835144,
+                        1.7999999523162842
+                    ],
+                    [
+                        5.317400932312012,
+                        -6.3008503913879395,
+                        -8.507619857788086,
+                        1.7999999523162842
+                    ],
+                    [
+                        5.442440986633301,
+                        -7.682990550994873,
+                        -12.19729995727539,
+                        1.7999999523162842
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.5
+            }
+        },
+        "dend_1": {
+            "geom": {
+                "L": 21.608522122744144,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.04307223190215,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        5.442440986633301,
+                        -7.682990550994873,
+                        -12.19729995727539,
+                        1.7999999523162842
+                    ],
+                    [
+                        5.442440986633301,
+                        -7.682990550994873,
+                        -12.19729995727539,
+                        1.2000000476837158
+                    ],
+                    [
+                        7.56001091003418,
+                        -12.496199607849121,
+                        -16.26919937133789,
+                        1.2000000476837158
+                    ],
+                    [
+                        10.820301055908203,
+                        -16.28230094909668,
+                        -21.604000091552734,
+                        0.8999999761581421
+                    ],
+                    [
+                        13.288301467895508,
+                        -18.43400001525879,
+                        -28.516399383544922,
+                        0.8999999761581421
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_10": {
+            "geom": {
+                "L": 135.52362919384865,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        -4.555939197540283,
+                        16.830799102783203,
+                        -6.33366060256958,
+                        0.8999999761581421
+                    ],
+                    [
+                        -4.555939197540283,
+                        16.830799102783203,
+                        -6.33366060256958,
+                        0.6000000238418579
+                    ],
+                    [
+                        -2.2915289402008057,
+                        15.94849967956543,
+                        -9.992899894714355,
+                        0.6000000238418579
+                    ],
+                    [
+                        -0.6880199909210205,
+                        18.237300872802734,
+                        -15.837599754333496,
+                        0.6000000238418579
+                    ],
+                    [
+                        4.097431182861328,
+                        14.723099708557129,
+                        -22.199199676513672,
+                        0.6000000238418579
+                    ],
+                    [
+                        15.73180103302002,
+                        2.9333996772766113,
+                        -23.050600051879883,
+                        0.6000000238418579
+                    ],
+                    [
+                        26.854602813720703,
+                        -7.342930316925049,
+                        -24.353300094604492,
+                        0.6000000238418579
+                    ],
+                    [
+                        31.08900260925293,
+                        -9.804450035095215,
+                        -29.099000930786133,
+                        0.6000000238418579
+                    ],
+                    [
+                        40.55849838256836,
+                        -19.507299423217773,
+                        -35.61520004272461,
+                        0.6000000238418579
+                    ],
+                    [
+                        52.83190155029297,
+                        -32.22489929199219,
+                        -48.433799743652344,
+                        0.6000000238418579
+                    ],
+                    [
+                        66.8281021118164,
+                        -49.39419937133789,
+                        -64.03189849853516,
+                        0.6000000238418579
+                    ],
+                    [
+                        72.59700012207031,
+                        -58.569400787353516,
+                        -71.8749008178711,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_9",
+                "parentX": 1.0
+            }
+        },
+        "dend_11": {
+            "geom": {
+                "L": 34.67467892540577,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -4.555939197540283,
+                        16.830799102783203,
+                        -6.33366060256958,
+                        0.8999999761581421
+                    ],
+                    [
+                        -4.555939197540283,
+                        16.830799102783203,
+                        -6.33366060256958,
+                        0.6000000238418579
+                    ],
+                    [
+                        -6.392788887023926,
+                        22.06100082397461,
+                        -4.796130657196045,
+                        0.6000000238418579
+                    ],
+                    [
+                        -12.60409927368164,
+                        35.80540084838867,
+                        -1.4987103939056396,
+                        0.6000000238418579
+                    ],
+                    [
+                        -16.617298126220703,
+                        45.725799560546875,
+                        0.9357276558876038,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.039398193359375,
+                        47.92449951171875,
+                        -0.1951143592596054,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_9",
+                "parentX": 1.0
+            }
+        },
+        "dend_12": {
+            "geom": {
+                "L": 35.190547750966,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -17.039398193359375,
+                        47.92449951171875,
+                        -0.1951143592596054,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.36939811706543,
+                        50.02519989013672,
+                        -1.724570393562317,
+                        0.6000000238418579
+                    ],
+                    [
+                        -20.20979881286621,
+                        55.05270004272461,
+                        -0.5734203457832336,
+                        0.6000000238418579
+                    ],
+                    [
+                        -27.49789810180664,
+                        68.34510040283203,
+                        -1.5192103385925293,
+                        0.6000000238418579
+                    ],
+                    [
+                        -33.1150016784668,
+                        76.94159698486328,
+                        3.6450297832489014,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_11",
+                "parentX": 1.0
+            }
+        },
+        "dend_13": {
+            "geom": {
+                "L": 40.74209409091479,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        -17.039398193359375,
+                        47.92449951171875,
+                        -0.1951143592596054,
+                        0.6000000238418579
+                    ],
+                    [
+                        -19.10179901123047,
+                        52.24420166015625,
+                        3.9522697925567627,
+                        0.6000000238418579
+                    ],
+                    [
+                        -21.525197982788086,
+                        61.65700149536133,
+                        6.481069564819336,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.558998107910156,
+                        73.94049835205078,
+                        -0.8209193348884583,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.024497985839844,
+                        80.4896011352539,
+                        -8.40923023223877,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_11",
+                "parentX": 1.0
+            }
+        },
+        "dend_14": {
+            "geom": {
+                "L": 7.928700936128788,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -22.024497985839844,
+                        80.4896011352539,
+                        -8.40923023223877,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.33879852294922,
+                        79.18219757080078,
+                        -6.796300411224365,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.34739875793457,
+                        81.93509674072266,
+                        -6.265580654144287,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_13",
+                "parentX": 1.0
+            }
+        },
+        "dend_15": {
+            "geom": {
+                "L": 66.56163135167141,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        -22.024497985839844,
+                        80.4896011352539,
+                        -8.40923023223877,
+                        0.6000000238418579
+                    ],
+                    [
+                        -21.35559844970703,
+                        87.93299865722656,
+                        -17.920799255371094,
+                        0.6000000238418579
+                    ],
+                    [
+                        -21.78249740600586,
+                        99.5988998413086,
+                        -29.56060028076172,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.600698471069336,
+                        106.57599639892578,
+                        -35.36600112915039,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.858198165893555,
+                        109.13600158691406,
+                        -34.49909973144531,
+                        0.6000000238418579
+                    ],
+                    [
+                        -29.991397857666016,
+                        120.7030029296875,
+                        -34.94300079345703,
+                        0.6000000238418579
+                    ],
+                    [
+                        -35.474300384521484,
+                        131.57200622558594,
+                        -31.872400283813477,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_13",
+                "parentX": 1.0
+            }
+        },
+        "dend_16": {
+            "geom": {
+                "L": 26.102096161335748,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.8999999761581421,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        2.0821709632873535,
+                        0.6173006296157837,
+                        -3.605720281600952,
+                        0.8999999761581421
+                    ],
+                    [
+                        6.833240985870361,
+                        -2.9393303394317627,
+                        -9.056710243225098,
+                        0.8999999761581421
+                    ],
+                    [
+                        13.365301132202148,
+                        -1.928450345993042,
+                        -18.252300262451172,
+                        0.8999999761581421
+                    ],
+                    [
+                        17.614002227783203,
+                        -1.1797103881835938,
+                        -23.403499603271484,
+                        0.8999999761581421
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.5
+            }
+        },
+        "dend_17": {
+            "geom": {
+                "L": 127.94676961964495,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418576,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        17.614002227783203,
+                        -1.1797103881835938,
+                        -23.403499603271484,
+                        0.8999999761581421
+                    ],
+                    [
+                        17.614002227783203,
+                        -1.1797103881835938,
+                        -23.403499603271484,
+                        0.6000000238418579
+                    ],
+                    [
+                        21.779802322387695,
+                        -1.8287303447723389,
+                        -25.51020050048828,
+                        0.6000000238418579
+                    ],
+                    [
+                        27.143802642822266,
+                        -4.978250503540039,
+                        -28.439300537109375,
+                        0.6000000238418579
+                    ],
+                    [
+                        31.352901458740234,
+                        -9.162320137023926,
+                        -30.818700790405273,
+                        0.6000000238418579
+                    ],
+                    [
+                        38.289798736572266,
+                        -14.472399711608887,
+                        -31.162700653076172,
+                        0.6000000238418579
+                    ],
+                    [
+                        42.79499816894531,
+                        -18.308500289916992,
+                        -31.342599868774414,
+                        0.6000000238418579
+                    ],
+                    [
+                        47.48080062866211,
+                        -23.434900283813477,
+                        -29.30299949645996,
+                        0.6000000238418579
+                    ],
+                    [
+                        58.12350082397461,
+                        -34.43519973754883,
+                        -29.09160041809082,
+                        0.6000000238418579
+                    ],
+                    [
+                        67.6906967163086,
+                        -44.49409866333008,
+                        -30.528499603271484,
+                        0.6000000238418579
+                    ],
+                    [
+                        70.00060272216797,
+                        -48.16279983520508,
+                        -32.162200927734375,
+                        0.6000000238418579
+                    ],
+                    [
+                        71.95050048828125,
+                        -51.46289825439453,
+                        -35.07889938354492,
+                        0.6000000238418579
+                    ],
+                    [
+                        75.7155990600586,
+                        -54.28239822387695,
+                        -37.819000244140625,
+                        0.6000000238418579
+                    ],
+                    [
+                        81.20870208740234,
+                        -59.7666015625,
+                        -43.0364990234375,
+                        0.6000000238418579
+                    ],
+                    [
+                        91.57389831542969,
+                        -70.18370056152344,
+                        -48.14360046386719,
+                        0.6000000238418579
+                    ],
+                    [
+                        95.60590362548828,
+                        -76.93579864501953,
+                        -50.21989822387695,
+                        0.6000000238418579
+                    ],
+                    [
+                        102.86199951171875,
+                        -84.25299835205078,
+                        -53.65359878540039,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_16",
+                "parentX": 1.0
+            }
+        },
+        "dend_18": {
+            "geom": {
+                "L": 41.05897036369948,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        17.614002227783203,
+                        -1.1797103881835938,
+                        -23.403499603271484,
+                        0.8999999761581421
+                    ],
+                    [
+                        17.614002227783203,
+                        -1.1797103881835938,
+                        -23.403499603271484,
+                        0.6000000238418579
+                    ],
+                    [
+                        20.96050262451172,
+                        -0.7428873777389526,
+                        -38.98500061035156,
+                        0.6000000238418579
+                    ],
+                    [
+                        25.760801315307617,
+                        -2.805410146713257,
+                        -50.78450012207031,
+                        0.6000000238418579
+                    ],
+                    [
+                        30.585302352905273,
+                        -4.723460674285889,
+                        -61.83760070800781,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_16",
+                "parentX": 1.0
+            }
+        },
+        "dend_19": {
+            "geom": {
+                "L": 131.5204779755812,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418585,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        30.585302352905273,
+                        -4.723460674285889,
+                        -61.83760070800781,
+                        0.6000000238418579
+                    ],
+                    [
+                        36.13460159301758,
+                        -10.606399536132812,
+                        -65.73590087890625,
+                        0.6000000238418579
+                    ],
+                    [
+                        48.1786003112793,
+                        -22.504100799560547,
+                        -72.68949890136719,
+                        0.6000000238418579
+                    ],
+                    [
+                        57.423099517822266,
+                        -31.659500122070312,
+                        -81.23529815673828,
+                        0.6000000238418579
+                    ],
+                    [
+                        71.25050354003906,
+                        -47.81079864501953,
+                        -86.44850158691406,
+                        0.6000000238418579
+                    ],
+                    [
+                        76.15499877929688,
+                        -55.62329864501953,
+                        -88.44950103759766,
+                        0.6000000238418579
+                    ],
+                    [
+                        84.43119812011719,
+                        -67.23729705810547,
+                        -97.75189971923828,
+                        0.6000000238418579
+                    ],
+                    [
+                        90.37999725341797,
+                        -76.81230163574219,
+                        -106.26100158691406,
+                        0.6000000238418579
+                    ],
+                    [
+                        95.40370178222656,
+                        -86.85130310058594,
+                        -111.38099670410156,
+                        0.6000000238418579
+                    ],
+                    [
+                        98.58460235595703,
+                        -94.21279907226562,
+                        -114.16500091552734,
+                        0.6000000238418579
+                    ],
+                    [
+                        99.60980224609375,
+                        -98.02110290527344,
+                        -117.80400085449219,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_18",
+                "parentX": 1.0
+            }
+        },
+        "dend_2": {
+            "geom": {
+                "L": 182.88078354505456,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.8999999761581414,
+                "nseg": 9,
+                "pt3d": [
+                    [
+                        13.288301467895508,
+                        -18.43400001525879,
+                        -28.516399383544922,
+                        0.8999999761581421
+                    ],
+                    [
+                        16.086801528930664,
+                        -26.926799774169922,
+                        -33.3307991027832,
+                        0.8999999761581421
+                    ],
+                    [
+                        18.60040283203125,
+                        -35.51169967651367,
+                        -43.59299850463867,
+                        0.8999999761581421
+                    ],
+                    [
+                        19.650402069091797,
+                        -37.628501892089844,
+                        -48.64979934692383,
+                        0.8999999761581421
+                    ],
+                    [
+                        21.55550193786621,
+                        -39.604000091552734,
+                        -55.608699798583984,
+                        0.8999999761581421
+                    ],
+                    [
+                        25.7666015625,
+                        -43.857200622558594,
+                        -67.32640075683594,
+                        0.8999999761581421
+                    ],
+                    [
+                        29.248401641845703,
+                        -49.45940017700195,
+                        -72.5519027709961,
+                        0.8999999761581421
+                    ],
+                    [
+                        32.4025993347168,
+                        -61.075801849365234,
+                        -78.99109649658203,
+                        0.8999999761581421
+                    ],
+                    [
+                        37.20050048828125,
+                        -77.50599670410156,
+                        -83.60269927978516,
+                        0.8999999761581421
+                    ],
+                    [
+                        42.15589904785156,
+                        -94.47889709472656,
+                        -95.70459747314453,
+                        0.8999999761581421
+                    ],
+                    [
+                        44.914798736572266,
+                        -105.85600280761719,
+                        -105.16000366210938,
+                        0.8999999761581421
+                    ],
+                    [
+                        47.70429992675781,
+                        -114.71499633789062,
+                        -112.1719970703125,
+                        0.8999999761581421
+                    ],
+                    [
+                        52.26729965209961,
+                        -131.5019989013672,
+                        -129.5189971923828,
+                        0.8999999761581421
+                    ],
+                    [
+                        53.260101318359375,
+                        -139.00599670410156,
+                        -136.9029998779297,
+                        0.8999999761581421
+                    ],
+                    [
+                        60.371700286865234,
+                        -142.9340057373047,
+                        -142.46299743652344,
+                        0.8999999761581421
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_1",
+                "parentX": 1.0
+            }
+        },
+        "dend_20": {
+            "geom": {
+                "L": 46.163390942745565,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        30.585302352905273,
+                        -4.723460674285889,
+                        -61.83760070800781,
+                        0.6000000238418579
+                    ],
+                    [
+                        31.201501846313477,
+                        -5.771540641784668,
+                        -65.87339782714844,
+                        0.6000000238418579
+                    ],
+                    [
+                        27.509502410888672,
+                        -3.7261602878570557,
+                        -83.14440155029297,
+                        0.6000000238418579
+                    ],
+                    [
+                        22.833101272583008,
+                        -0.9287323355674744,
+                        -91.78119659423828,
+                        0.6000000238418579
+                    ],
+                    [
+                        17.376102447509766,
+                        3.9040896892547607,
+                        -98.97370147705078,
+                        0.6000000238418579
+                    ],
+                    [
+                        14.163301467895508,
+                        5.626409530639648,
+                        -99.69770050048828,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_18",
+                "parentX": 1.0
+            }
+        },
+        "dend_21": {
+            "geom": {
+                "L": 13.601262641023407,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        14.163301467895508,
+                        5.626409530639648,
+                        -99.69770050048828,
+                        0.6000000238418579
+                    ],
+                    [
+                        12.17910099029541,
+                        6.861299514770508,
+                        -106.37899780273438,
+                        0.6000000238418579
+                    ],
+                    [
+                        7.103090763092041,
+                        8.893899917602539,
+                        -109.93599700927734,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_20",
+                "parentX": 1.0
+            }
+        },
+        "dend_22": {
+            "geom": {
+                "L": 64.17392999222626,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        14.163301467895508,
+                        5.626409530639648,
+                        -99.69770050048828,
+                        0.6000000238418579
+                    ],
+                    [
+                        7.474861145019531,
+                        7.417629718780518,
+                        -94.44660186767578,
+                        0.6000000238418579
+                    ],
+                    [
+                        4.823660850524902,
+                        7.80096960067749,
+                        -87.43479919433594,
+                        0.6000000238418579
+                    ],
+                    [
+                        -0.6208469867706299,
+                        10.580300331115723,
+                        -81.49430084228516,
+                        0.6000000238418579
+                    ],
+                    [
+                        -9.345659255981445,
+                        14.075499534606934,
+                        -79.44830322265625,
+                        0.6000000238418579
+                    ],
+                    [
+                        -20.661998748779297,
+                        20.589000701904297,
+                        -68.98819732666016,
+                        0.6000000238418579
+                    ],
+                    [
+                        -26.708398818969727,
+                        24.41119956970215,
+                        -58.007999420166016,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_20",
+                "parentX": 1.0
+            }
+        },
+        "dend_23": {
+            "geom": {
+                "L": 23.067050504413068,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.1155145115717717,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        1.7939409017562866,
+                        -4.716760635375977,
+                        -4.606170654296875,
+                        1.5
+                    ],
+                    [
+                        6.33751106262207,
+                        -8.692609786987305,
+                        -7.694660663604736,
+                        1.5
+                    ],
+                    [
+                        8.00809097290039,
+                        -10.106300354003906,
+                        -9.757940292358398,
+                        0.8999999761581421
+                    ],
+                    [
+                        8.660321235656738,
+                        -11.623600006103516,
+                        -12.909000396728516,
+                        0.8999999761581421
+                    ],
+                    [
+                        13.13110065460205,
+                        -18.688100814819336,
+                        -17.867300033569336,
+                        0.8999999761581421
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.5
+            }
+        },
+        "dend_24": {
+            "geom": {
+                "L": 203.65525965971335,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 11,
+                "pt3d": [
+                    [
+                        13.13110065460205,
+                        -18.688100814819336,
+                        -17.867300033569336,
+                        0.8999999761581421
+                    ],
+                    [
+                        14.221900939941406,
+                        -19.58530044555664,
+                        -23.035200119018555,
+                        0.8999999761581421
+                    ],
+                    [
+                        15.516000747680664,
+                        -21.45439910888672,
+                        -25.53019905090332,
+                        0.6000000238418579
+                    ],
+                    [
+                        16.53550148010254,
+                        -23.787500381469727,
+                        -30.741300582885742,
+                        0.6000000238418579
+                    ],
+                    [
+                        20.836301803588867,
+                        -30.09440040588379,
+                        -36.46039962768555,
+                        0.6000000238418579
+                    ],
+                    [
+                        24.209901809692383,
+                        -35.93709945678711,
+                        -42.69129943847656,
+                        0.6000000238418579
+                    ],
+                    [
+                        27.322002410888672,
+                        -38.33700180053711,
+                        -46.322200775146484,
+                        0.6000000238418579
+                    ],
+                    [
+                        29.576702117919922,
+                        -41.00579833984375,
+                        -48.127498626708984,
+                        0.6000000238418579
+                    ],
+                    [
+                        34.351200103759766,
+                        -49.298099517822266,
+                        -55.02790069580078,
+                        0.6000000238418579
+                    ],
+                    [
+                        41.84170150756836,
+                        -60.02280044555664,
+                        -65.29830169677734,
+                        0.6000000238418579
+                    ],
+                    [
+                        49.754398345947266,
+                        -73.6167984008789,
+                        -74.74700164794922,
+                        0.6000000238418579
+                    ],
+                    [
+                        53.09040069580078,
+                        -78.75050354003906,
+                        -78.3770980834961,
+                        0.6000000238418579
+                    ],
+                    [
+                        61.174198150634766,
+                        -93.99549865722656,
+                        -87.0739974975586,
+                        0.6000000238418579
+                    ],
+                    [
+                        68.60440063476562,
+                        -110.27100372314453,
+                        -94.85890197753906,
+                        0.6000000238418579
+                    ],
+                    [
+                        78.73799896240234,
+                        -129.86900329589844,
+                        -100.42900085449219,
+                        0.6000000238418579
+                    ],
+                    [
+                        85.00640106201172,
+                        -144.95599365234375,
+                        -104.98600006103516,
+                        0.6000000238418579
+                    ],
+                    [
+                        95.55069732666016,
+                        -159.93899536132812,
+                        -113.62999725341797,
+                        0.6000000238418579
+                    ],
+                    [
+                        99.75559997558594,
+                        -166.35499572753906,
+                        -117.08300018310547,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_23",
+                "parentX": 1.0
+            }
+        },
+        "dend_25": {
+            "geom": {
+                "L": 105.97837058508821,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 5,
+                "pt3d": [
+                    [
+                        13.13110065460205,
+                        -18.688100814819336,
+                        -17.867300033569336,
+                        0.8999999761581421
+                    ],
+                    [
+                        13.13110065460205,
+                        -18.688100814819336,
+                        -17.867300033569336,
+                        0.6000000238418579
+                    ],
+                    [
+                        16.858102798461914,
+                        -24.346399307250977,
+                        -19.245100021362305,
+                        0.6000000238418579
+                    ],
+                    [
+                        27.551902770996094,
+                        -37.61539840698242,
+                        -20.031700134277344,
+                        0.6000000238418579
+                    ],
+                    [
+                        37.47209930419922,
+                        -55.075599670410156,
+                        -37.05929946899414,
+                        0.6000000238418579
+                    ],
+                    [
+                        52.799198150634766,
+                        -92.35140228271484,
+                        -42.71699905395508,
+                        0.6000000238418579
+                    ],
+                    [
+                        57.552799224853516,
+                        -106.52400207519531,
+                        -41.80500030517578,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_23",
+                "parentX": 1.0
+            }
+        },
+        "dend_26": {
+            "geom": {
+                "L": 189.52406544344635,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418577,
+                "nseg": 9,
+                "pt3d": [
+                    [
+                        -2.1166491508483887,
+                        4.430959701538086,
+                        3.1571898460388184,
+                        1.2000000476837158
+                    ],
+                    [
+                        -8.387768745422363,
+                        15.49590015411377,
+                        4.930069446563721,
+                        1.2000000476837158
+                    ],
+                    [
+                        -12.705999374389648,
+                        24.052099227905273,
+                        8.645939826965332,
+                        1.2000000476837158
+                    ],
+                    [
+                        -17.89689826965332,
+                        33.467899322509766,
+                        12.340700149536133,
+                        1.2000000476837158
+                    ],
+                    [
+                        -22.860898971557617,
+                        42.8765983581543,
+                        12.094799995422363,
+                        0.8999999761581421
+                    ],
+                    [
+                        -28.705398559570312,
+                        54.20439910888672,
+                        11.868300437927246,
+                        0.8999999761581421
+                    ],
+                    [
+                        -29.789897918701172,
+                        58.77519989013672,
+                        9.726449966430664,
+                        0.8999999761581421
+                    ],
+                    [
+                        -32.96229934692383,
+                        64.2511978149414,
+                        11.823200225830078,
+                        0.6000000238418579
+                    ],
+                    [
+                        -34.8031005859375,
+                        69.58049774169922,
+                        9.099749565124512,
+                        0.6000000238418579
+                    ],
+                    [
+                        -37.408599853515625,
+                        75.99939727783203,
+                        7.713739395141602,
+                        0.6000000238418579
+                    ],
+                    [
+                        -38.56840133666992,
+                        79.80249786376953,
+                        9.488530158996582,
+                        0.6000000238418579
+                    ],
+                    [
+                        -40.9911994934082,
+                        81.76439666748047,
+                        10.843000411987305,
+                        0.6000000238418579
+                    ],
+                    [
+                        -48.62409973144531,
+                        96.15139770507812,
+                        9.221529960632324,
+                        0.6000000238418579
+                    ],
+                    [
+                        -51.76539993286133,
+                        108.81999969482422,
+                        8.150300025939941,
+                        0.6000000238418579
+                    ],
+                    [
+                        -55.5968017578125,
+                        116.96099853515625,
+                        8.439129829406738,
+                        0.6000000238418579
+                    ],
+                    [
+                        -56.31290054321289,
+                        123.41999816894531,
+                        7.562089443206787,
+                        0.6000000238418579
+                    ],
+                    [
+                        -55.14500045776367,
+                        125.87300109863281,
+                        4.432819366455078,
+                        0.6000000238418579
+                    ],
+                    [
+                        -41.27859878540039,
+                        127.8489990234375,
+                        -18.499399185180664,
+                        0.6000000238418579
+                    ],
+                    [
+                        -41.399898529052734,
+                        138.22999572753906,
+                        -28.68630027770996,
+                        0.6000000238418579
+                    ],
+                    [
+                        -43.528900146484375,
+                        145.9219970703125,
+                        -30.349000930786133,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.5
+            }
+        },
+        "dend_3": {
+            "geom": {
+                "L": 260.1743014875496,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418572,
+                "nseg": 13,
+                "pt3d": [
+                    [
+                        13.288301467895508,
+                        -18.43400001525879,
+                        -28.516399383544922,
+                        0.8999999761581421
+                    ],
+                    [
+                        17.65460205078125,
+                        -20.595699310302734,
+                        -33.179901123046875,
+                        0.8999999761581421
+                    ],
+                    [
+                        24.73910140991211,
+                        -25.88330078125,
+                        -39.24300003051758,
+                        0.6000000238418579
+                    ],
+                    [
+                        32.47639846801758,
+                        -32.71649932861328,
+                        -44.5349006652832,
+                        0.6000000238418579
+                    ],
+                    [
+                        39.20009994506836,
+                        -41.48109817504883,
+                        -52.2328987121582,
+                        0.6000000238418579
+                    ],
+                    [
+                        45.91360092163086,
+                        -51.459800720214844,
+                        -60.89720153808594,
+                        0.6000000238418579
+                    ],
+                    [
+                        59.99829864501953,
+                        -64.63520050048828,
+                        -75.54340362548828,
+                        0.6000000238418579
+                    ],
+                    [
+                        75.00579833984375,
+                        -83.16239929199219,
+                        -76.9009017944336,
+                        0.6000000238418579
+                    ],
+                    [
+                        78.67949676513672,
+                        -89.63130187988281,
+                        -81.36119842529297,
+                        0.6000000238418579
+                    ],
+                    [
+                        84.62909698486328,
+                        -93.20149993896484,
+                        -82.22599792480469,
+                        0.6000000238418579
+                    ],
+                    [
+                        91.30049896240234,
+                        -97.6134033203125,
+                        -88.4728012084961,
+                        0.6000000238418579
+                    ],
+                    [
+                        98.67120361328125,
+                        -110.66300201416016,
+                        -96.0719985961914,
+                        0.6000000238418579
+                    ],
+                    [
+                        112.97699737548828,
+                        -138.4429931640625,
+                        -97.66799926757812,
+                        0.6000000238418579
+                    ],
+                    [
+                        117.75399780273438,
+                        -158.07699584960938,
+                        -115.3270034790039,
+                        0.6000000238418579
+                    ],
+                    [
+                        124.96399688720703,
+                        -179.2729949951172,
+                        -127.1510009765625,
+                        0.6000000238418579
+                    ],
+                    [
+                        128.84800720214844,
+                        -199.00799560546875,
+                        -134.86399841308594,
+                        0.6000000238418579
+                    ],
+                    [
+                        133.00999450683594,
+                        -203.9429931640625,
+                        -137.8699951171875,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_1",
+                "parentX": 1.0
+            }
+        },
+        "dend_4": {
+            "geom": {
+                "L": 10.182414690713696,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        5.442440986633301,
+                        -7.682990550994873,
+                        -12.19729995727539,
+                        1.7999999523162842
+                    ],
+                    [
+                        5.442440986633301,
+                        -7.682990550994873,
+                        -12.19729995727539,
+                        0.6000000238418579
+                    ],
+                    [
+                        3.511720895767212,
+                        -7.957430362701416,
+                        -17.586599349975586,
+                        0.6000000238418579
+                    ],
+                    [
+                        2.762830972671509,
+                        -8.477950096130371,
+                        -21.943300247192383,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_5": {
+            "geom": {
+                "L": 33.73332200351897,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        2.762830972671509,
+                        -8.477950096130371,
+                        -21.943300247192383,
+                        0.6000000238418579
+                    ],
+                    [
+                        -2.852998971939087,
+                        -1.3983203172683716,
+                        -25.543399810791016,
+                        0.6000000238418579
+                    ],
+                    [
+                        -13.417899131774902,
+                        15.236800193786621,
+                        -27.75469970703125,
+                        0.6000000238418579
+                    ],
+                    [
+                        -14.98029899597168,
+                        18.332500457763672,
+                        -25.427900314331055,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_4",
+                "parentX": 1.0
+            }
+        },
+        "dend_6": {
+            "geom": {
+                "L": 99.452276650062,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.39129177417689653,
+                "nseg": 5,
+                "pt3d": [
+                    [
+                        -14.98029899597168,
+                        18.332500457763672,
+                        -25.427900314331055,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.061397552490234,
+                        23.7898006439209,
+                        -9.778630256652832,
+                        0.6000000238418579
+                    ],
+                    [
+                        -29.14649772644043,
+                        32.193599700927734,
+                        4.613869667053223,
+                        0.6000000238418579
+                    ],
+                    [
+                        -32.666900634765625,
+                        34.95289993286133,
+                        12.110799789428711,
+                        0.6000000238418579
+                    ],
+                    [
+                        -33.99580001831055,
+                        36.175201416015625,
+                        12.826399803161621,
+                        0.30000001192092896
+                    ],
+                    [
+                        -38.494998931884766,
+                        38.84170150756836,
+                        17.850900650024414,
+                        0.30000001192092896
+                    ],
+                    [
+                        -41.24359893798828,
+                        45.615299224853516,
+                        16.82270050048828,
+                        0.30000001192092896
+                    ],
+                    [
+                        -43.07469940185547,
+                        51.06010055541992,
+                        18.847999572753906,
+                        0.30000001192092896
+                    ],
+                    [
+                        -45.21670150756836,
+                        55.0619010925293,
+                        28.439899444580078,
+                        0.30000001192092896
+                    ],
+                    [
+                        -50.78139877319336,
+                        60.750301361083984,
+                        42.187198638916016,
+                        0.30000001192092896
+                    ],
+                    [
+                        -55.83549880981445,
+                        61.24679946899414,
+                        44.097999572753906,
+                        0.30000001192092896
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_5",
+                "parentX": 1.0
+            }
+        },
+        "dend_7": {
+            "geom": {
+                "L": 57.93499736969223,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.4011025491570851,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        -14.98029899597168,
+                        18.332500457763672,
+                        -25.427900314331055,
+                        0.6000000238418579
+                    ],
+                    [
+                        -18.079397201538086,
+                        23.24519920349121,
+                        -17.271099090576172,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.186498641967773,
+                        31.043699264526367,
+                        -9.45011043548584,
+                        0.6000000238418579
+                    ],
+                    [
+                        -24.428497314453125,
+                        36.363800048828125,
+                        -3.8467702865600586,
+                        0.30000001192092896
+                    ],
+                    [
+                        -24.65599822998047,
+                        38.874000549316406,
+                        1.0614296197891235,
+                        0.30000001192092896
+                    ],
+                    [
+                        -24.720298767089844,
+                        44.36320114135742,
+                        3.0257296562194824,
+                        0.30000001192092896
+                    ],
+                    [
+                        -24.260698318481445,
+                        47.62379837036133,
+                        6.572909355163574,
+                        0.30000001192092896
+                    ],
+                    [
+                        -25.468297958374023,
+                        48.911800384521484,
+                        11.3302001953125,
+                        0.30000001192092896
+                    ],
+                    [
+                        -28.323997497558594,
+                        54.21549987792969,
+                        14.550000190734863,
+                        0.30000001192092896
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_5",
+                "parentX": 1.0
+            }
+        },
+        "dend_8": {
+            "geom": {
+                "L": 143.89004776125913,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.300000011920929,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        2.762830972671509,
+                        -8.477950096130371,
+                        -21.943300247192383,
+                        0.6000000238418579
+                    ],
+                    [
+                        2.762830972671509,
+                        -8.477950096130371,
+                        -21.943300247192383,
+                        0.30000001192092896
+                    ],
+                    [
+                        3.9864108562469482,
+                        -11.52280044555664,
+                        -25.70789909362793,
+                        0.30000001192092896
+                    ],
+                    [
+                        2.834491014480591,
+                        -13.016200065612793,
+                        -34.46839904785156,
+                        0.30000001192092896
+                    ],
+                    [
+                        0.7948200106620789,
+                        -12.753700256347656,
+                        -33.8927001953125,
+                        0.30000001192092896
+                    ],
+                    [
+                        4.337280750274658,
+                        -27.18589973449707,
+                        -34.956199645996094,
+                        0.30000001192092896
+                    ],
+                    [
+                        9.940361022949219,
+                        -44.19380187988281,
+                        -49.38140106201172,
+                        0.30000001192092896
+                    ],
+                    [
+                        11.743901252746582,
+                        -51.816200256347656,
+                        -56.24039840698242,
+                        0.30000001192092896
+                    ],
+                    [
+                        14.369800567626953,
+                        -61.02799987792969,
+                        -57.1786003112793,
+                        0.30000001192092896
+                    ],
+                    [
+                        14.671900749206543,
+                        -65.63890075683594,
+                        -65.0593032836914,
+                        0.30000001192092896
+                    ],
+                    [
+                        18.828401565551758,
+                        -82.93199920654297,
+                        -78.28739929199219,
+                        0.30000001192092896
+                    ],
+                    [
+                        21.119102478027344,
+                        -103.35399627685547,
+                        -86.46790313720703,
+                        0.30000001192092896
+                    ],
+                    [
+                        17.890302658081055,
+                        -110.73799896240234,
+                        -91.9207992553711,
+                        0.30000001192092896
+                    ],
+                    [
+                        19.710201263427734,
+                        -116.63800048828125,
+                        -89.26820373535156,
+                        0.30000001192092896
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_4",
+                "parentX": 1.0
+            }
+        },
+        "dend_9": {
+            "geom": {
+                "L": 14.53117573634141,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.899999976158142,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -1.3915590047836304,
+                        5.0058794021606445,
+                        -0.6050703525543213,
+                        0.8999999761581421
+                    ],
+                    [
+                        -5.228468894958496,
+                        11.5,
+                        -3.0939102172851562,
+                        0.8999999761581421
+                    ],
+                    [
+                        -3.878359079360962,
+                        14.350799560546875,
+                        -4.671490669250488,
+                        0.8999999761581421
+                    ],
+                    [
+                        -4.555939197540283,
+                        16.830799102783203,
+                        -6.33366060256958,
+                        0.8999999761581421
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.01739263169062708,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.00972395061263911,
+                    "gna_max": 0.004844086478433836,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 6.827966371478425e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0005955161172824272,
+                    "taur": 4.106142876523726
+                },
+                "TC_iA": {
+                    "gk_max": 0.002739380310992112
+                },
+                "TC_iL": {
+                    "pcabar": 0.0001970970714465837
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 9.031719920175399e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 1.15841450451387e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.5
+            }
+        },
+        "soma_0": {
+            "geom": {
+                "L": 22.106383853723123,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 8.60582563135681,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -4.74976110458374,
+                        5.5333967208862305,
+                        8.285293579101562,
+                        3.4263322353363037
+                    ],
+                    [
+                        -4.2603936195373535,
+                        4.990058898925781,
+                        7.456418991088867,
+                        5.826786518096924
+                    ],
+                    [
+                        -3.771026134490967,
+                        4.446720600128174,
+                        6.627543926239014,
+                        7.98379373550415
+                    ],
+                    [
+                        -3.281658887863159,
+                        3.9033827781677246,
+                        5.798668384552002,
+                        9.138333320617676
+                    ],
+                    [
+                        -2.7922916412353516,
+                        3.3600447177886963,
+                        4.969793319702148,
+                        9.692026138305664
+                    ],
+                    [
+                        -2.302924156188965,
+                        2.816706895828247,
+                        4.140918254852295,
+                        10.12155818939209
+                    ],
+                    [
+                        -1.8135569095611572,
+                        2.2733688354492188,
+                        3.3120431900024414,
+                        10.491860389709473
+                    ],
+                    [
+                        -1.32418954372406,
+                        1.73003089427948,
+                        2.483168125152588,
+                        11.042701721191406
+                    ],
+                    [
+                        -0.8348222374916077,
+                        1.1866928339004517,
+                        1.6542929410934448,
+                        11.342872619628906
+                    ],
+                    [
+                        -0.3454548716545105,
+                        0.6433548927307129,
+                        0.8254178762435913,
+                        11.854037284851074
+                    ],
+                    [
+                        0.1439124494791031,
+                        0.10001689940690994,
+                        -0.0034572689328342676,
+                        11.806763648986816
+                    ],
+                    [
+                        0.6332798004150391,
+                        -0.4433210790157318,
+                        -0.8323323726654053,
+                        10.509778022766113
+                    ],
+                    [
+                        1.1226471662521362,
+                        -0.986659049987793,
+                        -1.6612075567245483,
+                        9.955855369567871
+                    ],
+                    [
+                        1.6120144128799438,
+                        -1.5299971103668213,
+                        -2.4900827407836914,
+                        9.034022331237793
+                    ],
+                    [
+                        2.101381778717041,
+                        -2.0733349323272705,
+                        -3.318957805633545,
+                        8.410331726074219
+                    ],
+                    [
+                        2.5907490253448486,
+                        -2.616672992706299,
+                        -4.147832870483398,
+                        8.085975646972656
+                    ],
+                    [
+                        3.0801165103912354,
+                        -3.160011053085327,
+                        -4.976707935333252,
+                        7.440264701843262
+                    ],
+                    [
+                        3.569483757019043,
+                        -3.7033491134643555,
+                        -5.8055830001831055,
+                        6.764132022857666
+                    ],
+                    [
+                        4.05885124206543,
+                        -4.246686935424805,
+                        -6.634458065032959,
+                        6.08799934387207
+                    ],
+                    [
+                        4.548218250274658,
+                        -4.790024757385254,
+                        -7.4633331298828125,
+                        4.104632377624512
+                    ],
+                    [
+                        5.037585735321045,
+                        -5.333363056182861,
+                        -8.292208671569824,
+                        2.422788381576538
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.0010454234086542868,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.005629521812299303,
+                    "gna_max": 0.05388936992916393,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 7.72144883568429e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.17979486560837313,
+                    "taur": 16.072120513181183
+                },
+                "TC_iA": {
+                    "gk_max": 0.023223860722110103
+                },
+                "TC_iL": {
+                    "pcabar": 0.000209869297600253
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 6.026701459887937e-06,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 3.0383915308958474e-06,
+                    "shift": 0.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 8.617446501142974e-05
+                }
+            },
+            "topol": {}
+        }
+    }
+}

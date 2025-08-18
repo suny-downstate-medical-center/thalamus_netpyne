@@ -1,0 +1,1 @@
+Figures are upside down because the y-axis (up/down) is flipped during figure generation, but the orientation is correct in the simulator

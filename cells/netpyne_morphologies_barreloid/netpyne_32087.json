@@ -1,0 +1,5933 @@
+{
+    "conds": {
+        "cellType": "32087"
+    },
+    "globals": {},
+    "secLists": {
+        "SectionList[0]": [],
+        "SectionList[1000]": [],
+        "SectionList[1001]": [],
+        "SectionList[1002]": [],
+        "SectionList[1003]": [],
+        "SectionList[1004]": [],
+        "SectionList[1005]": [],
+        "SectionList[1006]": [],
+        "SectionList[1007]": [],
+        "SectionList[1008]": [],
+        "SectionList[1009]": [],
+        "SectionList[100]": [],
+        "SectionList[1010]": [],
+        "SectionList[1011]": [],
+        "SectionList[1012]": [],
+        "SectionList[1013]": [],
+        "SectionList[1014]": [],
+        "SectionList[1015]": [],
+        "SectionList[1016]": [],
+        "SectionList[1017]": [],
+        "SectionList[1018]": [],
+        "SectionList[1019]": [],
+        "SectionList[101]": [],
+        "SectionList[1020]": [],
+        "SectionList[1021]": [],
+        "SectionList[1022]": [],
+        "SectionList[1023]": [],
+        "SectionList[1024]": [],
+        "SectionList[1025]": [],
+        "SectionList[1026]": [],
+        "SectionList[1027]": [],
+        "SectionList[1028]": [],
+        "SectionList[1029]": [],
+        "SectionList[102]": [],
+        "SectionList[1030]": [],
+        "SectionList[1031]": [],
+        "SectionList[1032]": [],
+        "SectionList[1033]": [],
+        "SectionList[1034]": [],
+        "SectionList[1035]": [],
+        "SectionList[1036]": [],
+        "SectionList[1037]": [],
+        "SectionList[1038]": [],
+        "SectionList[1039]": [],
+        "SectionList[103]": [],
+        "SectionList[1040]": [],
+        "SectionList[1041]": [],
+        "SectionList[1042]": [],
+        "SectionList[1043]": [],
+        "SectionList[1044]": [],
+        "SectionList[1045]": [],
+        "SectionList[1046]": [],
+        "SectionList[1047]": [],
+        "SectionList[1048]": [],
+        "SectionList[1049]": [],
+        "SectionList[104]": [],
+        "SectionList[1050]": [],
+        "SectionList[1051]": [],
+        "SectionList[1052]": [],
+        "SectionList[1053]": [],
+        "SectionList[1054]": [],
+        "SectionList[1055]": [],
+        "SectionList[1056]": [],
+        "SectionList[1057]": [],
+        "SectionList[1058]": [],
+        "SectionList[1059]": [],
+        "SectionList[105]": [],
+        "SectionList[1060]": [],
+        "SectionList[1061]": [],
+        "SectionList[1062]": [],
+        "SectionList[1063]": [],
+        "SectionList[1064]": [],
+        "SectionList[1065]": [],
+        "SectionList[1066]": [],
+        "SectionList[1067]": [],
+        "SectionList[1068]": [],
+        "SectionList[1069]": [],
+        "SectionList[106]": [],
+        "SectionList[1070]": [],
+        "SectionList[1071]": [],
+        "SectionList[1072]": [],
+        "SectionList[1073]": [],
+        "SectionList[1074]": [],
+        "SectionList[1075]": [],
+        "SectionList[1076]": [],
+        "SectionList[1077]": [],
+        "SectionList[1078]": [],
+        "SectionList[1079]": [],
+        "SectionList[107]": [],
+        "SectionList[1080]": [],
+        "SectionList[1081]": [],
+        "SectionList[1082]": [],
+        "SectionList[1083]": [],
+        "SectionList[1084]": [],
+        "SectionList[1085]": [],
+        "SectionList[1086]": [],
+        "SectionList[1087]": [],
+        "SectionList[1088]": [],
+        "SectionList[1089]": [],
+        "SectionList[108]": [],
+        "SectionList[1090]": [],
+        "SectionList[1091]": [],
+        "SectionList[1092]": [],
+        "SectionList[1093]": [],
+        "SectionList[1094]": [],
+        "SectionList[1095]": [],
+        "SectionList[1096]": [],
+        "SectionList[1097]": [],
+        "SectionList[1098]": [],
+        "SectionList[1099]": [],
+        "SectionList[109]": [],
+        "SectionList[10]": [],
+        "SectionList[1100]": [],
+        "SectionList[1101]": [],
+        "SectionList[1102]": [],
+        "SectionList[1103]": [],
+        "SectionList[1104]": [],
+        "SectionList[1105]": [],
+        "SectionList[1106]": [],
+        "SectionList[1107]": [],
+        "SectionList[1108]": [],
+        "SectionList[1109]": [],
+        "SectionList[110]": [],
+        "SectionList[1110]": [],
+        "SectionList[1111]": [],
+        "SectionList[1112]": [],
+        "SectionList[1113]": [],
+        "SectionList[1114]": [],
+        "SectionList[1115]": [],
+        "SectionList[1116]": [],
+        "SectionList[1117]": [],
+        "SectionList[1118]": [],
+        "SectionList[1119]": [],
+        "SectionList[111]": [],
+        "SectionList[1120]": [],
+        "SectionList[1121]": [],
+        "SectionList[1122]": [],
+        "SectionList[1123]": [],
+        "SectionList[1124]": [],
+        "SectionList[1125]": [],
+        "SectionList[1126]": [],
+        "SectionList[1127]": [],
+        "SectionList[1128]": [],
+        "SectionList[1129]": [],
+        "SectionList[112]": [],
+        "SectionList[1130]": [],
+        "SectionList[1131]": [],
+        "SectionList[1132]": [],
+        "SectionList[1133]": [],
+        "SectionList[1134]": [],
+        "SectionList[1135]": [],
+        "SectionList[1136]": [],
+        "SectionList[1137]": [],
+        "SectionList[1138]": [],
+        "SectionList[1139]": [],
+        "SectionList[113]": [],
+        "SectionList[1140]": [],
+        "SectionList[1141]": [],
+        "SectionList[1142]": [],
+        "SectionList[1143]": [],
+        "SectionList[1144]": [],
+        "SectionList[1145]": [],
+        "SectionList[1146]": [],
+        "SectionList[1147]": [],
+        "SectionList[1148]": [],
+        "SectionList[1149]": [],
+        "SectionList[114]": [],
+        "SectionList[1150]": [],
+        "SectionList[1151]": [],
+        "SectionList[1152]": [],
+        "SectionList[1153]": [],
+        "SectionList[1154]": [],
+        "SectionList[1155]": [],
+        "SectionList[1156]": [],
+        "SectionList[1157]": [],
+        "SectionList[1158]": [],
+        "SectionList[1159]": [],
+        "SectionList[115]": [],
+        "SectionList[1160]": [],
+        "SectionList[1161]": [],
+        "SectionList[1162]": [],
+        "SectionList[1163]": [],
+        "SectionList[1164]": [],
+        "SectionList[1165]": [],
+        "SectionList[1166]": [],
+        "SectionList[1167]": [],
+        "SectionList[1168]": [],
+        "SectionList[1169]": [],
+        "SectionList[116]": [],
+        "SectionList[1170]": [],
+        "SectionList[1171]": [],
+        "SectionList[1172]": [],
+        "SectionList[1173]": [],
+        "SectionList[1174]": [],
+        "SectionList[1175]": [],
+        "SectionList[1176]": [],
+        "SectionList[1177]": [],
+        "SectionList[1178]": [],
+        "SectionList[1179]": [],
+        "SectionList[117]": [],
+        "SectionList[1180]": [],
+        "SectionList[1181]": [],
+        "SectionList[1182]": [],
+        "SectionList[1183]": [],
+        "SectionList[1184]": [],
+        "SectionList[1185]": [],
+        "SectionList[1186]": [],
+        "SectionList[1187]": [],
+        "SectionList[1188]": [],
+        "SectionList[1189]": [],
+        "SectionList[118]": [],
+        "SectionList[1190]": [],
+        "SectionList[1191]": [],
+        "SectionList[1192]": [],
+        "SectionList[1193]": [],
+        "SectionList[1194]": [],
+        "SectionList[1195]": [],
+        "SectionList[1196]": [],
+        "SectionList[1197]": [],
+        "SectionList[1198]": [],
+        "SectionList[1199]": [],
+        "SectionList[119]": [],
+        "SectionList[11]": [],
+        "SectionList[1200]": [],
+        "SectionList[1201]": [],
+        "SectionList[1202]": [],
+        "SectionList[1203]": [],
+        "SectionList[1204]": [],
+        "SectionList[1205]": [],
+        "SectionList[1206]": [],
+        "SectionList[1207]": [],
+        "SectionList[1208]": [],
+        "SectionList[1209]": [],
+        "SectionList[120]": [],
+        "SectionList[1210]": [],
+        "SectionList[1211]": [],
+        "SectionList[1212]": [],
+        "SectionList[1213]": [],
+        "SectionList[1214]": [],
+        "SectionList[1215]": [],
+        "SectionList[1216]": [],
+        "SectionList[1217]": [],
+        "SectionList[1218]": [],
+        "SectionList[1219]": [],
+        "SectionList[121]": [],
+        "SectionList[1220]": [],
+        "SectionList[1221]": [],
+        "SectionList[1222]": [],
+        "SectionList[1223]": [],
+        "SectionList[1224]": [],
+        "SectionList[1225]": [],
+        "SectionList[1226]": [],
+        "SectionList[1227]": [],
+        "SectionList[1228]": [],
+        "SectionList[1229]": [],
+        "SectionList[122]": [],
+        "SectionList[1230]": [],
+        "SectionList[1231]": [],
+        "SectionList[1232]": [],
+        "SectionList[1233]": [],
+        "SectionList[1234]": [],
+        "SectionList[1235]": [],
+        "SectionList[1236]": [],
+        "SectionList[1237]": [],
+        "SectionList[1238]": [],
+        "SectionList[1239]": [],
+        "SectionList[123]": [],
+        "SectionList[1240]": [],
+        "SectionList[1241]": [],
+        "SectionList[1242]": [],
+        "SectionList[1243]": [],
+        "SectionList[1244]": [],
+        "SectionList[1245]": [],
+        "SectionList[1246]": [],
+        "SectionList[1247]": [],
+        "SectionList[1248]": [],
+        "SectionList[1249]": [],
+        "SectionList[124]": [],
+        "SectionList[1250]": [],
+        "SectionList[1251]": [],
+        "SectionList[1252]": [],
+        "SectionList[1253]": [],
+        "SectionList[1254]": [],
+        "SectionList[1255]": [],
+        "SectionList[1256]": [],
+        "SectionList[1257]": [],
+        "SectionList[1258]": [],
+        "SectionList[1259]": [],
+        "SectionList[125]": [],
+        "SectionList[1260]": [],
+        "SectionList[1261]": [],
+        "SectionList[1262]": [],
+        "SectionList[1263]": [],
+        "SectionList[1264]": [],
+        "SectionList[1265]": [],
+        "SectionList[1266]": [],
+        "SectionList[1267]": [],
+        "SectionList[1268]": [],
+        "SectionList[1269]": [],
+        "SectionList[126]": [],
+        "SectionList[1270]": [],
+        "SectionList[1271]": [],
+        "SectionList[1272]": [],
+        "SectionList[1273]": [],
+        "SectionList[1274]": [],
+        "SectionList[1275]": [],
+        "SectionList[1276]": [],
+        "SectionList[1277]": [],
+        "SectionList[1278]": [],
+        "SectionList[1279]": [],
+        "SectionList[127]": [],
+        "SectionList[1280]": [],
+        "SectionList[1281]": [],
+        "SectionList[1282]": [],
+        "SectionList[1283]": [],
+        "SectionList[1284]": [],
+        "SectionList[1285]": [],
+        "SectionList[1286]": [],
+        "SectionList[1287]": [],
+        "SectionList[1288]": [],
+        "SectionList[1289]": [],
+        "SectionList[128]": [],
+        "SectionList[1290]": [],
+        "SectionList[1291]": [],
+        "SectionList[1292]": [],
+        "SectionList[1293]": [],
+        "SectionList[1294]": [],
+        "SectionList[1295]": [],
+        "SectionList[1296]": [],
+        "SectionList[1297]": [],
+        "SectionList[1298]": [],
+        "SectionList[1299]": [],
+        "SectionList[129]": [],
+        "SectionList[12]": [],
+        "SectionList[1300]": [],
+        "SectionList[1301]": [],
+        "SectionList[1302]": [],
+        "SectionList[1303]": [],
+        "SectionList[1304]": [],
+        "SectionList[1305]": [],
+        "SectionList[1306]": [],
+        "SectionList[1307]": [],
+        "SectionList[1308]": [],
+        "SectionList[1309]": [],
+        "SectionList[130]": [],
+        "SectionList[1310]": [],
+        "SectionList[1311]": [],
+        "SectionList[1312]": [],
+        "SectionList[1313]": [],
+        "SectionList[1314]": [],
+        "SectionList[1315]": [],
+        "SectionList[1316]": [],
+        "SectionList[1317]": [],
+        "SectionList[1318]": [],
+        "SectionList[1319]": [],
+        "SectionList[131]": [],
+        "SectionList[1320]": [],
+        "SectionList[1321]": [],
+        "SectionList[1322]": [],
+        "SectionList[1323]": [],
+        "SectionList[1324]": [],
+        "SectionList[1325]": [],
+        "SectionList[1326]": [],
+        "SectionList[1327]": [],
+        "SectionList[1328]": [],
+        "SectionList[1329]": [],
+        "SectionList[132]": [],
+        "SectionList[1330]": [],
+        "SectionList[1331]": [],
+        "SectionList[1332]": [],
+        "SectionList[1333]": [],
+        "SectionList[1334]": [],
+        "SectionList[1335]": [],
+        "SectionList[1336]": [],
+        "SectionList[1337]": [],
+        "SectionList[1338]": [],
+        "SectionList[1339]": [],
+        "SectionList[133]": [],
+        "SectionList[1340]": [],
+        "SectionList[1341]": [],
+        "SectionList[1342]": [],
+        "SectionList[1343]": [],
+        "SectionList[1344]": [],
+        "SectionList[1345]": [],
+        "SectionList[1346]": [],
+        "SectionList[1347]": [],
+        "SectionList[1348]": [],
+        "SectionList[1349]": [],
+        "SectionList[134]": [],
+        "SectionList[1350]": [],
+        "SectionList[1351]": [],
+        "SectionList[1352]": [],
+        "SectionList[1353]": [],
+        "SectionList[1354]": [],
+        "SectionList[1355]": [],
+        "SectionList[1356]": [],
+        "SectionList[1357]": [],
+        "SectionList[1358]": [],
+        "SectionList[1359]": [],
+        "SectionList[135]": [],
+        "SectionList[1360]": [],
+        "SectionList[1361]": [],
+        "SectionList[1362]": [],
+        "SectionList[1363]": [],
+        "SectionList[1364]": [],
+        "SectionList[1365]": [],
+        "SectionList[1366]": [],
+        "SectionList[1367]": [],
+        "SectionList[1368]": [],
+        "SectionList[1369]": [],
+        "SectionList[136]": [],
+        "SectionList[1370]": [],
+        "SectionList[1371]": [],
+        "SectionList[1372]": [],
+        "SectionList[1373]": [],
+        "SectionList[1374]": [],
+        "SectionList[1375]": [],
+        "SectionList[1376]": [],
+        "SectionList[1377]": [],
+        "SectionList[1378]": [],
+        "SectionList[1379]": [],
+        "SectionList[137]": [],
+        "SectionList[1380]": [],
+        "SectionList[1381]": [],
+        "SectionList[1382]": [],
+        "SectionList[1383]": [],
+        "SectionList[1384]": [],
+        "SectionList[1385]": [],
+        "SectionList[1386]": [],
+        "SectionList[1387]": [],
+        "SectionList[1388]": [],
+        "SectionList[1389]": [],
+        "SectionList[138]": [],
+        "SectionList[1390]": [],
+        "SectionList[1391]": [],
+        "SectionList[1392]": [],
+        "SectionList[1393]": [],
+        "SectionList[1394]": [],
+        "SectionList[1395]": [],
+        "SectionList[1396]": [],
+        "SectionList[1397]": [],
+        "SectionList[1398]": [],
+        "SectionList[1399]": [],
+        "SectionList[139]": [],
+        "SectionList[13]": [],
+        "SectionList[1400]": [],
+        "SectionList[1401]": [],
+        "SectionList[1402]": [],
+        "SectionList[1403]": [],
+        "SectionList[1404]": [],
+        "SectionList[1405]": [],
+        "SectionList[1406]": [],
+        "SectionList[1407]": [],
+        "SectionList[1408]": [],
+        "SectionList[1409]": [],
+        "SectionList[140]": [],
+        "SectionList[1410]": [],
+        "SectionList[1411]": [],
+        "SectionList[1412]": [],
+        "SectionList[1413]": [],
+        "SectionList[1414]": [],
+        "SectionList[1415]": [],
+        "SectionList[1416]": [],
+        "SectionList[1417]": [],
+        "SectionList[1418]": [],
+        "SectionList[1419]": [],
+        "SectionList[141]": [],
+        "SectionList[1420]": [],
+        "SectionList[1421]": [],
+        "SectionList[1422]": [],
+        "SectionList[1423]": [],
+        "SectionList[1424]": [],
+        "SectionList[1425]": [],
+        "SectionList[1426]": [],
+        "SectionList[1427]": [],
+        "SectionList[1428]": [],
+        "SectionList[1429]": [],
+        "SectionList[142]": [],
+        "SectionList[1430]": [],
+        "SectionList[1431]": [],
+        "SectionList[1432]": [],
+        "SectionList[1433]": [],
+        "SectionList[1434]": [],
+        "SectionList[1435]": [],
+        "SectionList[1436]": [],
+        "SectionList[1437]": [],
+        "SectionList[1438]": [],
+        "SectionList[1439]": [],
+        "SectionList[143]": [],
+        "SectionList[1440]": [],
+        "SectionList[1441]": [],
+        "SectionList[1442]": [],
+        "SectionList[1443]": [],
+        "SectionList[1444]": [],
+        "SectionList[1445]": [],
+        "SectionList[1446]": [],
+        "SectionList[1447]": [],
+        "SectionList[1448]": [],
+        "SectionList[1449]": [],
+        "SectionList[144]": [],
+        "SectionList[1450]": [],
+        "SectionList[1451]": [],
+        "SectionList[1452]": [],
+        "SectionList[1453]": [],
+        "SectionList[1454]": [],
+        "SectionList[1455]": [],
+        "SectionList[1456]": [],
+        "SectionList[1457]": [],
+        "SectionList[1458]": [],
+        "SectionList[1459]": [],
+        "SectionList[145]": [],
+        "SectionList[1460]": [],
+        "SectionList[1461]": [],
+        "SectionList[1462]": [],
+        "SectionList[1463]": [],
+        "SectionList[1464]": [],
+        "SectionList[1465]": [],
+        "SectionList[1466]": [],
+        "SectionList[1467]": [],
+        "SectionList[1468]": [],
+        "SectionList[1469]": [],
+        "SectionList[146]": [],
+        "SectionList[1470]": [],
+        "SectionList[1471]": [],
+        "SectionList[1472]": [],
+        "SectionList[1473]": [],
+        "SectionList[1474]": [],
+        "SectionList[1475]": [],
+        "SectionList[1476]": [],
+        "SectionList[1477]": [],
+        "SectionList[1478]": [],
+        "SectionList[1479]": [],
+        "SectionList[147]": [],
+        "SectionList[1480]": [],
+        "SectionList[1481]": [],
+        "SectionList[1482]": [],
+        "SectionList[1483]": [],
+        "SectionList[1484]": [],
+        "SectionList[1485]": [],
+        "SectionList[1486]": [],
+        "SectionList[1487]": [],
+        "SectionList[1488]": [],
+        "SectionList[1489]": [],
+        "SectionList[148]": [],
+        "SectionList[1490]": [],
+        "SectionList[1491]": [],
+        "SectionList[1492]": [],
+        "SectionList[1493]": [],
+        "SectionList[1494]": [],
+        "SectionList[1495]": [],
+        "SectionList[1496]": [],
+        "SectionList[1497]": [],
+        "SectionList[1498]": [],
+        "SectionList[1499]": [],
+        "SectionList[149]": [],
+        "SectionList[14]": [],
+        "SectionList[1500]": [],
+        "SectionList[1501]": [],
+        "SectionList[1502]": [],
+        "SectionList[1503]": [],
+        "SectionList[1504]": [],
+        "SectionList[1505]": [],
+        "SectionList[1506]": [],
+        "SectionList[1507]": [],
+        "SectionList[1508]": [],
+        "SectionList[1509]": [],
+        "SectionList[150]": [],
+        "SectionList[1510]": [],
+        "SectionList[1511]": [],
+        "SectionList[1512]": [],
+        "SectionList[1513]": [],
+        "SectionList[1514]": [],
+        "SectionList[1515]": [],
+        "SectionList[1516]": [],
+        "SectionList[1517]": [],
+        "SectionList[1518]": [],
+        "SectionList[1519]": [],
+        "SectionList[151]": [],
+        "SectionList[1520]": [],
+        "SectionList[1521]": [],
+        "SectionList[1522]": [],
+        "SectionList[1523]": [],
+        "SectionList[1524]": [],
+        "SectionList[1525]": [],
+        "SectionList[1526]": [],
+        "SectionList[1527]": [],
+        "SectionList[1528]": [],
+        "SectionList[1529]": [],
+        "SectionList[152]": [],
+        "SectionList[1530]": [],
+        "SectionList[1531]": [],
+        "SectionList[1532]": [],
+        "SectionList[1533]": [],
+        "SectionList[1534]": [],
+        "SectionList[1535]": [],
+        "SectionList[1536]": [],
+        "SectionList[1537]": [],
+        "SectionList[1538]": [],
+        "SectionList[1539]": [],
+        "SectionList[153]": [],
+        "SectionList[1540]": [],
+        "SectionList[1541]": [],
+        "SectionList[1542]": [],
+        "SectionList[1543]": [],
+        "SectionList[1544]": [],
+        "SectionList[1545]": [],
+        "SectionList[1546]": [],
+        "SectionList[1547]": [],
+        "SectionList[1548]": [],
+        "SectionList[1549]": [],
+        "SectionList[154]": [],
+        "SectionList[1550]": [],
+        "SectionList[1551]": [],
+        "SectionList[1552]": [],
+        "SectionList[1553]": [],
+        "SectionList[1554]": [],
+        "SectionList[1555]": [],
+        "SectionList[1556]": [],
+        "SectionList[1557]": [],
+        "SectionList[1558]": [],
+        "SectionList[1559]": [],
+        "SectionList[155]": [],
+        "SectionList[1560]": [],
+        "SectionList[1561]": [],
+        "SectionList[1562]": [],
+        "SectionList[1563]": [],
+        "SectionList[1564]": [],
+        "SectionList[1565]": [],
+        "SectionList[1566]": [],
+        "SectionList[1567]": [],
+        "SectionList[1568]": [],
+        "SectionList[1569]": [],
+        "SectionList[156]": [],
+        "SectionList[1570]": [],
+        "SectionList[1571]": [],
+        "SectionList[1572]": [],
+        "SectionList[1573]": [],
+        "SectionList[1574]": [],
+        "SectionList[1575]": [],
+        "SectionList[1576]": [],
+        "SectionList[1577]": [],
+        "SectionList[1578]": [],
+        "SectionList[1579]": [],
+        "SectionList[157]": [],
+        "SectionList[1580]": [],
+        "SectionList[1581]": [],
+        "SectionList[1582]": [],
+        "SectionList[1583]": [],
+        "SectionList[1584]": [],
+        "SectionList[1585]": [],
+        "SectionList[1586]": [],
+        "SectionList[1587]": [],
+        "SectionList[1588]": [],
+        "SectionList[1589]": [],
+        "SectionList[158]": [],
+        "SectionList[1590]": [],
+        "SectionList[1591]": [],
+        "SectionList[1592]": [],
+        "SectionList[1593]": [],
+        "SectionList[1594]": [],
+        "SectionList[1595]": [],
+        "SectionList[1596]": [],
+        "SectionList[1597]": [],
+        "SectionList[1598]": [],
+        "SectionList[1599]": [],
+        "SectionList[159]": [],
+        "SectionList[15]": [],
+        "SectionList[1600]": [],
+        "SectionList[1601]": [],
+        "SectionList[1602]": [],
+        "SectionList[1603]": [],
+        "SectionList[1604]": [],
+        "SectionList[1605]": [],
+        "SectionList[1606]": [],
+        "SectionList[1607]": [],
+        "SectionList[1608]": [],
+        "SectionList[1609]": [],
+        "SectionList[160]": [],
+        "SectionList[1610]": [],
+        "SectionList[1611]": [],
+        "SectionList[1612]": [],
+        "SectionList[1613]": [],
+        "SectionList[1614]": [],
+        "SectionList[1615]": [],
+        "SectionList[1616]": [],
+        "SectionList[1617]": [],
+        "SectionList[1618]": [],
+        "SectionList[1619]": [],
+        "SectionList[161]": [],
+        "SectionList[1620]": [],
+        "SectionList[1621]": [],
+        "SectionList[1622]": [],
+        "SectionList[1623]": [],
+        "SectionList[1624]": [],
+        "SectionList[1625]": [],
+        "SectionList[1626]": [],
+        "SectionList[1627]": [],
+        "SectionList[1628]": [],
+        "SectionList[1629]": [],
+        "SectionList[162]": [],
+        "SectionList[1630]": [],
+        "SectionList[1631]": [],
+        "SectionList[1632]": [],
+        "SectionList[1633]": [],
+        "SectionList[1634]": [],
+        "SectionList[1635]": [],
+        "SectionList[1636]": [],
+        "SectionList[1637]": [],
+        "SectionList[1638]": [],
+        "SectionList[1639]": [],
+        "SectionList[163]": [],
+        "SectionList[1640]": [],
+        "SectionList[1641]": [],
+        "SectionList[1642]": [],
+        "SectionList[1643]": [],
+        "SectionList[1644]": [],
+        "SectionList[1645]": [],
+        "SectionList[1646]": [],
+        "SectionList[1647]": [],
+        "SectionList[1648]": [],
+        "SectionList[1649]": [],
+        "SectionList[164]": [],
+        "SectionList[1650]": [],
+        "SectionList[1651]": [],
+        "SectionList[1652]": [],
+        "SectionList[1653]": [],
+        "SectionList[1654]": [],
+        "SectionList[1655]": [],
+        "SectionList[1656]": [],
+        "SectionList[1657]": [],
+        "SectionList[1658]": [],
+        "SectionList[1659]": [],
+        "SectionList[165]": [],
+        "SectionList[1660]": [],
+        "SectionList[1661]": [],
+        "SectionList[1662]": [],
+        "SectionList[1663]": [],
+        "SectionList[1664]": [],
+        "SectionList[1665]": [],
+        "SectionList[1666]": [],
+        "SectionList[1667]": [],
+        "SectionList[1668]": [],
+        "SectionList[1669]": [],
+        "SectionList[166]": [],
+        "SectionList[1670]": [],
+        "SectionList[1671]": [],
+        "SectionList[1672]": [],
+        "SectionList[1673]": [],
+        "SectionList[1674]": [],
+        "SectionList[1675]": [],
+        "SectionList[1676]": [],
+        "SectionList[1677]": [],
+        "SectionList[1678]": [],
+        "SectionList[1679]": [],
+        "SectionList[167]": [],
+        "SectionList[1680]": [],
+        "SectionList[1681]": [],
+        "SectionList[1682]": [],
+        "SectionList[1683]": [],
+        "SectionList[1684]": [],
+        "SectionList[1685]": [],
+        "SectionList[1686]": [],
+        "SectionList[1687]": [],
+        "SectionList[1688]": [],
+        "SectionList[1689]": [],
+        "SectionList[168]": [],
+        "SectionList[1690]": [],
+        "SectionList[1691]": [],
+        "SectionList[1692]": [],
+        "SectionList[1693]": [],
+        "SectionList[1694]": [],
+        "SectionList[1695]": [],
+        "SectionList[1696]": [],
+        "SectionList[1697]": [],
+        "SectionList[1698]": [],
+        "SectionList[1699]": [],
+        "SectionList[169]": [],
+        "SectionList[16]": [],
+        "SectionList[1700]": [],
+        "SectionList[1701]": [],
+        "SectionList[1702]": [],
+        "SectionList[1703]": [],
+        "SectionList[1704]": [],
+        "SectionList[1705]": [],
+        "SectionList[1706]": [],
+        "SectionList[1707]": [],
+        "SectionList[1708]": [],
+        "SectionList[1709]": [],
+        "SectionList[170]": [],
+        "SectionList[1710]": [],
+        "SectionList[1711]": [],
+        "SectionList[1712]": [],
+        "SectionList[1713]": [],
+        "SectionList[1714]": [],
+        "SectionList[1715]": [],
+        "SectionList[1716]": [],
+        "SectionList[1717]": [],
+        "SectionList[1718]": [],
+        "SectionList[1719]": [],
+        "SectionList[171]": [],
+        "SectionList[1720]": [],
+        "SectionList[1721]": [],
+        "SectionList[1722]": [],
+        "SectionList[1723]": [],
+        "SectionList[1724]": [],
+        "SectionList[1725]": [],
+        "SectionList[1726]": [],
+        "SectionList[1727]": [],
+        "SectionList[1728]": [],
+        "SectionList[1729]": [],
+        "SectionList[172]": [],
+        "SectionList[1730]": [],
+        "SectionList[1731]": [],
+        "SectionList[1732]": [],
+        "SectionList[1733]": [],
+        "SectionList[1734]": [],
+        "SectionList[1735]": [],
+        "SectionList[1736]": [],
+        "SectionList[1737]": [],
+        "SectionList[1738]": [],
+        "SectionList[1739]": [],
+        "SectionList[173]": [],
+        "SectionList[1740]": [],
+        "SectionList[1741]": [],
+        "SectionList[1742]": [],
+        "SectionList[1743]": [],
+        "SectionList[1744]": [],
+        "SectionList[1745]": [],
+        "SectionList[1746]": [],
+        "SectionList[1747]": [],
+        "SectionList[1748]": [],
+        "SectionList[1749]": [],
+        "SectionList[174]": [],
+        "SectionList[1750]": [],
+        "SectionList[1751]": [],
+        "SectionList[1752]": [],
+        "SectionList[1753]": [],
+        "SectionList[1754]": [],
+        "SectionList[1755]": [],
+        "SectionList[1756]": [],
+        "SectionList[1757]": [],
+        "SectionList[1758]": [],
+        "SectionList[1759]": [],
+        "SectionList[175]": [],
+        "SectionList[1760]": [],
+        "SectionList[1761]": [],
+        "SectionList[1762]": [],
+        "SectionList[1763]": [],
+        "SectionList[1764]": [],
+        "SectionList[1765]": [],
+        "SectionList[1766]": [],
+        "SectionList[1767]": [],
+        "SectionList[1768]": [],
+        "SectionList[1769]": [],
+        "SectionList[176]": [],
+        "SectionList[1770]": [],
+        "SectionList[1771]": [],
+        "SectionList[1772]": [],
+        "SectionList[1773]": [],
+        "SectionList[1774]": [],
+        "SectionList[1775]": [],
+        "SectionList[1776]": [],
+        "SectionList[1777]": [],
+        "SectionList[1778]": [],
+        "SectionList[1779]": [],
+        "SectionList[177]": [],
+        "SectionList[1780]": [],
+        "SectionList[1781]": [],
+        "SectionList[1782]": [],
+        "SectionList[1783]": [],
+        "SectionList[1784]": [],
+        "SectionList[1785]": [],
+        "SectionList[1786]": [],
+        "SectionList[1787]": [],
+        "SectionList[1788]": [],
+        "SectionList[1789]": [],
+        "SectionList[178]": [],
+        "SectionList[1790]": [],
+        "SectionList[1791]": [],
+        "SectionList[1792]": [],
+        "SectionList[1793]": [],
+        "SectionList[1794]": [],
+        "SectionList[1795]": [],
+        "SectionList[1796]": [],
+        "SectionList[1797]": [],
+        "SectionList[1798]": [],
+        "SectionList[1799]": [],
+        "SectionList[179]": [],
+        "SectionList[17]": [],
+        "SectionList[1800]": [],
+        "SectionList[1801]": [],
+        "SectionList[1802]": [],
+        "SectionList[1803]": [],
+        "SectionList[1804]": [],
+        "SectionList[1805]": [],
+        "SectionList[1806]": [],
+        "SectionList[1807]": [],
+        "SectionList[1808]": [],
+        "SectionList[1809]": [],
+        "SectionList[180]": [],
+        "SectionList[1810]": [],
+        "SectionList[1811]": [],
+        "SectionList[1812]": [],
+        "SectionList[1813]": [],
+        "SectionList[1814]": [],
+        "SectionList[1815]": [],
+        "SectionList[1816]": [],
+        "SectionList[1817]": [],
+        "SectionList[1818]": [],
+        "SectionList[1819]": [],
+        "SectionList[181]": [],
+        "SectionList[1820]": [],
+        "SectionList[1821]": [],
+        "SectionList[1822]": [],
+        "SectionList[1823]": [],
+        "SectionList[1824]": [],
+        "SectionList[1825]": [],
+        "SectionList[1826]": [],
+        "SectionList[1827]": [],
+        "SectionList[1828]": [],
+        "SectionList[1829]": [],
+        "SectionList[182]": [],
+        "SectionList[1830]": [],
+        "SectionList[1831]": [],
+        "SectionList[1832]": [],
+        "SectionList[1833]": [],
+        "SectionList[1834]": [],
+        "SectionList[1835]": [],
+        "SectionList[1836]": [],
+        "SectionList[1837]": [],
+        "SectionList[1838]": [],
+        "SectionList[1839]": [],
+        "SectionList[183]": [],
+        "SectionList[1840]": [],
+        "SectionList[1841]": [],
+        "SectionList[1842]": [],
+        "SectionList[1843]": [],
+        "SectionList[1844]": [],
+        "SectionList[1845]": [],
+        "SectionList[1846]": [],
+        "SectionList[1847]": [],
+        "SectionList[1848]": [],
+        "SectionList[1849]": [],
+        "SectionList[184]": [],
+        "SectionList[1850]": [],
+        "SectionList[1851]": [],
+        "SectionList[1852]": [],
+        "SectionList[1853]": [],
+        "SectionList[1854]": [],
+        "SectionList[1855]": [],
+        "SectionList[1856]": [],
+        "SectionList[1857]": [],
+        "SectionList[1858]": [],
+        "SectionList[1859]": [],
+        "SectionList[185]": [],
+        "SectionList[1860]": [],
+        "SectionList[1861]": [],
+        "SectionList[1862]": [],
+        "SectionList[1863]": [],
+        "SectionList[1864]": [],
+        "SectionList[1865]": [],
+        "SectionList[1866]": [],
+        "SectionList[1867]": [],
+        "SectionList[1868]": [],
+        "SectionList[1869]": [],
+        "SectionList[186]": [],
+        "SectionList[1870]": [],
+        "SectionList[1871]": [],
+        "SectionList[1872]": [],
+        "SectionList[1873]": [],
+        "SectionList[1874]": [],
+        "SectionList[1875]": [],
+        "SectionList[1876]": [],
+        "SectionList[1877]": [],
+        "SectionList[1878]": [],
+        "SectionList[1879]": [],
+        "SectionList[187]": [],
+        "SectionList[1880]": [],
+        "SectionList[1881]": [],
+        "SectionList[1882]": [],
+        "SectionList[1883]": [],
+        "SectionList[1884]": [],
+        "SectionList[1885]": [],
+        "SectionList[1886]": [],
+        "SectionList[1887]": [],
+        "SectionList[1888]": [],
+        "SectionList[1889]": [],
+        "SectionList[188]": [],
+        "SectionList[1890]": [],
+        "SectionList[1891]": [],
+        "SectionList[1892]": [],
+        "SectionList[1893]": [],
+        "SectionList[1894]": [],
+        "SectionList[1895]": [],
+        "SectionList[1896]": [],
+        "SectionList[1897]": [],
+        "SectionList[1898]": [],
+        "SectionList[1899]": [],
+        "SectionList[189]": [],
+        "SectionList[18]": [],
+        "SectionList[1900]": [],
+        "SectionList[1901]": [],
+        "SectionList[1902]": [],
+        "SectionList[1903]": [],
+        "SectionList[1904]": [],
+        "SectionList[1905]": [],
+        "SectionList[1906]": [],
+        "SectionList[1907]": [],
+        "SectionList[1908]": [],
+        "SectionList[1909]": [],
+        "SectionList[190]": [],
+        "SectionList[1910]": [],
+        "SectionList[1911]": [],
+        "SectionList[1912]": [],
+        "SectionList[1913]": [],
+        "SectionList[1914]": [],
+        "SectionList[1915]": [],
+        "SectionList[1916]": [],
+        "SectionList[1917]": [],
+        "SectionList[1918]": [],
+        "SectionList[1919]": [],
+        "SectionList[191]": [],
+        "SectionList[1920]": [],
+        "SectionList[1921]": [],
+        "SectionList[1922]": [],
+        "SectionList[1923]": [],
+        "SectionList[1924]": [],
+        "SectionList[1925]": [],
+        "SectionList[1926]": [],
+        "SectionList[1927]": [],
+        "SectionList[1928]": [],
+        "SectionList[1929]": [],
+        "SectionList[192]": [],
+        "SectionList[1930]": [],
+        "SectionList[1931]": [],
+        "SectionList[1932]": [],
+        "SectionList[1933]": [],
+        "SectionList[1934]": [],
+        "SectionList[1935]": [],
+        "SectionList[1936]": [],
+        "SectionList[1937]": [],
+        "SectionList[1938]": [],
+        "SectionList[1939]": [],
+        "SectionList[193]": [],
+        "SectionList[1940]": [],
+        "SectionList[1941]": [],
+        "SectionList[1942]": [],
+        "SectionList[1943]": [],
+        "SectionList[1944]": [],
+        "SectionList[1945]": [],
+        "SectionList[1946]": [],
+        "SectionList[1947]": [],
+        "SectionList[1948]": [],
+        "SectionList[1949]": [],
+        "SectionList[194]": [],
+        "SectionList[1950]": [],
+        "SectionList[1951]": [],
+        "SectionList[1952]": [],
+        "SectionList[1953]": [],
+        "SectionList[1954]": [],
+        "SectionList[1955]": [],
+        "SectionList[1956]": [],
+        "SectionList[1957]": [],
+        "SectionList[1958]": [],
+        "SectionList[1959]": [],
+        "SectionList[195]": [],
+        "SectionList[1960]": [],
+        "SectionList[1961]": [],
+        "SectionList[1962]": [],
+        "SectionList[1963]": [],
+        "SectionList[1964]": [],
+        "SectionList[1965]": [],
+        "SectionList[1966]": [],
+        "SectionList[1967]": [],
+        "SectionList[1968]": [],
+        "SectionList[1969]": [],
+        "SectionList[196]": [],
+        "SectionList[1970]": [],
+        "SectionList[1971]": [],
+        "SectionList[1972]": [],
+        "SectionList[1973]": [],
+        "SectionList[1974]": [],
+        "SectionList[1975]": [],
+        "SectionList[1976]": [],
+        "SectionList[1977]": [],
+        "SectionList[1978]": [],
+        "SectionList[1979]": [],
+        "SectionList[197]": [],
+        "SectionList[1980]": [],
+        "SectionList[1981]": [],
+        "SectionList[1982]": [],
+        "SectionList[1983]": [],
+        "SectionList[1984]": [],
+        "SectionList[1985]": [],
+        "SectionList[1986]": [],
+        "SectionList[1987]": [],
+        "SectionList[1988]": [],
+        "SectionList[1989]": [],
+        "SectionList[198]": [],
+        "SectionList[1990]": [],
+        "SectionList[1991]": [],
+        "SectionList[1992]": [],
+        "SectionList[1993]": [],
+        "SectionList[1994]": [],
+        "SectionList[1995]": [],
+        "SectionList[1996]": [],
+        "SectionList[1997]": [],
+        "SectionList[1998]": [],
+        "SectionList[1999]": [],
+        "SectionList[199]": [],
+        "SectionList[19]": [],
+        "SectionList[1]": [],
+        "SectionList[2000]": [],
+        "SectionList[2001]": [],
+        "SectionList[2002]": [],
+        "SectionList[2003]": [],
+        "SectionList[2004]": [],
+        "SectionList[2005]": [],
+        "SectionList[2006]": [],
+        "SectionList[2007]": [],
+        "SectionList[2008]": [],
+        "SectionList[2009]": [],
+        "SectionList[200]": [],
+        "SectionList[2010]": [],
+        "SectionList[2011]": [],
+        "SectionList[2012]": [],
+        "SectionList[2013]": [],
+        "SectionList[2014]": [],
+        "SectionList[2015]": [],
+        "SectionList[2016]": [],
+        "SectionList[2017]": [],
+        "SectionList[2018]": [],
+        "SectionList[2019]": [],
+        "SectionList[201]": [],
+        "SectionList[2020]": [],
+        "SectionList[2021]": [],
+        "SectionList[2022]": [],
+        "SectionList[2023]": [],
+        "SectionList[2024]": [],
+        "SectionList[2025]": [],
+        "SectionList[2026]": [],
+        "SectionList[2027]": [],
+        "SectionList[2028]": [],
+        "SectionList[2029]": [],
+        "SectionList[202]": [],
+        "SectionList[2030]": [],
+        "SectionList[2031]": [],
+        "SectionList[2032]": [],
+        "SectionList[2033]": [],
+        "SectionList[2034]": [],
+        "SectionList[2035]": [],
+        "SectionList[2036]": [],
+        "SectionList[2037]": [],
+        "SectionList[2038]": [],
+        "SectionList[2039]": [],
+        "SectionList[203]": [],
+        "SectionList[2040]": [],
+        "SectionList[2041]": [],
+        "SectionList[2042]": [],
+        "SectionList[2043]": [],
+        "SectionList[2044]": [],
+        "SectionList[2045]": [],
+        "SectionList[2046]": [],
+        "SectionList[2047]": [],
+        "SectionList[2048]": [],
+        "SectionList[2049]": [],
+        "SectionList[204]": [],
+        "SectionList[2050]": [],
+        "SectionList[2051]": [],
+        "SectionList[2052]": [],
+        "SectionList[2053]": [],
+        "SectionList[2054]": [],
+        "SectionList[2055]": [],
+        "SectionList[2056]": [],
+        "SectionList[2057]": [],
+        "SectionList[2058]": [],
+        "SectionList[2059]": [],
+        "SectionList[205]": [],
+        "SectionList[2060]": [],
+        "SectionList[2061]": [],
+        "SectionList[2062]": [],
+        "SectionList[2063]": [],
+        "SectionList[2064]": [],
+        "SectionList[2065]": [],
+        "SectionList[2066]": [],
+        "SectionList[2067]": [],
+        "SectionList[2068]": [],
+        "SectionList[2069]": [],
+        "SectionList[206]": [],
+        "SectionList[2070]": [],
+        "SectionList[2071]": [],
+        "SectionList[2072]": [],
+        "SectionList[2073]": [],
+        "SectionList[2074]": [],
+        "SectionList[2075]": [],
+        "SectionList[2076]": [],
+        "SectionList[2077]": [],
+        "SectionList[2078]": [],
+        "SectionList[2079]": [],
+        "SectionList[207]": [],
+        "SectionList[2080]": [],
+        "SectionList[2081]": [],
+        "SectionList[2082]": [],
+        "SectionList[2083]": [],
+        "SectionList[2084]": [],
+        "SectionList[2085]": [],
+        "SectionList[2086]": [],
+        "SectionList[2087]": [],
+        "SectionList[2088]": [],
+        "SectionList[2089]": [],
+        "SectionList[208]": [],
+        "SectionList[2090]": [],
+        "SectionList[2091]": [],
+        "SectionList[2092]": [],
+        "SectionList[2093]": [],
+        "SectionList[2094]": [],
+        "SectionList[2095]": [],
+        "SectionList[2096]": [],
+        "SectionList[2097]": [],
+        "SectionList[2098]": [],
+        "SectionList[2099]": [],
+        "SectionList[209]": [],
+        "SectionList[20]": [],
+        "SectionList[2100]": [],
+        "SectionList[2101]": [],
+        "SectionList[2102]": [],
+        "SectionList[2103]": [],
+        "SectionList[2104]": [],
+        "SectionList[2105]": [],
+        "SectionList[2106]": [],
+        "SectionList[2107]": [],
+        "SectionList[2108]": [],
+        "SectionList[2109]": [],
+        "SectionList[210]": [],
+        "SectionList[2110]": [],
+        "SectionList[2111]": [],
+        "SectionList[2112]": [],
+        "SectionList[2113]": [],
+        "SectionList[2114]": [],
+        "SectionList[2115]": [],
+        "SectionList[2116]": [],
+        "SectionList[2117]": [],
+        "SectionList[2118]": [],
+        "SectionList[2119]": [],
+        "SectionList[211]": [],
+        "SectionList[2120]": [],
+        "SectionList[2121]": [],
+        "SectionList[2122]": [],
+        "SectionList[2123]": [],
+        "SectionList[2124]": [],
+        "SectionList[2125]": [],
+        "SectionList[2126]": [],
+        "SectionList[2127]": [],
+        "SectionList[2128]": [],
+        "SectionList[2129]": [],
+        "SectionList[212]": [],
+        "SectionList[2130]": [],
+        "SectionList[2131]": [],
+        "SectionList[2132]": [],
+        "SectionList[2133]": [],
+        "SectionList[2134]": [],
+        "SectionList[2135]": [],
+        "SectionList[2136]": [],
+        "SectionList[2137]": [],
+        "SectionList[2138]": [],
+        "SectionList[2139]": [],
+        "SectionList[213]": [],
+        "SectionList[2140]": [],
+        "SectionList[2141]": [],
+        "SectionList[2142]": [],
+        "SectionList[2143]": [],
+        "SectionList[2144]": [],
+        "SectionList[2145]": [],
+        "SectionList[2146]": [],
+        "SectionList[2147]": [],
+        "SectionList[2148]": [],
+        "SectionList[2149]": [],
+        "SectionList[214]": [],
+        "SectionList[2150]": [],
+        "SectionList[2151]": [],
+        "SectionList[2152]": [],
+        "SectionList[2153]": [],
+        "SectionList[2154]": [],
+        "SectionList[2155]": [],
+        "SectionList[2156]": [],
+        "SectionList[2157]": [],
+        "SectionList[2158]": [],
+        "SectionList[2159]": [],
+        "SectionList[215]": [],
+        "SectionList[2160]": [],
+        "SectionList[2161]": [],
+        "SectionList[2162]": [],
+        "SectionList[2163]": [],
+        "SectionList[2164]": [],
+        "SectionList[2165]": [],
+        "SectionList[2166]": [],
+        "SectionList[2167]": [],
+        "SectionList[2168]": [],
+        "SectionList[2169]": [],
+        "SectionList[216]": [],
+        "SectionList[2170]": [],
+        "SectionList[2171]": [],
+        "SectionList[2172]": [],
+        "SectionList[2173]": [],
+        "SectionList[2174]": [],
+        "SectionList[2175]": [],
+        "SectionList[2176]": [],
+        "SectionList[2177]": [],
+        "SectionList[2178]": [],
+        "SectionList[2179]": [],
+        "SectionList[217]": [],
+        "SectionList[2180]": [],
+        "SectionList[2181]": [],
+        "SectionList[2182]": [],
+        "SectionList[2183]": [],
+        "SectionList[2184]": [],
+        "SectionList[2185]": [],
+        "SectionList[2186]": [],
+        "SectionList[2187]": [],
+        "SectionList[2188]": [],
+        "SectionList[2189]": [],
+        "SectionList[218]": [],
+        "SectionList[2190]": [],
+        "SectionList[2191]": [],
+        "SectionList[2192]": [],
+        "SectionList[2193]": [],
+        "SectionList[2194]": [],
+        "SectionList[2195]": [],
+        "SectionList[2196]": [],
+        "SectionList[2197]": [],
+        "SectionList[2198]": [],
+        "SectionList[2199]": [],
+        "SectionList[219]": [],
+        "SectionList[21]": [],
+        "SectionList[2200]": [],
+        "SectionList[2201]": [],
+        "SectionList[2202]": [],
+        "SectionList[2203]": [],
+        "SectionList[2204]": [],
+        "SectionList[2205]": [],
+        "SectionList[2206]": [],
+        "SectionList[2207]": [],
+        "SectionList[2208]": [],
+        "SectionList[2209]": [],
+        "SectionList[220]": [],
+        "SectionList[2210]": [],
+        "SectionList[2211]": [],
+        "SectionList[2212]": [],
+        "SectionList[2213]": [],
+        "SectionList[2214]": [],
+        "SectionList[2215]": [],
+        "SectionList[2216]": [],
+        "SectionList[2217]": [],
+        "SectionList[2218]": [],
+        "SectionList[2219]": [],
+        "SectionList[221]": [],
+        "SectionList[2220]": [],
+        "SectionList[2221]": [],
+        "SectionList[2222]": [],
+        "SectionList[2223]": [],
+        "SectionList[2224]": [],
+        "SectionList[2225]": [],
+        "SectionList[2226]": [],
+        "SectionList[2227]": [],
+        "SectionList[2228]": [],
+        "SectionList[2229]": [],
+        "SectionList[222]": [],
+        "SectionList[2230]": [],
+        "SectionList[2231]": [],
+        "SectionList[2232]": [],
+        "SectionList[2233]": [],
+        "SectionList[2234]": [],
+        "SectionList[2235]": [],
+        "SectionList[2236]": [],
+        "SectionList[2237]": [],
+        "SectionList[2238]": [],
+        "SectionList[2239]": [],
+        "SectionList[223]": [],
+        "SectionList[2240]": [],
+        "SectionList[2241]": [],
+        "SectionList[2242]": [],
+        "SectionList[2243]": [],
+        "SectionList[2244]": [],
+        "SectionList[2245]": [],
+        "SectionList[2246]": [],
+        "SectionList[2247]": [],
+        "SectionList[2248]": [],
+        "SectionList[2249]": [],
+        "SectionList[224]": [],
+        "SectionList[2250]": [],
+        "SectionList[2251]": [],
+        "SectionList[2252]": [],
+        "SectionList[2253]": [],
+        "SectionList[2254]": [],
+        "SectionList[2255]": [],
+        "SectionList[2256]": [],
+        "SectionList[2257]": [],
+        "SectionList[2258]": [],
+        "SectionList[2259]": [],
+        "SectionList[225]": [],
+        "SectionList[2260]": [],
+        "SectionList[2261]": [],
+        "SectionList[2262]": [],
+        "SectionList[2263]": [],
+        "SectionList[2264]": [],
+        "SectionList[2265]": [],
+        "SectionList[2266]": [],
+        "SectionList[2267]": [],
+        "SectionList[2268]": [],
+        "SectionList[2269]": [],
+        "SectionList[226]": [],
+        "SectionList[2270]": [],
+        "SectionList[2271]": [],
+        "SectionList[2272]": [],
+        "SectionList[2273]": [],
+        "SectionList[2274]": [],
+        "SectionList[2275]": [],
+        "SectionList[2276]": [],
+        "SectionList[2277]": [],
+        "SectionList[2278]": [],
+        "SectionList[2279]": [],
+        "SectionList[227]": [],
+        "SectionList[2280]": [],
+        "SectionList[2281]": [],
+        "SectionList[2282]": [],
+        "SectionList[2283]": [],
+        "SectionList[2284]": [],
+        "SectionList[2285]": [],
+        "SectionList[2286]": [],
+        "SectionList[2287]": [],
+        "SectionList[2288]": [],
+        "SectionList[2289]": [],
+        "SectionList[228]": [],
+        "SectionList[2290]": [],
+        "SectionList[2291]": [],
+        "SectionList[2292]": [],
+        "SectionList[2293]": [],
+        "SectionList[2294]": [],
+        "SectionList[2295]": [],
+        "SectionList[2296]": [],
+        "SectionList[2297]": [],
+        "SectionList[2298]": [],
+        "SectionList[2299]": [],
+        "SectionList[229]": [],
+        "SectionList[22]": [],
+        "SectionList[2300]": [],
+        "SectionList[2301]": [],
+        "SectionList[2302]": [],
+        "SectionList[2303]": [],
+        "SectionList[2304]": [],
+        "SectionList[2305]": [],
+        "SectionList[2306]": [],
+        "SectionList[2307]": [],
+        "SectionList[2308]": [],
+        "SectionList[2309]": [],
+        "SectionList[230]": [],
+        "SectionList[2310]": [],
+        "SectionList[2311]": [],
+        "SectionList[2312]": [],
+        "SectionList[2313]": [],
+        "SectionList[2314]": [],
+        "SectionList[2315]": [],
+        "SectionList[2316]": [],
+        "SectionList[2317]": [],
+        "SectionList[2318]": [],
+        "SectionList[2319]": [],
+        "SectionList[231]": [],
+        "SectionList[2320]": [],
+        "SectionList[2321]": [],
+        "SectionList[2322]": [],
+        "SectionList[2323]": [],
+        "SectionList[2324]": [],
+        "SectionList[2325]": [],
+        "SectionList[2326]": [],
+        "SectionList[2327]": [],
+        "SectionList[2328]": [],
+        "SectionList[2329]": [],
+        "SectionList[232]": [],
+        "SectionList[2330]": [],
+        "SectionList[2331]": [],
+        "SectionList[2332]": [],
+        "SectionList[2333]": [],
+        "SectionList[2334]": [],
+        "SectionList[2335]": [],
+        "SectionList[2336]": [],
+        "SectionList[2337]": [],
+        "SectionList[2338]": [],
+        "SectionList[2339]": [],
+        "SectionList[233]": [],
+        "SectionList[2340]": [],
+        "SectionList[2341]": [],
+        "SectionList[2342]": [],
+        "SectionList[2343]": [],
+        "SectionList[2344]": [],
+        "SectionList[2345]": [],
+        "SectionList[2346]": [],
+        "SectionList[2347]": [],
+        "SectionList[2348]": [],
+        "SectionList[2349]": [],
+        "SectionList[234]": [],
+        "SectionList[2350]": [],
+        "SectionList[2351]": [],
+        "SectionList[2352]": [],
+        "SectionList[2353]": [],
+        "SectionList[2354]": [],
+        "SectionList[2355]": [],
+        "SectionList[2356]": [],
+        "SectionList[2357]": [],
+        "SectionList[2358]": [],
+        "SectionList[2359]": [],
+        "SectionList[235]": [],
+        "SectionList[2360]": [],
+        "SectionList[2361]": [],
+        "SectionList[2362]": [],
+        "SectionList[2363]": [],
+        "SectionList[2364]": [],
+        "SectionList[2365]": [],
+        "SectionList[2366]": [],
+        "SectionList[2367]": [],
+        "SectionList[2368]": [],
+        "SectionList[2369]": [],
+        "SectionList[236]": [],
+        "SectionList[2370]": [],
+        "SectionList[2371]": [],
+        "SectionList[2372]": [],
+        "SectionList[2373]": [],
+        "SectionList[2374]": [],
+        "SectionList[2375]": [],
+        "SectionList[2376]": [],
+        "SectionList[2377]": [],
+        "SectionList[2378]": [],
+        "SectionList[2379]": [],
+        "SectionList[237]": [],
+        "SectionList[2380]": [],
+        "SectionList[2381]": [],
+        "SectionList[2382]": [],
+        "SectionList[2383]": [],
+        "SectionList[2384]": [],
+        "SectionList[2385]": [],
+        "SectionList[2386]": [],
+        "SectionList[2387]": [],
+        "SectionList[2388]": [],
+        "SectionList[2389]": [],
+        "SectionList[238]": [],
+        "SectionList[2390]": [],
+        "SectionList[2391]": [],
+        "SectionList[2392]": [],
+        "SectionList[2393]": [],
+        "SectionList[2394]": [],
+        "SectionList[2395]": [],
+        "SectionList[2396]": [],
+        "SectionList[2397]": [],
+        "SectionList[2398]": [],
+        "SectionList[2399]": [],
+        "SectionList[239]": [],
+        "SectionList[23]": [],
+        "SectionList[2400]": [],
+        "SectionList[2401]": [],
+        "SectionList[2402]": [],
+        "SectionList[2403]": [],
+        "SectionList[2404]": [],
+        "SectionList[2405]": [],
+        "SectionList[2406]": [],
+        "SectionList[2407]": [],
+        "SectionList[2408]": [],
+        "SectionList[2409]": [],
+        "SectionList[240]": [],
+        "SectionList[2410]": [],
+        "SectionList[2411]": [],
+        "SectionList[2412]": [],
+        "SectionList[2413]": [],
+        "SectionList[2414]": [],
+        "SectionList[2415]": [],
+        "SectionList[2416]": [],
+        "SectionList[2417]": [],
+        "SectionList[2418]": [],
+        "SectionList[2419]": [],
+        "SectionList[241]": [],
+        "SectionList[2420]": [],
+        "SectionList[2421]": [],
+        "SectionList[2422]": [],
+        "SectionList[2423]": [],
+        "SectionList[2424]": [],
+        "SectionList[2425]": [],
+        "SectionList[2426]": [],
+        "SectionList[2427]": [],
+        "SectionList[2428]": [],
+        "SectionList[2429]": [],
+        "SectionList[242]": [],
+        "SectionList[2430]": [],
+        "SectionList[2431]": [],
+        "SectionList[2432]": [],
+        "SectionList[2433]": [],
+        "SectionList[2434]": [],
+        "SectionList[2435]": [],
+        "SectionList[2436]": [],
+        "SectionList[2437]": [],
+        "SectionList[2438]": [],
+        "SectionList[2439]": [],
+        "SectionList[243]": [],
+        "SectionList[2440]": [],
+        "SectionList[2441]": [],
+        "SectionList[2442]": [],
+        "SectionList[2443]": [],
+        "SectionList[2444]": [],
+        "SectionList[2445]": [],
+        "SectionList[2446]": [],
+        "SectionList[2447]": [],
+        "SectionList[2448]": [],
+        "SectionList[2449]": [],
+        "SectionList[244]": [],
+        "SectionList[2450]": [],
+        "SectionList[2451]": [],
+        "SectionList[2452]": [],
+        "SectionList[2453]": [],
+        "SectionList[2454]": [],
+        "SectionList[2455]": [],
+        "SectionList[2456]": [],
+        "SectionList[2457]": [],
+        "SectionList[2458]": [],
+        "SectionList[2459]": [],
+        "SectionList[245]": [],
+        "SectionList[2460]": [],
+        "SectionList[2461]": [],
+        "SectionList[2462]": [],
+        "SectionList[2463]": [],
+        "SectionList[2464]": [],
+        "SectionList[2465]": [],
+        "SectionList[2466]": [],
+        "SectionList[2467]": [],
+        "SectionList[2468]": [],
+        "SectionList[2469]": [],
+        "SectionList[246]": [],
+        "SectionList[2470]": [],
+        "SectionList[2471]": [],
+        "SectionList[2472]": [],
+        "SectionList[2473]": [],
+        "SectionList[2474]": [],
+        "SectionList[2475]": [],
+        "SectionList[2476]": [],
+        "SectionList[2477]": [],
+        "SectionList[2478]": [],
+        "SectionList[2479]": [],
+        "SectionList[247]": [],
+        "SectionList[2480]": [],
+        "SectionList[2481]": [],
+        "SectionList[2482]": [],
+        "SectionList[2483]": [],
+        "SectionList[2484]": [],
+        "SectionList[2485]": [],
+        "SectionList[2486]": [],
+        "SectionList[2487]": [],
+        "SectionList[2488]": [],
+        "SectionList[2489]": [],
+        "SectionList[248]": [],
+        "SectionList[2490]": [],
+        "SectionList[2491]": [],
+        "SectionList[2492]": [],
+        "SectionList[2493]": [],
+        "SectionList[2494]": [],
+        "SectionList[2495]": [],
+        "SectionList[2496]": [],
+        "SectionList[2497]": [],
+        "SectionList[249]": [],
+        "SectionList[24]": [],
+        "SectionList[250]": [],
+        "SectionList[251]": [],
+        "SectionList[252]": [],
+        "SectionList[253]": [],
+        "SectionList[254]": [],
+        "SectionList[255]": [],
+        "SectionList[256]": [],
+        "SectionList[257]": [],
+        "SectionList[258]": [],
+        "SectionList[259]": [],
+        "SectionList[25]": [],
+        "SectionList[260]": [],
+        "SectionList[261]": [],
+        "SectionList[262]": [],
+        "SectionList[263]": [],
+        "SectionList[264]": [],
+        "SectionList[265]": [],
+        "SectionList[266]": [],
+        "SectionList[267]": [],
+        "SectionList[268]": [],
+        "SectionList[269]": [],
+        "SectionList[26]": [],
+        "SectionList[270]": [],
+        "SectionList[271]": [],
+        "SectionList[272]": [],
+        "SectionList[273]": [],
+        "SectionList[274]": [],
+        "SectionList[275]": [],
+        "SectionList[276]": [],
+        "SectionList[277]": [],
+        "SectionList[278]": [],
+        "SectionList[279]": [],
+        "SectionList[27]": [],
+        "SectionList[280]": [],
+        "SectionList[281]": [],
+        "SectionList[282]": [],
+        "SectionList[283]": [],
+        "SectionList[284]": [],
+        "SectionList[285]": [],
+        "SectionList[286]": [],
+        "SectionList[287]": [],
+        "SectionList[288]": [],
+        "SectionList[289]": [],
+        "SectionList[28]": [],
+        "SectionList[290]": [],
+        "SectionList[291]": [],
+        "SectionList[292]": [],
+        "SectionList[293]": [],
+        "SectionList[294]": [],
+        "SectionList[295]": [],
+        "SectionList[296]": [],
+        "SectionList[297]": [],
+        "SectionList[298]": [],
+        "SectionList[299]": [],
+        "SectionList[29]": [],
+        "SectionList[2]": [],
+        "SectionList[300]": [],
+        "SectionList[301]": [],
+        "SectionList[302]": [],
+        "SectionList[303]": [],
+        "SectionList[304]": [],
+        "SectionList[305]": [],
+        "SectionList[306]": [],
+        "SectionList[307]": [],
+        "SectionList[308]": [],
+        "SectionList[309]": [],
+        "SectionList[30]": [],
+        "SectionList[310]": [],
+        "SectionList[311]": [],
+        "SectionList[312]": [],
+        "SectionList[313]": [],
+        "SectionList[314]": [],
+        "SectionList[315]": [],
+        "SectionList[316]": [],
+        "SectionList[317]": [],
+        "SectionList[318]": [],
+        "SectionList[319]": [],
+        "SectionList[31]": [],
+        "SectionList[320]": [],
+        "SectionList[321]": [],
+        "SectionList[322]": [],
+        "SectionList[323]": [],
+        "SectionList[324]": [],
+        "SectionList[325]": [],
+        "SectionList[326]": [],
+        "SectionList[327]": [],
+        "SectionList[328]": [],
+        "SectionList[329]": [],
+        "SectionList[32]": [],
+        "SectionList[330]": [],
+        "SectionList[331]": [],
+        "SectionList[332]": [],
+        "SectionList[333]": [],
+        "SectionList[334]": [],
+        "SectionList[335]": [],
+        "SectionList[336]": [],
+        "SectionList[337]": [],
+        "SectionList[338]": [],
+        "SectionList[339]": [],
+        "SectionList[33]": [],
+        "SectionList[340]": [],
+        "SectionList[341]": [],
+        "SectionList[342]": [],
+        "SectionList[343]": [],
+        "SectionList[344]": [],
+        "SectionList[345]": [],
+        "SectionList[346]": [],
+        "SectionList[347]": [],
+        "SectionList[348]": [],
+        "SectionList[349]": [],
+        "SectionList[34]": [],
+        "SectionList[350]": [],
+        "SectionList[351]": [],
+        "SectionList[352]": [],
+        "SectionList[353]": [],
+        "SectionList[354]": [],
+        "SectionList[355]": [],
+        "SectionList[356]": [],
+        "SectionList[357]": [],
+        "SectionList[358]": [],
+        "SectionList[359]": [],
+        "SectionList[35]": [],
+        "SectionList[360]": [],
+        "SectionList[361]": [],
+        "SectionList[362]": [],
+        "SectionList[363]": [],
+        "SectionList[364]": [],
+        "SectionList[365]": [],
+        "SectionList[366]": [],
+        "SectionList[367]": [],
+        "SectionList[368]": [],
+        "SectionList[369]": [],
+        "SectionList[36]": [],
+        "SectionList[370]": [],
+        "SectionList[371]": [],
+        "SectionList[372]": [],
+        "SectionList[373]": [],
+        "SectionList[374]": [],
+        "SectionList[375]": [],
+        "SectionList[376]": [],
+        "SectionList[377]": [],
+        "SectionList[378]": [],
+        "SectionList[379]": [],
+        "SectionList[37]": [],
+        "SectionList[380]": [],
+        "SectionList[381]": [],
+        "SectionList[382]": [],
+        "SectionList[383]": [],
+        "SectionList[384]": [],
+        "SectionList[385]": [],
+        "SectionList[386]": [],
+        "SectionList[387]": [],
+        "SectionList[388]": [],
+        "SectionList[389]": [],
+        "SectionList[38]": [],
+        "SectionList[390]": [],
+        "SectionList[391]": [],
+        "SectionList[392]": [],
+        "SectionList[393]": [],
+        "SectionList[394]": [],
+        "SectionList[395]": [],
+        "SectionList[396]": [],
+        "SectionList[397]": [],
+        "SectionList[398]": [],
+        "SectionList[399]": [],
+        "SectionList[39]": [],
+        "SectionList[3]": [],
+        "SectionList[400]": [],
+        "SectionList[401]": [],
+        "SectionList[402]": [],
+        "SectionList[403]": [],
+        "SectionList[404]": [],
+        "SectionList[405]": [],
+        "SectionList[406]": [],
+        "SectionList[407]": [],
+        "SectionList[408]": [],
+        "SectionList[409]": [],
+        "SectionList[40]": [],
+        "SectionList[410]": [],
+        "SectionList[411]": [],
+        "SectionList[412]": [],
+        "SectionList[413]": [],
+        "SectionList[414]": [],
+        "SectionList[415]": [],
+        "SectionList[416]": [],
+        "SectionList[417]": [],
+        "SectionList[418]": [],
+        "SectionList[419]": [],
+        "SectionList[41]": [],
+        "SectionList[420]": [],
+        "SectionList[421]": [],
+        "SectionList[422]": [],
+        "SectionList[423]": [],
+        "SectionList[424]": [],
+        "SectionList[425]": [],
+        "SectionList[426]": [],
+        "SectionList[427]": [],
+        "SectionList[428]": [],
+        "SectionList[429]": [],
+        "SectionList[42]": [],
+        "SectionList[430]": [],
+        "SectionList[431]": [],
+        "SectionList[432]": [],
+        "SectionList[433]": [],
+        "SectionList[434]": [],
+        "SectionList[435]": [],
+        "SectionList[436]": [],
+        "SectionList[437]": [],
+        "SectionList[438]": [],
+        "SectionList[439]": [],
+        "SectionList[43]": [],
+        "SectionList[440]": [],
+        "SectionList[441]": [],
+        "SectionList[442]": [],
+        "SectionList[443]": [],
+        "SectionList[444]": [],
+        "SectionList[445]": [],
+        "SectionList[446]": [],
+        "SectionList[447]": [],
+        "SectionList[448]": [],
+        "SectionList[449]": [],
+        "SectionList[44]": [],
+        "SectionList[450]": [],
+        "SectionList[451]": [],
+        "SectionList[452]": [],
+        "SectionList[453]": [],
+        "SectionList[454]": [],
+        "SectionList[455]": [],
+        "SectionList[456]": [],
+        "SectionList[457]": [],
+        "SectionList[458]": [],
+        "SectionList[459]": [],
+        "SectionList[45]": [],
+        "SectionList[460]": [],
+        "SectionList[461]": [],
+        "SectionList[462]": [],
+        "SectionList[463]": [],
+        "SectionList[464]": [],
+        "SectionList[465]": [],
+        "SectionList[466]": [],
+        "SectionList[467]": [],
+        "SectionList[468]": [],
+        "SectionList[469]": [],
+        "SectionList[46]": [],
+        "SectionList[470]": [],
+        "SectionList[471]": [],
+        "SectionList[472]": [],
+        "SectionList[473]": [],
+        "SectionList[474]": [],
+        "SectionList[475]": [],
+        "SectionList[476]": [],
+        "SectionList[477]": [],
+        "SectionList[478]": [],
+        "SectionList[479]": [],
+        "SectionList[47]": [],
+        "SectionList[480]": [],
+        "SectionList[481]": [],
+        "SectionList[482]": [],
+        "SectionList[483]": [],
+        "SectionList[484]": [],
+        "SectionList[485]": [],
+        "SectionList[486]": [],
+        "SectionList[487]": [],
+        "SectionList[488]": [],
+        "SectionList[489]": [],
+        "SectionList[48]": [],
+        "SectionList[490]": [],
+        "SectionList[491]": [],
+        "SectionList[492]": [],
+        "SectionList[493]": [],
+        "SectionList[494]": [],
+        "SectionList[495]": [],
+        "SectionList[496]": [],
+        "SectionList[497]": [],
+        "SectionList[498]": [],
+        "SectionList[499]": [],
+        "SectionList[49]": [],
+        "SectionList[4]": [],
+        "SectionList[500]": [],
+        "SectionList[501]": [],
+        "SectionList[502]": [],
+        "SectionList[503]": [],
+        "SectionList[504]": [],
+        "SectionList[505]": [],
+        "SectionList[506]": [],
+        "SectionList[507]": [],
+        "SectionList[508]": [],
+        "SectionList[509]": [],
+        "SectionList[50]": [],
+        "SectionList[510]": [],
+        "SectionList[511]": [],
+        "SectionList[512]": [],
+        "SectionList[513]": [],
+        "SectionList[514]": [],
+        "SectionList[515]": [],
+        "SectionList[516]": [],
+        "SectionList[517]": [],
+        "SectionList[518]": [],
+        "SectionList[519]": [],
+        "SectionList[51]": [],
+        "SectionList[520]": [],
+        "SectionList[521]": [],
+        "SectionList[522]": [],
+        "SectionList[523]": [],
+        "SectionList[524]": [],
+        "SectionList[525]": [],
+        "SectionList[526]": [],
+        "SectionList[527]": [],
+        "SectionList[528]": [],
+        "SectionList[529]": [],
+        "SectionList[52]": [],
+        "SectionList[530]": [],
+        "SectionList[531]": [],
+        "SectionList[532]": [],
+        "SectionList[533]": [],
+        "SectionList[534]": [],
+        "SectionList[535]": [],
+        "SectionList[536]": [],
+        "SectionList[537]": [],
+        "SectionList[538]": [],
+        "SectionList[539]": [],
+        "SectionList[53]": [],
+        "SectionList[540]": [],
+        "SectionList[541]": [],
+        "SectionList[542]": [],
+        "SectionList[543]": [],
+        "SectionList[544]": [],
+        "SectionList[545]": [],
+        "SectionList[546]": [],
+        "SectionList[547]": [],
+        "SectionList[548]": [],
+        "SectionList[549]": [],
+        "SectionList[54]": [],
+        "SectionList[550]": [],
+        "SectionList[551]": [],
+        "SectionList[552]": [],
+        "SectionList[553]": [],
+        "SectionList[554]": [],
+        "SectionList[555]": [],
+        "SectionList[556]": [],
+        "SectionList[557]": [],
+        "SectionList[558]": [],
+        "SectionList[559]": [],
+        "SectionList[55]": [],
+        "SectionList[560]": [],
+        "SectionList[561]": [],
+        "SectionList[562]": [],
+        "SectionList[563]": [],
+        "SectionList[564]": [],
+        "SectionList[565]": [],
+        "SectionList[566]": [],
+        "SectionList[567]": [],
+        "SectionList[568]": [],
+        "SectionList[569]": [],
+        "SectionList[56]": [],
+        "SectionList[570]": [],
+        "SectionList[571]": [],
+        "SectionList[572]": [],
+        "SectionList[573]": [],
+        "SectionList[574]": [],
+        "SectionList[575]": [],
+        "SectionList[576]": [],
+        "SectionList[577]": [],
+        "SectionList[578]": [],
+        "SectionList[579]": [],
+        "SectionList[57]": [],
+        "SectionList[580]": [],
+        "SectionList[581]": [],
+        "SectionList[582]": [],
+        "SectionList[583]": [],
+        "SectionList[584]": [],
+        "SectionList[585]": [],
+        "SectionList[586]": [],
+        "SectionList[587]": [],
+        "SectionList[588]": [],
+        "SectionList[589]": [],
+        "SectionList[58]": [],
+        "SectionList[590]": [],
+        "SectionList[591]": [],
+        "SectionList[592]": [],
+        "SectionList[593]": [],
+        "SectionList[594]": [],
+        "SectionList[595]": [],
+        "SectionList[596]": [],
+        "SectionList[597]": [],
+        "SectionList[598]": [],
+        "SectionList[599]": [],
+        "SectionList[59]": [],
+        "SectionList[5]": [],
+        "SectionList[600]": [],
+        "SectionList[601]": [],
+        "SectionList[602]": [],
+        "SectionList[603]": [],
+        "SectionList[604]": [],
+        "SectionList[605]": [],
+        "SectionList[606]": [],
+        "SectionList[607]": [],
+        "SectionList[608]": [],
+        "SectionList[609]": [],
+        "SectionList[60]": [],
+        "SectionList[610]": [],
+        "SectionList[611]": [],
+        "SectionList[612]": [],
+        "SectionList[613]": [],
+        "SectionList[614]": [],
+        "SectionList[615]": [],
+        "SectionList[616]": [],
+        "SectionList[617]": [],
+        "SectionList[618]": [],
+        "SectionList[619]": [],
+        "SectionList[61]": [],
+        "SectionList[620]": [],
+        "SectionList[621]": [],
+        "SectionList[622]": [],
+        "SectionList[623]": [],
+        "SectionList[624]": [],
+        "SectionList[625]": [],
+        "SectionList[626]": [],
+        "SectionList[627]": [],
+        "SectionList[628]": [],
+        "SectionList[629]": [],
+        "SectionList[62]": [],
+        "SectionList[630]": [],
+        "SectionList[631]": [],
+        "SectionList[632]": [],
+        "SectionList[633]": [],
+        "SectionList[634]": [],
+        "SectionList[635]": [],
+        "SectionList[636]": [],
+        "SectionList[637]": [],
+        "SectionList[638]": [],
+        "SectionList[639]": [],
+        "SectionList[63]": [],
+        "SectionList[640]": [],
+        "SectionList[641]": [],
+        "SectionList[642]": [],
+        "SectionList[643]": [],
+        "SectionList[644]": [],
+        "SectionList[645]": [],
+        "SectionList[646]": [],
+        "SectionList[647]": [],
+        "SectionList[648]": [],
+        "SectionList[649]": [],
+        "SectionList[64]": [],
+        "SectionList[650]": [],
+        "SectionList[651]": [],
+        "SectionList[652]": [],
+        "SectionList[653]": [],
+        "SectionList[654]": [],
+        "SectionList[655]": [],
+        "SectionList[656]": [],
+        "SectionList[657]": [],
+        "SectionList[658]": [],
+        "SectionList[659]": [],
+        "SectionList[65]": [],
+        "SectionList[660]": [],
+        "SectionList[661]": [],
+        "SectionList[662]": [],
+        "SectionList[663]": [],
+        "SectionList[664]": [],
+        "SectionList[665]": [],
+        "SectionList[666]": [],
+        "SectionList[667]": [],
+        "SectionList[668]": [],
+        "SectionList[669]": [],
+        "SectionList[66]": [],
+        "SectionList[670]": [],
+        "SectionList[671]": [],
+        "SectionList[672]": [],
+        "SectionList[673]": [],
+        "SectionList[674]": [],
+        "SectionList[675]": [],
+        "SectionList[676]": [],
+        "SectionList[677]": [],
+        "SectionList[678]": [],
+        "SectionList[679]": [],
+        "SectionList[67]": [],
+        "SectionList[680]": [],
+        "SectionList[681]": [],
+        "SectionList[682]": [],
+        "SectionList[683]": [],
+        "SectionList[684]": [],
+        "SectionList[685]": [],
+        "SectionList[686]": [],
+        "SectionList[687]": [],
+        "SectionList[688]": [],
+        "SectionList[689]": [],
+        "SectionList[68]": [],
+        "SectionList[690]": [],
+        "SectionList[691]": [],
+        "SectionList[692]": [],
+        "SectionList[693]": [],
+        "SectionList[694]": [],
+        "SectionList[695]": [],
+        "SectionList[696]": [],
+        "SectionList[697]": [],
+        "SectionList[698]": [],
+        "SectionList[699]": [],
+        "SectionList[69]": [],
+        "SectionList[6]": [],
+        "SectionList[700]": [],
+        "SectionList[701]": [],
+        "SectionList[702]": [],
+        "SectionList[703]": [],
+        "SectionList[704]": [],
+        "SectionList[705]": [],
+        "SectionList[706]": [],
+        "SectionList[707]": [],
+        "SectionList[708]": [],
+        "SectionList[709]": [],
+        "SectionList[70]": [],
+        "SectionList[710]": [],
+        "SectionList[711]": [],
+        "SectionList[712]": [],
+        "SectionList[713]": [],
+        "SectionList[714]": [],
+        "SectionList[715]": [],
+        "SectionList[716]": [],
+        "SectionList[717]": [],
+        "SectionList[718]": [],
+        "SectionList[719]": [],
+        "SectionList[71]": [],
+        "SectionList[720]": [],
+        "SectionList[721]": [],
+        "SectionList[722]": [],
+        "SectionList[723]": [],
+        "SectionList[724]": [],
+        "SectionList[725]": [],
+        "SectionList[726]": [],
+        "SectionList[727]": [],
+        "SectionList[728]": [],
+        "SectionList[729]": [],
+        "SectionList[72]": [],
+        "SectionList[730]": [],
+        "SectionList[731]": [],
+        "SectionList[732]": [],
+        "SectionList[733]": [],
+        "SectionList[734]": [],
+        "SectionList[735]": [],
+        "SectionList[736]": [],
+        "SectionList[737]": [],
+        "SectionList[738]": [],
+        "SectionList[739]": [],
+        "SectionList[73]": [],
+        "SectionList[740]": [],
+        "SectionList[741]": [],
+        "SectionList[742]": [],
+        "SectionList[743]": [],
+        "SectionList[744]": [],
+        "SectionList[745]": [],
+        "SectionList[746]": [],
+        "SectionList[747]": [],
+        "SectionList[748]": [],
+        "SectionList[749]": [],
+        "SectionList[74]": [],
+        "SectionList[750]": [],
+        "SectionList[751]": [],
+        "SectionList[752]": [],
+        "SectionList[753]": [],
+        "SectionList[754]": [],
+        "SectionList[755]": [],
+        "SectionList[756]": [],
+        "SectionList[757]": [],
+        "SectionList[758]": [],
+        "SectionList[759]": [],
+        "SectionList[75]": [],
+        "SectionList[760]": [],
+        "SectionList[761]": [],
+        "SectionList[762]": [],
+        "SectionList[763]": [],
+        "SectionList[764]": [],
+        "SectionList[765]": [],
+        "SectionList[766]": [],
+        "SectionList[767]": [],
+        "SectionList[768]": [],
+        "SectionList[769]": [],
+        "SectionList[76]": [],
+        "SectionList[770]": [],
+        "SectionList[771]": [],
+        "SectionList[772]": [],
+        "SectionList[773]": [],
+        "SectionList[774]": [],
+        "SectionList[775]": [],
+        "SectionList[776]": [],
+        "SectionList[777]": [],
+        "SectionList[778]": [],
+        "SectionList[779]": [],
+        "SectionList[77]": [],
+        "SectionList[780]": [],
+        "SectionList[781]": [],
+        "SectionList[782]": [],
+        "SectionList[783]": [],
+        "SectionList[784]": [],
+        "SectionList[785]": [],
+        "SectionList[786]": [],
+        "SectionList[787]": [],
+        "SectionList[788]": [],
+        "SectionList[789]": [],
+        "SectionList[78]": [],
+        "SectionList[790]": [],
+        "SectionList[791]": [],
+        "SectionList[792]": [],
+        "SectionList[793]": [],
+        "SectionList[794]": [],
+        "SectionList[795]": [],
+        "SectionList[796]": [],
+        "SectionList[797]": [],
+        "SectionList[798]": [],
+        "SectionList[799]": [],
+        "SectionList[79]": [],
+        "SectionList[7]": [],
+        "SectionList[800]": [],
+        "SectionList[801]": [],
+        "SectionList[802]": [],
+        "SectionList[803]": [],
+        "SectionList[804]": [],
+        "SectionList[805]": [],
+        "SectionList[806]": [],
+        "SectionList[807]": [],
+        "SectionList[808]": [],
+        "SectionList[809]": [],
+        "SectionList[80]": [],
+        "SectionList[810]": [],
+        "SectionList[811]": [],
+        "SectionList[812]": [],
+        "SectionList[813]": [],
+        "SectionList[814]": [],
+        "SectionList[815]": [],
+        "SectionList[816]": [],
+        "SectionList[817]": [],
+        "SectionList[818]": [],
+        "SectionList[819]": [],
+        "SectionList[81]": [],
+        "SectionList[820]": [],
+        "SectionList[821]": [],
+        "SectionList[822]": [],
+        "SectionList[823]": [],
+        "SectionList[824]": [],
+        "SectionList[825]": [],
+        "SectionList[826]": [],
+        "SectionList[827]": [],
+        "SectionList[828]": [],
+        "SectionList[829]": [],
+        "SectionList[82]": [],
+        "SectionList[830]": [],
+        "SectionList[831]": [],
+        "SectionList[832]": [],
+        "SectionList[833]": [],
+        "SectionList[834]": [],
+        "SectionList[835]": [],
+        "SectionList[836]": [],
+        "SectionList[837]": [],
+        "SectionList[838]": [],
+        "SectionList[839]": [],
+        "SectionList[83]": [],
+        "SectionList[840]": [],
+        "SectionList[841]": [],
+        "SectionList[842]": [],
+        "SectionList[843]": [],
+        "SectionList[844]": [],
+        "SectionList[845]": [],
+        "SectionList[846]": [],
+        "SectionList[847]": [],
+        "SectionList[848]": [],
+        "SectionList[849]": [],
+        "SectionList[84]": [],
+        "SectionList[850]": [],
+        "SectionList[851]": [],
+        "SectionList[852]": [],
+        "SectionList[853]": [],
+        "SectionList[854]": [],
+        "SectionList[855]": [],
+        "SectionList[856]": [],
+        "SectionList[857]": [],
+        "SectionList[858]": [],
+        "SectionList[859]": [],
+        "SectionList[85]": [],
+        "SectionList[860]": [],
+        "SectionList[861]": [],
+        "SectionList[862]": [],
+        "SectionList[863]": [],
+        "SectionList[864]": [],
+        "SectionList[865]": [],
+        "SectionList[866]": [],
+        "SectionList[867]": [],
+        "SectionList[868]": [],
+        "SectionList[869]": [],
+        "SectionList[86]": [],
+        "SectionList[870]": [],
+        "SectionList[871]": [],
+        "SectionList[872]": [],
+        "SectionList[873]": [],
+        "SectionList[874]": [],
+        "SectionList[875]": [],
+        "SectionList[876]": [],
+        "SectionList[877]": [],
+        "SectionList[878]": [],
+        "SectionList[879]": [],
+        "SectionList[87]": [],
+        "SectionList[880]": [],
+        "SectionList[881]": [],
+        "SectionList[882]": [],
+        "SectionList[883]": [],
+        "SectionList[884]": [],
+        "SectionList[885]": [],
+        "SectionList[886]": [],
+        "SectionList[887]": [],
+        "SectionList[888]": [],
+        "SectionList[889]": [],
+        "SectionList[88]": [],
+        "SectionList[890]": [],
+        "SectionList[891]": [],
+        "SectionList[892]": [],
+        "SectionList[893]": [],
+        "SectionList[894]": [],
+        "SectionList[895]": [],
+        "SectionList[896]": [],
+        "SectionList[897]": [],
+        "SectionList[898]": [],
+        "SectionList[899]": [],
+        "SectionList[89]": [],
+        "SectionList[8]": [],
+        "SectionList[900]": [],
+        "SectionList[901]": [],
+        "SectionList[902]": [],
+        "SectionList[903]": [],
+        "SectionList[904]": [],
+        "SectionList[905]": [],
+        "SectionList[906]": [],
+        "SectionList[907]": [],
+        "SectionList[908]": [],
+        "SectionList[909]": [],
+        "SectionList[90]": [],
+        "SectionList[910]": [],
+        "SectionList[911]": [],
+        "SectionList[912]": [],
+        "SectionList[913]": [],
+        "SectionList[914]": [],
+        "SectionList[915]": [],
+        "SectionList[916]": [],
+        "SectionList[917]": [],
+        "SectionList[918]": [],
+        "SectionList[919]": [],
+        "SectionList[91]": [],
+        "SectionList[920]": [],
+        "SectionList[921]": [],
+        "SectionList[922]": [],
+        "SectionList[923]": [],
+        "SectionList[924]": [],
+        "SectionList[925]": [],
+        "SectionList[926]": [],
+        "SectionList[927]": [],
+        "SectionList[928]": [],
+        "SectionList[929]": [],
+        "SectionList[92]": [],
+        "SectionList[930]": [],
+        "SectionList[931]": [],
+        "SectionList[932]": [],
+        "SectionList[933]": [],
+        "SectionList[934]": [],
+        "SectionList[935]": [],
+        "SectionList[936]": [],
+        "SectionList[937]": [],
+        "SectionList[938]": [],
+        "SectionList[939]": [],
+        "SectionList[93]": [],
+        "SectionList[940]": [],
+        "SectionList[941]": [],
+        "SectionList[942]": [],
+        "SectionList[943]": [],
+        "SectionList[944]": [],
+        "SectionList[945]": [],
+        "SectionList[946]": [],
+        "SectionList[947]": [],
+        "SectionList[948]": [],
+        "SectionList[949]": [],
+        "SectionList[94]": [],
+        "SectionList[950]": [],
+        "SectionList[951]": [],
+        "SectionList[952]": [],
+        "SectionList[953]": [],
+        "SectionList[954]": [],
+        "SectionList[955]": [],
+        "SectionList[956]": [],
+        "SectionList[957]": [],
+        "SectionList[958]": [],
+        "SectionList[959]": [],
+        "SectionList[95]": [],
+        "SectionList[960]": [],
+        "SectionList[961]": [],
+        "SectionList[962]": [],
+        "SectionList[963]": [],
+        "SectionList[964]": [],
+        "SectionList[965]": [],
+        "SectionList[966]": [],
+        "SectionList[967]": [],
+        "SectionList[968]": [],
+        "SectionList[969]": [],
+        "SectionList[96]": [],
+        "SectionList[970]": [],
+        "SectionList[971]": [],
+        "SectionList[972]": [],
+        "SectionList[973]": [],
+        "SectionList[974]": [],
+        "SectionList[975]": [],
+        "SectionList[976]": [],
+        "SectionList[977]": [],
+        "SectionList[978]": [],
+        "SectionList[979]": [],
+        "SectionList[97]": [],
+        "SectionList[980]": [],
+        "SectionList[981]": [],
+        "SectionList[982]": [],
+        "SectionList[983]": [],
+        "SectionList[984]": [],
+        "SectionList[985]": [],
+        "SectionList[986]": [],
+        "SectionList[987]": [],
+        "SectionList[988]": [],
+        "SectionList[989]": [],
+        "SectionList[98]": [],
+        "SectionList[990]": [],
+        "SectionList[991]": [],
+        "SectionList[992]": [],
+        "SectionList[993]": [],
+        "SectionList[994]": [],
+        "SectionList[995]": [],
+        "SectionList[996]": [],
+        "SectionList[997]": [],
+        "SectionList[998]": [],
+        "SectionList[999]": [],
+        "SectionList[99]": [],
+        "SectionList[9]": [],
+        "all": [
+            "soma_0",
+            "dend_0",
+            "dend_1",
+            "dend_2",
+            "dend_3",
+            "dend_4",
+            "dend_5",
+            "dend_6",
+            "dend_7",
+            "dend_8",
+            "dend_9",
+            "dend_10",
+            "dend_11",
+            "dend_12",
+            "dend_13",
+            "dend_14",
+            "dend_15",
+            "dend_16",
+            "dend_17",
+            "dend_18",
+            "dend_19",
+            "dend_20",
+            "dend_21",
+            "dend_22",
+            "dend_23",
+            "axon_0",
+            "axon_1"
+        ],
+        "apical": [],
+        "axonal": [
+            "axon_0",
+            "axon_1"
+        ],
+        "basal": [
+            "dend_0",
+            "dend_1",
+            "dend_2",
+            "dend_3",
+            "dend_4",
+            "dend_5",
+            "dend_6",
+            "dend_7",
+            "dend_8",
+            "dend_9",
+            "dend_10",
+            "dend_11",
+            "dend_12",
+            "dend_13",
+            "dend_14",
+            "dend_15",
+            "dend_16",
+            "dend_17",
+            "dend_18",
+            "dend_19",
+            "dend_20",
+            "dend_21",
+            "dend_22",
+            "dend_23"
+        ],
+        "inputs__distal": [
+            "dend_2",
+            "dend_3",
+            "dend_5",
+            "dend_7",
+            "dend_8",
+            "dend_10",
+            "dend_11",
+            "dend_12",
+            "dend_13",
+            "dend_17",
+            "dend_18",
+            "dend_19",
+            "dend_20",
+            "dend_21",
+            "dend_22",
+            "dend_23"
+        ],
+        "inputs__intermediate": [
+            "dend_1",
+            "dend_4",
+            "dend_6",
+            "dend_16"
+        ],
+        "inputs__proximal": [
+            "soma_0",
+            "dend_0",
+            "dend_9",
+            "dend_14",
+            "dend_15"
+        ],
+        "myelinated": [],
+        "somatic": [
+            "soma_0"
+        ]
+    },
+    "secs": {
+        "axon_0": {
+            "geom": {
+                "L": 30.0,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.7999999523162837,
+                "nseg": 5,
+                "pt3d": []
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "TC_HH": {
+                    "gk_max": 0.042585450866590845,
+                    "gna_max": 0.03795335746720781,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.05,
+                    "taur": 5.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 1.0
+            }
+        },
+        "axon_1": {
+            "geom": {
+                "L": 30.0,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.0829284074776242,
+                "nseg": 5,
+                "pt3d": []
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "TC_HH": {
+                    "gk_max": 0.042585450866590845,
+                    "gna_max": 0.03795335746720781,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.05,
+                    "taur": 5.0
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "axon_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_0": {
+            "geom": {
+                "L": 26.85460524081401,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.2000000476837158,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -1.7602698802947998,
+                        4.065535545349121,
+                        4.80534553527832,
+                        1.2000000476837158
+                    ],
+                    [
+                        -0.6344964504241943,
+                        -0.32422906160354614,
+                        2.3791701793670654,
+                        1.2000000476837158
+                    ],
+                    [
+                        0.5019895434379578,
+                        1.0668200254440308,
+                        5.496829986572266,
+                        1.2000000476837158
+                    ],
+                    [
+                        2.777360439300537,
+                        3.0625,
+                        9.64955997467041,
+                        1.2000000476837158
+                    ],
+                    [
+                        5.156870365142822,
+                        3.8642499446868896,
+                        14.697199821472168,
+                        1.2000000476837158
+                    ],
+                    [
+                        7.407170295715332,
+                        5.963119983673096,
+                        21.36079978942871,
+                        1.2000000476837158
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.0
+            }
+        },
+        "dend_1": {
+            "geom": {
+                "L": 14.961004856245465,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        7.407170295715332,
+                        5.963119983673096,
+                        21.36079978942871,
+                        1.2000000476837158
+                    ],
+                    [
+                        7.407170295715332,
+                        5.963119983673096,
+                        21.36079978942871,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.183000564575195,
+                        8.346619606018066,
+                        29.450700759887695,
+                        0.6000000238418579
+                    ],
+                    [
+                        8.15156078338623,
+                        11.857399940490723,
+                        32.79890060424805,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_10": {
+            "geom": {
+                "L": 212.68537576303814,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 11,
+                "pt3d": [
+                    [
+                        -7.922889709472656,
+                        16.061500549316406,
+                        14.362700462341309,
+                        1.2000000476837158
+                    ],
+                    [
+                        -7.922889709472656,
+                        16.061500549316406,
+                        14.362700462341309,
+                        0.6000000238418579
+                    ],
+                    [
+                        -7.250599384307861,
+                        16.475200653076172,
+                        14.644100189208984,
+                        0.6000000238418579
+                    ],
+                    [
+                        -1.3454093933105469,
+                        16.199800491333008,
+                        9.062560081481934,
+                        0.6000000238418579
+                    ],
+                    [
+                        5.795210361480713,
+                        15.380000114440918,
+                        0.11012616753578186,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.65630054473877,
+                        14.965399742126465,
+                        -7.351319789886475,
+                        0.6000000238418579
+                    ],
+                    [
+                        13.41930103302002,
+                        17.712600708007812,
+                        -8.56643009185791,
+                        0.6000000238418579
+                    ],
+                    [
+                        23.593599319458008,
+                        16.7268009185791,
+                        -13.696399688720703,
+                        0.6000000238418579
+                    ],
+                    [
+                        25.48150062561035,
+                        20.035200119018555,
+                        -17.25589942932129,
+                        0.6000000238418579
+                    ],
+                    [
+                        32.88959884643555,
+                        24.928600311279297,
+                        -16.974000930786133,
+                        0.6000000238418579
+                    ],
+                    [
+                        41.849098205566406,
+                        27.21969985961914,
+                        -21.023399353027344,
+                        0.6000000238418579
+                    ],
+                    [
+                        55.218101501464844,
+                        29.234100341796875,
+                        -29.03890037536621,
+                        0.6000000238418579
+                    ],
+                    [
+                        61.712799072265625,
+                        27.40559959411621,
+                        -36.41999816894531,
+                        0.6000000238418579
+                    ],
+                    [
+                        66.43180084228516,
+                        25.792299270629883,
+                        -41.50529861450195,
+                        0.6000000238418579
+                    ],
+                    [
+                        73.84159851074219,
+                        21.154600143432617,
+                        -49.62860107421875,
+                        0.6000000238418579
+                    ],
+                    [
+                        75.96839904785156,
+                        20.376100540161133,
+                        -50.80139923095703,
+                        0.6000000238418579
+                    ],
+                    [
+                        83.97530364990234,
+                        16.245100021362305,
+                        -63.305198669433594,
+                        0.6000000238418579
+                    ],
+                    [
+                        87.53800201416016,
+                        9.11536979675293,
+                        -79.21369934082031,
+                        0.6000000238418579
+                    ],
+                    [
+                        93.76519775390625,
+                        3.172559976577759,
+                        -95.62960052490234,
+                        0.6000000238418579
+                    ],
+                    [
+                        96.52249908447266,
+                        -0.04285145550966263,
+                        -102.56700134277344,
+                        0.6000000238418579
+                    ],
+                    [
+                        98.54239654541016,
+                        -3.1666600704193115,
+                        -109.44200134277344,
+                        0.30000001192092896
+                    ],
+                    [
+                        100.86299896240234,
+                        -8.39955997467041,
+                        -118.19300079345703,
+                        0.30000001192092896
+                    ],
+                    [
+                        105.91100311279297,
+                        -17.360700607299805,
+                        -133.16000366210938,
+                        0.30000001192092896
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_9",
+                "parentX": 1.0
+            }
+        },
+        "dend_11": {
+            "geom": {
+                "L": 106.72405700391208,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.9824446639610365,
+                "nseg": 5,
+                "pt3d": [
+                    [
+                        -7.922889709472656,
+                        16.061500549316406,
+                        14.362700462341309,
+                        1.2000000476837158
+                    ],
+                    [
+                        -9.356939315795898,
+                        18.927000045776367,
+                        17.365800857543945,
+                        1.2000000476837158
+                    ],
+                    [
+                        -15.649099349975586,
+                        36.23759841918945,
+                        37.80670166015625,
+                        1.2000000476837158
+                    ],
+                    [
+                        -27.734699249267578,
+                        53.64580154418945,
+                        58.69269943237305,
+                        0.8999999761581421
+                    ],
+                    [
+                        -34.82830047607422,
+                        60.89459991455078,
+                        70.34709930419922,
+                        0.6000000238418579
+                    ],
+                    [
+                        -41.14229965209961,
+                        73.1427001953125,
+                        87.73400115966797,
+                        0.6000000238418579
+                    ],
+                    [
+                        -43.514198303222656,
+                        77.39759826660156,
+                        93.34159851074219,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_9",
+                "parentX": 1.0
+            }
+        },
+        "dend_12": {
+            "geom": {
+                "L": 12.54118199906344,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -43.514198303222656,
+                        77.39759826660156,
+                        93.34159851074219,
+                        0.6000000238418579
+                    ],
+                    [
+                        -45.29050064086914,
+                        81.12999725341797,
+                        100.72899627685547,
+                        0.6000000238418579
+                    ],
+                    [
+                        -46.14609909057617,
+                        83.402099609375,
+                        104.00299835205078,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_11",
+                "parentX": 1.0
+            }
+        },
+        "dend_13": {
+            "geom": {
+                "L": 127.9091724379775,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        -43.514198303222656,
+                        77.39759826660156,
+                        93.34159851074219,
+                        0.6000000238418579
+                    ],
+                    [
+                        -56.35279846191406,
+                        87.4020004272461,
+                        102.04900360107422,
+                        0.6000000238418579
+                    ],
+                    [
+                        -65.08889770507812,
+                        95.99310302734375,
+                        110.8270034790039,
+                        0.6000000238418579
+                    ],
+                    [
+                        -79.59989929199219,
+                        109.60900115966797,
+                        125.41400146484375,
+                        0.6000000238418579
+                    ],
+                    [
+                        -82.84380340576172,
+                        113.4010009765625,
+                        129.65499877929688,
+                        0.6000000238418579
+                    ],
+                    [
+                        -89.65019989013672,
+                        116.66300201416016,
+                        130.36900329589844,
+                        0.6000000238418579
+                    ],
+                    [
+                        -92.55750274658203,
+                        121.01000213623047,
+                        136.91400146484375,
+                        0.6000000238418579
+                    ],
+                    [
+                        -101.08300018310547,
+                        126.68399810791016,
+                        140.98199462890625,
+                        0.6000000238418579
+                    ],
+                    [
+                        -101.23999786376953,
+                        127.51399993896484,
+                        142.0570068359375,
+                        0.6000000238418579
+                    ],
+                    [
+                        -105.49299621582031,
+                        130.80799865722656,
+                        145.6750030517578,
+                        0.6000000238418579
+                    ],
+                    [
+                        -110.56400299072266,
+                        135.53199768066406,
+                        151.95199584960938,
+                        0.6000000238418579
+                    ],
+                    [
+                        -114.38300323486328,
+                        140.55499267578125,
+                        158.89500427246094,
+                        0.6000000238418579
+                    ],
+                    [
+                        -118.22699737548828,
+                        144.9290008544922,
+                        166.52099609375,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_11",
+                "parentX": 1.0
+            }
+        },
+        "dend_14": {
+            "geom": {
+                "L": 146.54706048451217,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        -1.7602698802947998,
+                        4.065535545349121,
+                        4.80534553527832,
+                        0.6000000238418579
+                    ],
+                    [
+                        -1.6144593954086304,
+                        2.811039924621582,
+                        5.354159832000732,
+                        0.6000000238418579
+                    ],
+                    [
+                        -6.12900972366333,
+                        8.63125991821289,
+                        14.13659954071045,
+                        0.6000000238418579
+                    ],
+                    [
+                        -6.855119705200195,
+                        10.968000411987305,
+                        18.73040008544922,
+                        0.6000000238418579
+                    ],
+                    [
+                        -7.229859352111816,
+                        13.348400115966797,
+                        21.232500076293945,
+                        0.6000000238418579
+                    ],
+                    [
+                        -13.340298652648926,
+                        22.13330078125,
+                        33.784000396728516,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.16390037536621,
+                        27.885400772094727,
+                        44.183998107910156,
+                        0.6000000238418579
+                    ],
+                    [
+                        -22.815099716186523,
+                        34.72909927368164,
+                        53.82609939575195,
+                        0.6000000238418579
+                    ],
+                    [
+                        -23.654499053955078,
+                        36.643699645996094,
+                        58.17219924926758,
+                        0.6000000238418579
+                    ],
+                    [
+                        -24.73150062561035,
+                        38.87200164794922,
+                        66.45259857177734,
+                        0.6000000238418579
+                    ],
+                    [
+                        -27.654199600219727,
+                        41.685001373291016,
+                        75.71990203857422,
+                        0.6000000238418579
+                    ],
+                    [
+                        -20.96660041809082,
+                        37.66360092163086,
+                        84.47440338134766,
+                        0.6000000238418579
+                    ],
+                    [
+                        -17.314699172973633,
+                        34.87630081176758,
+                        91.23480224609375,
+                        0.6000000238418579
+                    ],
+                    [
+                        -14.56679916381836,
+                        34.472900390625,
+                        99.88520050048828,
+                        0.6000000238418579
+                    ],
+                    [
+                        -15.352699279785156,
+                        35.826698303222656,
+                        105.28700256347656,
+                        0.6000000238418579
+                    ],
+                    [
+                        -15.504399299621582,
+                        38.738800048828125,
+                        113.83000183105469,
+                        0.6000000238418579
+                    ],
+                    [
+                        -12.22239875793457,
+                        39.66999816894531,
+                        120.1520004272461,
+                        0.6000000238418579
+                    ],
+                    [
+                        -10.216599464416504,
+                        42.117000579833984,
+                        128.08700561523438,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.0
+            }
+        },
+        "dend_15": {
+            "geom": {
+                "L": 38.44547124342081,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 2.1792072534608793,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -1.7602698802947998,
+                        4.065535545349121,
+                        4.80534553527832,
+                        2.4000000953674316
+                    ],
+                    [
+                        0.8258415460586548,
+                        -3.626840114593506,
+                        -4.4775800704956055,
+                        2.4000000953674316
+                    ],
+                    [
+                        2.958420515060425,
+                        -7.1882500648498535,
+                        -8.835200309753418,
+                        2.4000000953674316
+                    ],
+                    [
+                        3.4970204830169678,
+                        -9.12720012664795,
+                        -11.171099662780762,
+                        2.4000000953674316
+                    ],
+                    [
+                        4.221640586853027,
+                        -12.574199676513672,
+                        -15.693900108337402,
+                        1.7999999523162842
+                    ],
+                    [
+                        5.293300628662109,
+                        -15.911800384521484,
+                        -20.99020004272461,
+                        1.7999999523162842
+                    ],
+                    [
+                        6.224240303039551,
+                        -18.48819923400879,
+                        -25.088899612426758,
+                        1.7999999523162842
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.0
+            }
+        },
+        "dend_16": {
+            "geom": {
+                "L": 54.76338473577146,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.2000000476837156,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        6.224240303039551,
+                        -18.48819923400879,
+                        -25.088899612426758,
+                        1.7999999523162842
+                    ],
+                    [
+                        6.224240303039551,
+                        -18.48819923400879,
+                        -25.088899612426758,
+                        1.2000000476837158
+                    ],
+                    [
+                        10.348000526428223,
+                        -22.68600082397461,
+                        -28.6564998626709,
+                        1.2000000476837158
+                    ],
+                    [
+                        14.828301429748535,
+                        -27.84760093688965,
+                        -34.41619873046875,
+                        1.2000000476837158
+                    ],
+                    [
+                        22.3075008392334,
+                        -36.89569854736328,
+                        -43.299800872802734,
+                        1.2000000476837158
+                    ],
+                    [
+                        30.68549919128418,
+                        -48.42150115966797,
+                        -54.83409881591797,
+                        1.2000000476837158
+                    ],
+                    [
+                        32.95399856567383,
+                        -52.646400451660156,
+                        -58.25389862060547,
+                        1.2000000476837158
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_15",
+                "parentX": 1.0
+            }
+        },
+        "dend_17": {
+            "geom": {
+                "L": 98.40570200019383,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418581,
+                "nseg": 5,
+                "pt3d": [
+                    [
+                        32.95399856567383,
+                        -52.646400451660156,
+                        -58.25389862060547,
+                        1.2000000476837158
+                    ],
+                    [
+                        32.95399856567383,
+                        -52.646400451660156,
+                        -58.25389862060547,
+                        0.6000000238418579
+                    ],
+                    [
+                        32.867801666259766,
+                        -57.05350112915039,
+                        -59.74140167236328,
+                        0.6000000238418579
+                    ],
+                    [
+                        34.933998107910156,
+                        -63.80099868774414,
+                        -63.9385986328125,
+                        0.6000000238418579
+                    ],
+                    [
+                        33.6150016784668,
+                        -70.4572982788086,
+                        -73.45149993896484,
+                        0.6000000238418579
+                    ],
+                    [
+                        32.77539825439453,
+                        -79.91919708251953,
+                        -83.0990982055664,
+                        0.6000000238418579
+                    ],
+                    [
+                        29.427400588989258,
+                        -83.77559661865234,
+                        -89.39929962158203,
+                        0.6000000238418579
+                    ],
+                    [
+                        13.46920108795166,
+                        -88.17630004882812,
+                        -97.38150024414062,
+                        0.6000000238418579
+                    ],
+                    [
+                        6.983950614929199,
+                        -98.81159973144531,
+                        -113.59200286865234,
+                        0.6000000238418579
+                    ],
+                    [
+                        3.6568005084991455,
+                        -108.13200378417969,
+                        -122.60700225830078,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_16",
+                "parentX": 1.0
+            }
+        },
+        "dend_18": {
+            "geom": {
+                "L": 64.93087386952872,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        32.95399856567383,
+                        -52.646400451660156,
+                        -58.25389862060547,
+                        1.2000000476837158
+                    ],
+                    [
+                        32.95399856567383,
+                        -52.646400451660156,
+                        -58.25389862060547,
+                        0.6000000238418579
+                    ],
+                    [
+                        35.832698822021484,
+                        -57.016700744628906,
+                        -64.32740020751953,
+                        0.6000000238418579
+                    ],
+                    [
+                        37.75849914550781,
+                        -62.6703987121582,
+                        -71.95099639892578,
+                        0.6000000238418579
+                    ],
+                    [
+                        42.540000915527344,
+                        -71.91799926757812,
+                        -85.83920288085938,
+                        0.6000000238418579
+                    ],
+                    [
+                        48.0166015625,
+                        -81.38980102539062,
+                        -101.25199890136719,
+                        0.6000000238418579
+                    ],
+                    [
+                        52.716800689697266,
+                        -87.12139892578125,
+                        -109.33999633789062,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_16",
+                "parentX": 1.0
+            }
+        },
+        "dend_19": {
+            "geom": {
+                "L": 141.33442623925413,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418581,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        52.716800689697266,
+                        -87.12139892578125,
+                        -109.33999633789062,
+                        0.6000000238418579
+                    ],
+                    [
+                        56.41120147705078,
+                        -90.18250274658203,
+                        -114.33899688720703,
+                        0.6000000238418579
+                    ],
+                    [
+                        60.79079818725586,
+                        -95.79139709472656,
+                        -121.4280014038086,
+                        0.6000000238418579
+                    ],
+                    [
+                        63.84230041503906,
+                        -100.36599731445312,
+                        -127.57599639892578,
+                        0.6000000238418579
+                    ],
+                    [
+                        66.595703125,
+                        -105.78600311279297,
+                        -137.75799560546875,
+                        0.6000000238418579
+                    ],
+                    [
+                        65.85320281982422,
+                        -107.99299621582031,
+                        -143.6790008544922,
+                        0.6000000238418579
+                    ],
+                    [
+                        68.4739990234375,
+                        -113.21499633789062,
+                        -152.76300048828125,
+                        0.6000000238418579
+                    ],
+                    [
+                        73.54910278320312,
+                        -119.26200103759766,
+                        -162.18699645996094,
+                        0.6000000238418579
+                    ],
+                    [
+                        73.09249877929688,
+                        -124.55699920654297,
+                        -171.4010009765625,
+                        0.6000000238418579
+                    ],
+                    [
+                        77.0238037109375,
+                        -131.02699279785156,
+                        -184.89300537109375,
+                        0.6000000238418579
+                    ],
+                    [
+                        81.33789825439453,
+                        -137.052001953125,
+                        -194.14500427246094,
+                        0.6000000238418579
+                    ],
+                    [
+                        82.34539794921875,
+                        -139.55499267578125,
+                        -198.0240020751953,
+                        0.6000000238418579
+                    ],
+                    [
+                        83.26840209960938,
+                        -139.86599731445312,
+                        -198.5850067138672,
+                        0.6000000238418579
+                    ],
+                    [
+                        90.5634994506836,
+                        -148.3820037841797,
+                        -209.21800231933594,
+                        0.6000000238418579
+                    ],
+                    [
+                        98.13359832763672,
+                        -156.18800354003906,
+                        -220.30999755859375,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_18",
+                "parentX": 1.0
+            }
+        },
+        "dend_2": {
+            "geom": {
+                "L": 104.47092766675583,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 5,
+                "pt3d": [
+                    [
+                        8.15156078338623,
+                        11.857399940490723,
+                        32.79890060424805,
+                        0.6000000238418579
+                    ],
+                    [
+                        8.045801162719727,
+                        15.52810001373291,
+                        37.57320022583008,
+                        0.6000000238418579
+                    ],
+                    [
+                        7.437530517578125,
+                        20.121999740600586,
+                        44.11470031738281,
+                        0.6000000238418579
+                    ],
+                    [
+                        9.080500602722168,
+                        24.26140022277832,
+                        52.808998107910156,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.138200759887695,
+                        28.77989959716797,
+                        61.968299865722656,
+                        0.6000000238418579
+                    ],
+                    [
+                        10.844600677490234,
+                        31.180700302124023,
+                        66.70159912109375,
+                        0.6000000238418579
+                    ],
+                    [
+                        9.094011306762695,
+                        36.462100982666016,
+                        82.29609680175781,
+                        0.6000000238418579
+                    ],
+                    [
+                        5.890930652618408,
+                        39.13520050048828,
+                        90.31120300292969,
+                        0.6000000238418579
+                    ],
+                    [
+                        4.199930667877197,
+                        42.65520095825195,
+                        96.2042007446289,
+                        0.6000000238418579
+                    ],
+                    [
+                        2.236100435256958,
+                        49.27000045776367,
+                        114.96700286865234,
+                        0.6000000238418579
+                    ],
+                    [
+                        2.4048805236816406,
+                        51.18239974975586,
+                        116.54499816894531,
+                        0.6000000238418579
+                    ],
+                    [
+                        1.4520505666732788,
+                        55.00669860839844,
+                        123.50499725341797,
+                        0.6000000238418579
+                    ],
+                    [
+                        1.3682105541229248,
+                        55.19670104980469,
+                        125.28399658203125,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_1",
+                "parentX": 1.0
+            }
+        },
+        "dend_20": {
+            "geom": {
+                "L": 24.129425844327393,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        98.13359832763672,
+                        -156.18800354003906,
+                        -220.30999755859375,
+                        0.6000000238418579
+                    ],
+                    [
+                        100.13400268554688,
+                        -157.07899475097656,
+                        -219.4199981689453,
+                        0.6000000238418579
+                    ],
+                    [
+                        111.68800354003906,
+                        -166.44500732421875,
+                        -230.2729949951172,
+                        0.6000000238418579
+                    ],
+                    [
+                        114.52100372314453,
+                        -168.23899841308594,
+                        -230.22900390625,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_19",
+                "parentX": 1.0
+            }
+        },
+        "dend_21": {
+            "geom": {
+                "L": 29.393402888929597,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.600000023841858,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        98.13359832763672,
+                        -156.18800354003906,
+                        -220.30999755859375,
+                        0.6000000238418579
+                    ],
+                    [
+                        99.85820007324219,
+                        -160.80799865722656,
+                        -228.63499450683594,
+                        0.6000000238418579
+                    ],
+                    [
+                        106.0510025024414,
+                        -165.56700134277344,
+                        -237.4739990234375,
+                        0.6000000238418579
+                    ],
+                    [
+                        111.71299743652344,
+                        -169.3699951171875,
+                        -241.50399780273438,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_19",
+                "parentX": 1.0
+            }
+        },
+        "dend_22": {
+            "geom": {
+                "L": 34.207021409569315,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        52.716800689697266,
+                        -87.12139892578125,
+                        -109.33999633789062,
+                        0.6000000238418579
+                    ],
+                    [
+                        63.751399993896484,
+                        -98.48179626464844,
+                        -122.74099731445312,
+                        0.6000000238418579
+                    ],
+                    [
+                        70.46630096435547,
+                        -107.03199768066406,
+                        -130.67799377441406,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_18",
+                "parentX": 1.0
+            }
+        },
+        "dend_23": {
+            "geom": {
+                "L": 265.7551860486866,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418584,
+                "nseg": 13,
+                "pt3d": [
+                    [
+                        6.224240303039551,
+                        -18.48819923400879,
+                        -25.088899612426758,
+                        1.7999999523162842
+                    ],
+                    [
+                        6.224240303039551,
+                        -18.48819923400879,
+                        -25.088899612426758,
+                        0.6000000238418579
+                    ],
+                    [
+                        5.941590309143066,
+                        -23.17889976501465,
+                        -34.8567008972168,
+                        0.6000000238418579
+                    ],
+                    [
+                        1.9864505529403687,
+                        -25.114900588989258,
+                        -41.30619812011719,
+                        0.6000000238418579
+                    ],
+                    [
+                        -6.221339702606201,
+                        -22.466400146484375,
+                        -47.214599609375,
+                        0.6000000238418579
+                    ],
+                    [
+                        -16.716999053955078,
+                        -17.679000854492188,
+                        -54.152801513671875,
+                        0.6000000238418579
+                    ],
+                    [
+                        -23.01810073852539,
+                        -16.861099243164062,
+                        -60.14120101928711,
+                        0.6000000238418579
+                    ],
+                    [
+                        -26.574499130249023,
+                        -19.936500549316406,
+                        -69.93270111083984,
+                        0.6000000238418579
+                    ],
+                    [
+                        -31.42970085144043,
+                        -23.958999633789062,
+                        -81.18489837646484,
+                        0.6000000238418579
+                    ],
+                    [
+                        -34.19160079956055,
+                        -29.346500396728516,
+                        -92.98719787597656,
+                        0.6000000238418579
+                    ],
+                    [
+                        -35.37929916381836,
+                        -35.69770050048828,
+                        -105.84600067138672,
+                        0.6000000238418579
+                    ],
+                    [
+                        -39.137901306152344,
+                        -41.3125,
+                        -120.9209976196289,
+                        0.6000000238418579
+                    ],
+                    [
+                        -39.342498779296875,
+                        -47.047698974609375,
+                        -136.76199340820312,
+                        0.6000000238418579
+                    ],
+                    [
+                        -36.28409957885742,
+                        -58.69179916381836,
+                        -156.88499450683594,
+                        0.6000000238418579
+                    ],
+                    [
+                        -27.98940086364746,
+                        -71.36239624023438,
+                        -169.26699829101562,
+                        0.6000000238418579
+                    ],
+                    [
+                        -19.15679931640625,
+                        -84.13839721679688,
+                        -184.1999969482422,
+                        0.6000000238418579
+                    ],
+                    [
+                        -13.57249927520752,
+                        -93.94840240478516,
+                        -195.0070037841797,
+                        0.6000000238418579
+                    ],
+                    [
+                        -13.14419937133789,
+                        -100.58799743652344,
+                        -207.45700073242188,
+                        0.6000000238418579
+                    ],
+                    [
+                        -8.288848876953125,
+                        -109.0510025024414,
+                        -222.5449981689453,
+                        0.6000000238418579
+                    ],
+                    [
+                        -5.579039573669434,
+                        -117.28800201416016,
+                        -237.63800048828125,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_15",
+                "parentX": 1.0
+            }
+        },
+        "dend_3": {
+            "geom": {
+                "L": 153.38666551857526,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        8.15156078338623,
+                        11.857399940490723,
+                        32.79890060424805,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.400900840759277,
+                        13.433899879455566,
+                        39.16239929199219,
+                        0.6000000238418579
+                    ],
+                    [
+                        14.570501327514648,
+                        16.607999801635742,
+                        49.13859939575195,
+                        0.6000000238418579
+                    ],
+                    [
+                        16.07430076599121,
+                        23.459199905395508,
+                        59.452999114990234,
+                        0.6000000238418579
+                    ],
+                    [
+                        18.969600677490234,
+                        31.954200744628906,
+                        75.78179931640625,
+                        0.6000000238418579
+                    ],
+                    [
+                        13.370901107788086,
+                        44.59880065917969,
+                        97.6897964477539,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.442501068115234,
+                        51.159698486328125,
+                        110.7750015258789,
+                        0.6000000238418579
+                    ],
+                    [
+                        8.043830871582031,
+                        58.99769973754883,
+                        123.02999877929688,
+                        0.6000000238418579
+                    ],
+                    [
+                        7.050870418548584,
+                        62.30590057373047,
+                        132.73300170898438,
+                        0.6000000238418579
+                    ],
+                    [
+                        6.7646002769470215,
+                        67.70680236816406,
+                        142.7949981689453,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.057600975036621,
+                        69.26069641113281,
+                        161.46499633789062,
+                        0.6000000238418579
+                    ],
+                    [
+                        16.311599731445312,
+                        65.65039825439453,
+                        165.36199951171875,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_1",
+                "parentX": 1.0
+            }
+        },
+        "dend_4": {
+            "geom": {
+                "L": 8.996822955091016,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        7.407170295715332,
+                        5.963119983673096,
+                        21.36079978942871,
+                        1.2000000476837158
+                    ],
+                    [
+                        7.407170295715332,
+                        5.963119983673096,
+                        21.36079978942871,
+                        0.6000000238418579
+                    ],
+                    [
+                        11.152200698852539,
+                        3.8371100425720215,
+                        22.42180061340332,
+                        0.6000000238418579
+                    ],
+                    [
+                        14.363500595092773,
+                        0.7927049398422241,
+                        21.313800811767578,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_0",
+                "parentX": 1.0
+            }
+        },
+        "dend_5": {
+            "geom": {
+                "L": 132.8185534955252,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 7,
+                "pt3d": [
+                    [
+                        14.363500595092773,
+                        0.7927049398422241,
+                        21.313800811767578,
+                        0.6000000238418579
+                    ],
+                    [
+                        19.555599212646484,
+                        0.1271909475326538,
+                        20.600099563598633,
+                        0.6000000238418579
+                    ],
+                    [
+                        28.06529998779297,
+                        -6.894720077514648,
+                        17.228900909423828,
+                        0.6000000238418579
+                    ],
+                    [
+                        33.640201568603516,
+                        -9.385299682617188,
+                        17.578699111938477,
+                        0.6000000238418579
+                    ],
+                    [
+                        36.2843017578125,
+                        -9.468339920043945,
+                        19.12969970703125,
+                        0.6000000238418579
+                    ],
+                    [
+                        35.71969985961914,
+                        -6.203219890594482,
+                        23.22249984741211,
+                        0.6000000238418579
+                    ],
+                    [
+                        37.922298431396484,
+                        -5.900010108947754,
+                        28.608800888061523,
+                        0.6000000238418579
+                    ],
+                    [
+                        42.45050048828125,
+                        -5.393370151519775,
+                        30.488300323486328,
+                        0.6000000238418579
+                    ],
+                    [
+                        43.0901985168457,
+                        -5.12060022354126,
+                        31.272199630737305,
+                        0.6000000238418579
+                    ],
+                    [
+                        46.40299987792969,
+                        -7.018189907073975,
+                        29.561800003051758,
+                        0.6000000238418579
+                    ],
+                    [
+                        51.55870056152344,
+                        -8.600939750671387,
+                        29.64739990234375,
+                        0.6000000238418579
+                    ],
+                    [
+                        58.77519989013672,
+                        -6.755620002746582,
+                        39.150699615478516,
+                        0.6000000238418579
+                    ],
+                    [
+                        61.25510025024414,
+                        -1.11844003200531,
+                        51.01570129394531,
+                        0.6000000238418579
+                    ],
+                    [
+                        66.86309814453125,
+                        -1.997789978981018,
+                        57.56869888305664,
+                        0.6000000238418579
+                    ],
+                    [
+                        62.42279815673828,
+                        4.149720191955566,
+                        79.068603515625,
+                        0.6000000238418579
+                    ],
+                    [
+                        63.320899963378906,
+                        7.618989944458008,
+                        92.12809753417969,
+                        0.6000000238418579
+                    ],
+                    [
+                        66.3988037109375,
+                        5.312049865722656,
+                        101.0510025024414,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_4",
+                "parentX": 1.0
+            }
+        },
+        "dend_6": {
+            "geom": {
+                "L": 32.48684291073828,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418579,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        14.363500595092773,
+                        0.7927049398422241,
+                        21.313800811767578,
+                        0.6000000238418579
+                    ],
+                    [
+                        19.61090087890625,
+                        -3.5554399490356445,
+                        19.898399353027344,
+                        0.6000000238418579
+                    ],
+                    [
+                        26.73699951171875,
+                        -9.68124008178711,
+                        22.35610008239746,
+                        0.6000000238418579
+                    ],
+                    [
+                        29.568199157714844,
+                        -11.796199798583984,
+                        27.255399703979492,
+                        0.6000000238418579
+                    ],
+                    [
+                        36.01300048828125,
+                        -14.353799819946289,
+                        34.141998291015625,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_4",
+                "parentX": 1.0
+            }
+        },
+        "dend_7": {
+            "geom": {
+                "L": 14.964872966998463,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        36.01300048828125,
+                        -14.353799819946289,
+                        34.141998291015625,
+                        0.6000000238418579
+                    ],
+                    [
+                        36.57210159301758,
+                        -17.058000564575195,
+                        37.57709884643555,
+                        0.6000000238418579
+                    ],
+                    [
+                        32.53049850463867,
+                        -18.413799285888672,
+                        43.31829833984375,
+                        0.6000000238418579
+                    ],
+                    [
+                        33.209800720214844,
+                        -20.846599578857422,
+                        45.60419845581055,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_6",
+                "parentX": 1.0
+            }
+        },
+        "dend_8": {
+            "geom": {
+                "L": 55.99376428809599,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 0.6000000238418578,
+                "nseg": 3,
+                "pt3d": [
+                    [
+                        36.01300048828125,
+                        -14.353799819946289,
+                        34.141998291015625,
+                        0.6000000238418579
+                    ],
+                    [
+                        60.61790084838867,
+                        -27.784400939941406,
+                        29.193199157714844,
+                        0.6000000238418579
+                    ],
+                    [
+                        64.46189880371094,
+                        -28.40690040588379,
+                        31.739500045776367,
+                        0.6000000238418579
+                    ],
+                    [
+                        68.83760070800781,
+                        -29.167200088500977,
+                        46.452999114990234,
+                        0.6000000238418579
+                    ],
+                    [
+                        74.79219818115234,
+                        -30.619199752807617,
+                        50.7869987487793,
+                        0.6000000238418579
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "dend_6",
+                "parentX": 1.0
+            }
+        },
+        "dend_9": {
+            "geom": {
+                "L": 24.53827170282055,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 1.3409477969059878,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -1.7602698802947998,
+                        4.065535545349121,
+                        4.80534553527832,
+                        1.5
+                    ],
+                    [
+                        -1.9334594011306763,
+                        2.02167010307312,
+                        2.180230140686035,
+                        1.5
+                    ],
+                    [
+                        -3.2068896293640137,
+                        4.99606990814209,
+                        7.066269874572754,
+                        1.5
+                    ],
+                    [
+                        -3.31123948097229,
+                        7.7292799949646,
+                        10.856499671936035,
+                        1.2000000476837158
+                    ],
+                    [
+                        -4.009979724884033,
+                        10.198699951171875,
+                        12.851200103759766,
+                        1.2000000476837158
+                    ],
+                    [
+                        -5.746899604797363,
+                        11.385899543762207,
+                        13.15820026397705,
+                        1.2000000476837158
+                    ],
+                    [
+                        -7.922889709472656,
+                        16.061500549316406,
+                        14.362700462341309,
+                        1.2000000476837158
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.02731034085322947,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.009930673433629493,
+                    "gna_max": 0.0005637226677278192,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.58052734298846e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.0006260469960465429,
+                    "taur": 6.087132587687931
+                },
+                "TC_iA": {
+                    "gk_max": 0.006956529971096487
+                },
+                "TC_iL": {
+                    "pcabar": 1.0326094891942588e-05
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 8.826470717198516e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 8.94536231356133e-06
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {
+                "childX": 0.0,
+                "parentSec": "soma_0",
+                "parentX": 0.0
+            }
+        },
+        "soma_0": {
+            "geom": {
+                "L": 15.954844398377691,
+                "Ra": 100.0,
+                "cm": 1.0,
+                "diam": 6.87881111331716,
+                "nseg": 1,
+                "pt3d": [
+                    [
+                        -1.7602698802947998,
+                        4.065535545349121,
+                        4.80534553527832,
+                        2.2713799476623535
+                    ],
+                    [
+                        -1.6134651899337769,
+                        3.5824155807495117,
+                        4.187740325927734,
+                        4.197930335998535
+                    ],
+                    [
+                        -1.4666603803634644,
+                        3.0992953777313232,
+                        3.5701353549957275,
+                        5.506595611572266
+                    ],
+                    [
+                        -1.3198556900024414,
+                        2.6161751747131348,
+                        2.9525303840637207,
+                        6.384820938110352
+                    ],
+                    [
+                        -1.173050880432129,
+                        2.1330549716949463,
+                        2.334925413131714,
+                        7.315797805786133
+                    ],
+                    [
+                        -1.0262460708618164,
+                        1.6499347686767578,
+                        1.7173205614089966,
+                        8.279603958129883
+                    ],
+                    [
+                        -0.8794413208961487,
+                        1.1668145656585693,
+                        1.0997155904769897,
+                        8.959848403930664
+                    ],
+                    [
+                        -0.732636570930481,
+                        0.6836943626403809,
+                        0.4821106195449829,
+                        9.58426570892334
+                    ],
+                    [
+                        -0.5858318209648132,
+                        0.20057418942451477,
+                        -0.13549432158470154,
+                        10.045019149780273
+                    ],
+                    [
+                        -0.4390270411968231,
+                        -0.2825459837913513,
+                        -0.753099262714386,
+                        9.992549896240234
+                    ],
+                    [
+                        -0.292222261428833,
+                        -0.7656661868095398,
+                        -1.370704174041748,
+                        9.930486679077148
+                    ],
+                    [
+                        -0.1454174965620041,
+                        -1.2487863302230835,
+                        -1.9883091449737549,
+                        9.60653018951416
+                    ],
+                    [
+                        0.0013872720301151276,
+                        -1.731906533241272,
+                        -2.6059141159057617,
+                        8.657918930053711
+                    ],
+                    [
+                        0.14819203317165375,
+                        -2.215026617050171,
+                        -3.2235190868377686,
+                        7.559207916259766
+                    ],
+                    [
+                        0.29499679803848267,
+                        -2.6981468200683594,
+                        -3.8411240577697754,
+                        6.794227600097656
+                    ],
+                    [
+                        0.4418015778064728,
+                        -3.181267023086548,
+                        -4.458728790283203,
+                        6.155084133148193
+                    ],
+                    [
+                        0.5886063575744629,
+                        -3.6643872261047363,
+                        -5.076333999633789,
+                        5.515940189361572
+                    ],
+                    [
+                        0.7354111075401306,
+                        -4.147507667541504,
+                        -5.693938732147217,
+                        4.7029194831848145
+                    ],
+                    [
+                        0.8822158575057983,
+                        -4.630627632141113,
+                        -6.311543941497803,
+                        3.739725112915039
+                    ],
+                    [
+                        1.0290206670761108,
+                        -5.113747596740723,
+                        -6.9291486740112305,
+                        2.666191339492798
+                    ],
+                    [
+                        1.1758253574371338,
+                        -5.59686803817749,
+                        -7.546753883361816,
+                        1.6917405128479004
+                    ]
+                ]
+            },
+            "ions": {
+                "ca": {
+                    "e": 132.4579341637009,
+                    "i": 5e-05,
+                    "o": 2.0
+                },
+                "k": {
+                    "e": -90.0,
+                    "i": 54.4,
+                    "o": 2.5
+                },
+                "na": {
+                    "e": 50.0,
+                    "i": 10.0,
+                    "o": 140.0
+                }
+            },
+            "mechs": {
+                "SK_E2": {
+                    "gSK_E2bar": 0.022679373711821108,
+                    "zTau": 1.0
+                },
+                "TC_HH": {
+                    "gk_max": 0.02532298482965297,
+                    "gna_max": 0.0002996976345645149,
+                    "vtraub": -55.5,
+                    "vtraub2": -45.5
+                },
+                "TC_Nap_Et2": {
+                    "gNap_Et2bar": 8.449456243690126e-05
+                },
+                "TC_cad": {
+                    "cainf": 5e-05,
+                    "depth": 0.1,
+                    "gamma": 0.01350954427282492,
+                    "taur": 8.561105771545282
+                },
+                "TC_iA": {
+                    "gk_max": 0.034710457309483675
+                },
+                "TC_iL": {
+                    "pcabar": 0.0002982725576081889
+                },
+                "TC_iT_Des98": {
+                    "actshift": 0.0,
+                    "pcabar": 1.185268845314858e-05,
+                    "shift": 2.0
+                },
+                "TC_ih_Bud97": {
+                    "gh_max": 2.0053050501964372e-05
+                },
+                "pas": {
+                    "e": -80.0,
+                    "g": 7.658105689196739e-05
+                }
+            },
+            "topol": {}
+        }
+    }
+}
